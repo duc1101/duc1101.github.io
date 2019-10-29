@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main_style.css">
 </head>
-<body  onload="nhay();">
+<body  id="_body" onload="nhay();">
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top head_nav" role="navigation">
 			<div class="text-center duc" id="duc">
@@ -23,7 +23,7 @@
 			</div>
 		</nav>
 	</header>
-	<section id="_body" class="_main">
+	<section class="_main">
 		<div class="row main_1">
 			<div class="col-sm-2 banner_left _container">
 				<!-- <img src="images/banner_left_2.png" alt=""> -->
@@ -56,7 +56,7 @@
 							<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="images/main_2.jpg">
 							<div class="container">
 								<div class="carousel-caption">
-									<h4 style="color: black">Tuổi mới hay ăn chóng lớn, gặp nhiều may mắn</h4>
+									<h4 style="color: aqua">Tuổi mới hay ăn chóng lớn, gặp nhiều may mắn</h4>
 									<p></p>
 									<p><a class="btn btn-lg btn-default custom_btn" href="#" disabled="true" role="button"><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><br><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""></a></p>
 								</div>
@@ -66,8 +66,8 @@
 							<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="images/main_3.jpg">
 							<div class="container">
 								<div class="carousel-caption">
-									<h4 style="color: aqua">Có một sinh nhật thật vui</h4>
-									<p><br><br></p>
+									<h4 style="color: aqua">Có một sinh nhật vui vẻ</h4>
+									<p><br></p>
 									<p><a class="btn btn-lg btn-default custom_btn" href="#" disabled="true" role="button"><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><br><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""><img src="images/qua.gif" alt=""></a></p>
 								</div>
 							</div>
@@ -76,9 +76,9 @@
 							<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="images/main_4.jpg">
 							<div class="container">
 								<div class="carousel-caption">
-									<h4 style="color: black; font-family:Courgette">Rảnh thì nhấn nhận quà bên dưới<br>👇</h4>
+									<h5 style="color: black; font-family:Courgette">Rảnh thì nhấn nhận quà bên dưới<br>👇</h5>
 									<p></p>
-									<p><a class="btn btn-lg btn-success" data-toggle="modal" href='#modal-id' onclick="bongbay();">Nhận quà</a></p>
+									<p><a id="_button" class="btn btn-lg btn-success" data-toggle="modal" href='#modal-id' onclick="bongbay();">Nhận quà</a></p>
 								</div>
 							</div>
 						</div>
@@ -90,47 +90,50 @@
 			<div class="col-sm-2 banner_right _container">
 			</div>
 		</div>
-		<div class="row text-center play_audio">
-			<div class="col-sm-8">
-				<h2 style="">toio laf dducwsc ddoanf vanw dduawsc</h2>
+		<div class="row play_audio text-center">
+			<div class=" text-center">
+				<audio controls autoplay="" volume="">
+					<source src="images/HappyBirthday.mp3" type="audio/mpeg">
+					</source>
+				</audio>
 
+				</div>
 			</div>
-		</div>
-	</section>
-	<footer class="pull-right _footer">
+		</section>
+		<footer class="pull-right _footer">
+			<div class="navbar-fixed-bottom banner_bottom_2" >
+			</div>
+		</footer>
 		<div class="navbar-fixed-bottom banner_bottom" >
-			<img class="pull-right" src="images/banner_bottom.png" alt="">
-		</div>
-		<div class="navbar-fixed-bottom banner_bottom_2" >
+			<img id="_3" class="" src="images/banner_bottom.png" alt="">
 		</div>
 		<div class="navbar-fixed-bottom banner_bottom_3" >
-			<img class="pull-left" src="images/snow_bottom_left.png" alt="">
-			<img class="pull-right" src="images/snow_bottom_right.png" alt="">
+			<img id="_1" class="pull-left" src="images/snow_bottom_left.png" alt="">
+			<img id="_2" class="pull-right" src="images/snow_bottom_right.png" alt="">
 		</div>
-	</footer>
-	<div class="modal fade" id="modal-id">
-		<div class="modal-dialog">
-			<div class="modal-content" id="_gif">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h6 class="modal-title text-right">design by mr.d</h6>
-				</div>
-				<div class="modal-body _gif">
-					<img id="quaBong" src="images/gif.png" alt="">
-					<img id="qua" src="images/Gift-icon.png" alt="">
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default pull-left" onclick="thoatFake()">ấn để thoát</button>
-					<button class="btn btn-primary pull-right" onclick="thanks()" href="">no caption</button>
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog">
+				<div class="modal-content" id="_gif">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h6 class="modal-title text-right">design by mr.d</h6>
+					</div>
+					<div class="modal-body _gif">
+						<img id="quaBong" src="images/gif.png" alt="">
+						<img id="qua" src="images/Gift-icon.png" alt="">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default pull-left" onclick="thoatFake()">ấn để thoát</button>
+						<button class="btn btn-primary pull-right" onclick="thanks()" href="">no caption</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.snow.js"></script>
-	<script type="text/javascript" src="js/mr.duc.js"></script>
-</body>
-<!-- <audio src="images/HappyBirthday.mp3" autoplay></audio> -->
-</html>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.snow.js"></script>
+		<script type="text/javascript" src="js/mr.duc.js"></script>
+	</body>
+	<!-- <audio src="images/HappyBirthday.mp3" autoplay></audio> -->
+	</html>
