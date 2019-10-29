@@ -17,6 +17,11 @@ function nhay(){
 			var bg_key = Math.floor(bg_length);
 			_body.style.backgroundImage=bg_table[bg_key];
 		}
+		if (time%3==0) {
+			_button.style.backgroundColor= '#f0ad4e';
+		}else{
+			_button.style.backgroundColor= '#5cb85c';
+		}
 		if(time<=42){
 					// chạy xuôi
 					duc.style.fontFamily='Tangerine';
