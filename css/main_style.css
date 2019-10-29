@@ -137,7 +137,6 @@ p{
 .custom_btn{
 	padding: 0px 6px;
 }
-
 section>div.main_1>div.banner_right{
 	height: 100vh;
 	background-image: url('../images/banner_right_2.png');
@@ -388,7 +387,6 @@ div.banner_bottom_3{
 			color: gold;
 		}
 	}
-
 	@media (max-height: 360px) and (max-width: 640px){
 		._main>div.play_audio{
 			margin-top: 111px;
@@ -398,7 +396,6 @@ div.banner_bottom_3{
 		div.banner_bottom_2,div.banner_bottom{
 			display: none;
 		}
-
 	}
 	@media(max-width: 320px){
 		div.banner_bottom_2,div.banner_bottom{
