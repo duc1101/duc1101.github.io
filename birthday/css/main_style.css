@@ -71,12 +71,17 @@ header>nav.head_nav{
 	box-sizing: border-box;
 }
 ._main{
-	margin-top: 48px;
+	padding: 48px 0;
 }
-section>div.banner_left,section>div.main_bd,section>div.banner_right{
+._main>div.play_audio{
+	margin-top: 16px;
 	height: 100vh;
 }
-section>div.banner_left{
+section>div.main_1>div.banner_left,section>div.main_1>div.main_bd,section>div.main_1>div.banner_right{
+	max-height: 100vh;
+}
+section>div.main_1>div.banner_left{
+	height: 100vh;
 	background-image: url('../images/banner_left_2.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -101,12 +106,14 @@ p{
 .custom_btn{
 	padding: 0px 6px;
 }
-section>div.banner_right{
+
+section>div.main_1>div.banner_right{
+	height: 100vh;
 	background-image: url('../images/banner_right_2.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-section>div.banner_left>img,section>div.main_bd>img, section>div.banner_right>img{
+section>div.main_1>div.banner_left>img,section>div.main_1>div.main_bd>img, section>div.main_1>div.banner_right>img{
 	width: 100%;
 }
 div.banner_bottom{
@@ -324,14 +331,14 @@ div._gif{
 	}
 }
 @media (max-width: 666px){
-	.banner_bottom_2,section>div.banner_left,section>div.banner_right{
+	.banner_bottom_2,section>div.main_1>div.banner_left,section>div.main_1>div.banner_right{
 		display: none;
 	}
 	div.banner_top_2{
 		display: block;
 	}
 	._main{
-		margin-top: 88px;
+		margin-top: 40px;
 	}
 	div.banner_top>img{
 		width:100%;
@@ -352,10 +359,18 @@ div._gif{
 	div.banner_bottom{
 		display: none;
 	}
+	div.banner_bottom_3>img{
+		height: 78px;
+	}
 }
 @media(max-width: 440px){
 	div.snowflake{
 		color: gold;
+	}
+}
+@media (max-height: 385px){
+	div.banner_bottom_2{
+		display: none;
 	}
 }
 @media(max-width: 320px){
