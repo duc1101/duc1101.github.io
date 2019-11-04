@@ -1,0 +1,153 @@
+{
+	"0":{
+		"app_1":{
+			"id":"1","name":"","link":"https://myaccount.google.com","title":"My Account","image":"images/acc.png"
+		},
+		"app_2":{
+			"id":"2","name":"","link":"https://google.com","title":"Google","image":"images/google-logo.png"
+		},
+		"app_3":{
+			"id":"2","name":"","link":"https://mail.google.com","title":"Gmail","image":"images/Gmail-icon.png"
+		},
+		"app_4":{
+			"id":"2","name":"","link":"https://drive.google.com","title":"Drive","image":"images/Google-Drive-icon.png"
+		},
+		"app_5":{
+			"id":"2","name":"","link":"https://translate.google.com","title":"Translate","image":"images/Google-Translate-icon.png"
+		},
+		"app_6":{
+			"id":"2","name":"","link":"https://www.google.com/maps","title":"Maps","image":"images/Google-Maps-icon.png"
+		},
+		"app_7":{
+			"id":"2","name":"","link":"https://photos.google.com","title":"Google Photos","image":"images/1024px-Google_Photos_icon.svg.png"
+		},
+		"app_8":{
+			"id":"2","name":"","link":"https://contacts.google.com","title":"Contacts","image":"images/gg-contacts.png"
+		},
+		"app_9":{
+			"id":"2","name":"","link":"https://calendar.google.com","title":"Calendar","image":"images/Google-Calendar-icon.png"
+		},
+		"app_10":{
+			"id":"2","name":"","link":"https://earth.google.com/web","title":"Google Earth","image":"images/google-earth.png"
+		},
+		"app_11":{
+			"id":"2","name":"","link":"https://www.google.com.vn/imghp?hl=vi&tab=ii&authuser=0","title":"Hình ảnh","image":"images/Google-Camera.png"
+		},
+		
+		"app_12":{
+			"id":"3","name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Web Store","image":"images/Chrome Web Store.png"
+		}
+	},
+	"1":{
+		"app_1":{
+			"id":"1","name":"","link":"https://facebook.com","title":"Facebook","image":"images/facebook.png"
+		},
+		"app_2":{
+			"id":"2","name":"","link":"https://www.youtube.com","title":"You Tube","image":"images/youtube.png"
+		},
+		"app_3":{
+			"id":"3","name":"","link":"https://chat.zalo.me","title":"Chat Zalo","image":"images/zalo.png"
+		},
+		"app_4":{
+			"id":"4","name":"","link":"https://www.instagram.com","title":"Instagram","image":"images/instagram.png"
+		},
+		"app_5":{
+			"id":"5","name":"","link":"https://zingmp3.vn","title":"Zing mp3","image":"images/zing-mp3.png"
+		},
+		"app_6":{
+			"id":"6","name":"","link":"https://www.nhaccuatui.com","title":"Nhạc của tui","image":"images/nhaccuatui.png"
+		},
+		"app_7":{
+			"id":"7","name":"","link":"https://twitter.com","title":"Twitter","image":"images/twitter.png"
+		},
+		"app_8":{
+			"id":"8","name":"","link":"https://www.tiktok.com/vi/trending","title":"Tiktok","image":"images/tiktok.png"
+		},
+		"app_9":{
+			"id":"9","name":"","link":"https://web.skype.com","title":"Skype","image":"images/Skype.png"
+		},
+		"app_10":{
+			"id":"10","name":"","link":"https://www.fshare.vn","title":"Fshare","image":"images/fshare.png"
+		},
+		"app_11":{
+			"id":"11","name":"","link":"https://www.dropbox.com","title":"Dropbox","image":"images/dropbox.png"
+		},
+		"app_12":{
+			"id":"12","name":"","link":"https://mega.nz","title":"Mega","image":"images/mega.png"
+		},
+		"app_13":{
+			"id":"13","name":"","link":"https://outlook.live.com","title":"Outlook","image":"images/Outlook.png"
+		},
+		"app_14":{
+			"id":"14","name":"","link":"https://www.microsoft.com/vi-vn","title":"Microsoft","image":"images/microsoft.png"
+		},
+		"app_15":{
+			"id":"15","name":"","link":"https://bachkhoa-aptech.edu.vn","title":"BachKhoa - Aptech","image":"images/aptech.png"
+		},
+		"app_16":{
+			"id":"16","name":"","link":"https://github.com","title":"Github","image":"images/github.png"
+		},
+		"app_17":{
+			"id":"17","name":"","link":"https://web.airdroid.com","title":"AirDroid","image":"http://icons.iconarchive.com/icons/chrisbanks2/cold-fusion-hd/128/airdroid-icon.png"
+		},
+		"app_18":{
+			"id":"18","name":"","link":"https://www.bigo.tv","title":"Bigo Live","image":"images/bigo.png"
+		},
+		"app_19":{
+			"id":"19","name":"","link":"https://play.google.com","title":"Google plays","image":"http://icons.iconarchive.com/icons/dakirby309/simply-styled/128/Google-Play-Store-alt-icon.png"
+		}
+
+	},
+	"2":{
+		"app_1":{
+			"id":"1","name":"Duolingo","link":"https://www.duolingo.com","title":"Duolingo - học tiếng anh giao tiếp","image":"images/duolingo.png"
+		},
+		"app_2":{
+			"id":"2","name":"W3shool","link":"https://www.w3schools.com","title":"W3shool","image":"images/w3shools.png"
+		},
+		"app_3":{
+			"id":"3","name":"Links vip","link":"https://linksvip.net","title":"Links vip - get Link Fshare 4share","image":"images/link-vip.svg"
+		},
+		"app_4":{
+			"id":"4","name":"Lazada","link":"https://member.lazada.vn/user/login?spm=a2o4n.home.header.d5.444b6afe1XSUcN&redirect=https%3A%2F%2Fwww.lazada.vn%2F%3Fspm%3Da2o4n.manage_account.header.dhome.136a705behhJvY","title":"Lazada","image":"images/lazada.png"
+		},
+		"app_5":{
+			"id":"5","name":"Shopee","link":"https://shopee.vn","title":"Shopee","image":"images/shopee.png"
+		},
+		"app_6":{
+			"id":"6","name":"Wikipedia","link":"https://www.wikipedia.org","title":"Wikipedia","image":"images/wikipedia.png"
+		},
+		"app_7":{
+			"id":"7","name":"CamBridge","link":"https://dictionary.cambridge.org/vi/dictionary/english/bridge","title":"Cam Bridge","image":"images/Cambridge.png"
+		},
+		"app_8":{
+			"id":"8","name":"Chia sẻ","link":"http://chiase.io","title":"Chia sẻ","image":"images/chiase.png"
+		},
+		"app_9":{
+			"id":"9","name":"IconArchive","link":"http://www.iconarchive.com","title":"Icon Archive","image":"images/iconArchive.png"
+		},
+		"app_10":{
+			"id":"10","name":"Awesome","link":"https://fontawesome.com","title":"Font Awesome","image":"images/Font Awesome.png"
+		},
+		"app_11":{
+			"id":"11","name":"Phim mới","link":"http://www.phimmoi.net","title":"Phim mới","image":"images/phimmoi-square.png"
+		},
+		"app_12":{
+			"id":"12","name":"Vui ghê","link":"https://vuighe.net","title":"Vui ghê","image":"images/vuighe.png"
+		},
+
+		"app_13":{
+			"id":"13","name":"Tutorial","link":"https://www.tutorialspoint.com","title":"Tutorial","image":"images/tutorial.png"
+		},
+		"app_14":{
+			"id":"14","name":"VinaSearch","link":"https://vinaresearch.net","title":"VinaSearch","image":"images/vinasearch.png"
+		},
+		"app_15":{
+			"id":"15","name":"Mediafire","link":"https://www.mediafire.com","title":"Mediafire","image":"images/Mediafire.png"
+		},
+
+		"app_16":{
+			"id":"16","name":"Xaiandroid","link":"https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html","title":"Root và cài đặt sony m2","image":"images/xaiandroid.png"
+		}
+	}
+}
