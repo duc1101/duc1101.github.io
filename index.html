@@ -62,8 +62,7 @@
 					<div class="col-xs-6  sub_app" ng-repeat="(key, value) in leftApp | limitTo:2:10">
 						<a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
 					</div>
-					<div class="col-xs-6  sub_app ">
-						<a data-toggle="modal" href='#modal-id' title="Add Links"><img src="images/Gift-icon.png" alt=""></a>
+					<div class="col-xs-6  sub_app _hide">
 					</div>
 				</div>
 				<div class="col-xs-6 col-xs-pull-3 col-sm-12 col-sm-pull-0 _container">
@@ -118,31 +117,5 @@
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/jquery.snow.js"></script>	
 <script type="text/javascript" src="js/mr.duc.js"></script>
-<div class="modal fade" id="modal-id">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Thêm app</h4>
-			</div>
-			<div class="modal-body">
-				<form action="" method="POST" class="form-inline" role="form">
-					<div class="form-group">
-						<label class="" for="">Import link</label>
-						<input type="text" class="form-control" id="" placeholder="Nhập link...">
-					</div>
-					<div class="form-group">
-						<label class="" for="">Import image</label>
-						<input type="text" class="form-control" id="" placeholder="Image...">
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-success">Action</button>
-			</div>
-		</div>
-	</div>
-</div>
 </body>
 </html>
