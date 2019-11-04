@@ -88,13 +88,13 @@
 			"id":"16","name":"","link":"https://github.com","title":"Github","image":"images/github.png"
 		},
 		"app_17":{
-			"id":"17","name":"","link":"https://web.airdroid.com","title":"AirDroid","image":"http://icons.iconarchive.com/icons/chrisbanks2/cold-fusion-hd/128/airdroid-icon.png"
+			"id":"17","name":"","link":"https://web.airdroid.com","title":"AirDroid","image":"images/airdroid-icon.png"
 		},
 		"app_18":{
 			"id":"18","name":"","link":"https://www.bigo.tv","title":"Bigo Live","image":"images/bigo.png"
 		},
 		"app_19":{
-			"id":"19","name":"","link":"https://play.google.com","title":"Google plays","image":"http://icons.iconarchive.com/icons/dakirby309/simply-styled/128/Google-Play-Store-alt-icon.png"
+			"id":"19","name":"","link":"https://play.google.com","title":"Google plays","image":"images/Google-Play.png"
 		}
 
 	},
