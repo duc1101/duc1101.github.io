@@ -93,12 +93,12 @@
 	</FORM>
 	<div class="row custom">
 		<div class=" col-xs-6 row _container">
-			<div class="col-xs-3 app_add"  ng-repeat="(key, value) in centerAppMain" ng-show="key % 2 == 0 && key > 8">
+			<div class="col-xs-3 app_add"  ng-repeat="(key, value) in centerAppMain" ng-show="key % 2 == 0 && key > 7">
 				<a href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
 			</div>
 		</div>
 		<div class=" col-xs-6 row _container">
-			<div class="col-xs-3 app_add" ng-repeat="(key, value) in centerAppMain" ng-show="key % 2 != 0 && key > 8">
+			<div class="col-xs-3 app_add" ng-repeat="(key, value) in centerAppMain" ng-show="key % 2 != 0 && key > 7">
 				<a href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
 			</div>
 		</div>
