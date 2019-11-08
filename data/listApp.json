@@ -109,7 +109,7 @@
 			"id":"3","name":"Links vip","link":"https://linksvip.net","title":"Links vip - get Link Fshare 4share","image":"images/link-vip.svg"
 		},
 		"app_4":{
-			"id":"4","name":"Lazada","link":"https://member.lazada.vn/user/login?spm=a2o4n.home.header.d5.444b6afe1XSUcN&redirect=https%3A%2F%2Fwww.lazada.vn%2F%3Fspm%3Da2o4n.manage_account.header.dhome.136a705behhJvY","title":"Lazada","image":"images/lazada.png"
+			"id":"4","name":"Lazada","link":"https://member.lazada.vn","title":"Lazada","image":"images/lazada.png"
 		},
 		"app_5":{
 			"id":"5","name":"Shopee","link":"https://shopee.vn","title":"Shopee","image":"images/shopee.png"
