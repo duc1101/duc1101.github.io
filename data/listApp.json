@@ -100,56 +100,58 @@
 	},
 	"2":{
 		"app_1":{
-			"id":"1","name":"Duolingo","link":"https://www.duolingo.com","title":"Duolingo - học tiếng anh giao tiếp","image":"images/duolingo.png"
+			"name":"Duolingo","link":"https://www.duolingo.com","title":"Duolingo - học tiếng anh giao tiếp","image":"images/duolingo.png"
 		},
 		"app_2":{
-			"id":"2","name":"W3shool","link":"https://www.w3schools.com","title":"W3shool","image":"images/w3shools.png"
+			"name":"W3shool","link":"https://www.w3schools.com","title":"W3shool","image":"images/w3shools.png"
 		},
 		"app_3":{
-			"id":"3","name":"Links vip","link":"https://linksvip.net","title":"Links vip - get Link Fshare 4share","image":"images/link-vip.svg"
+			"name":"Links vip","link":"https://linksvip.net","title":"Links vip - get Link Fshare 4share","image":"images/link-vip.svg"
 		},
 		"app_4":{
-			"id":"4","name":"Lazada","link":"https://lazada.vn","title":"Lazada","image":"images/lazada.png"
+			"name":"Lazada","link":"https://lazada.vn","title":"Lazada","image":"images/lazada.png"
 		},
 		"app_5":{
-			"id":"5","name":"Shopee","link":"https://shopee.vn","title":"Shopee","image":"images/shopee.png"
+			"name":"Shopee","link":"https://shopee.vn","title":"Shopee","image":"images/shopee.png"
 		},
 		"app_6":{
-			"id":"6","name":"Wikipedia","link":"https://www.wikipedia.org","title":"Wikipedia","image":"images/wikipedia.png"
+			"name":"Wikipedia","link":"https://www.wikipedia.org","title":"Wikipedia","image":"images/wikipedia.png"
 		},
 		"app_7":{
-			"id":"7","name":"CamBridge","link":"https://dictionary.cambridge.org/vi/dictionary/english/bridge","title":"Cam Bridge","image":"images/Cambridge.png"
+			"name":"CamBridge","link":"https://dictionary.cambridge.org/vi/dictionary/english/bridge","title":"Cam Bridge","image":"images/Cambridge.png"
 		},
 		"app_8":{
-			"id":"8","name":"Chia sẻ","link":"http://chiase.io","title":"Chia sẻ","image":"images/chiase.png"
+			"name":"Chia sẻ","link":"http://chiase.io","title":"Chia sẻ","image":"images/chiase.png"
 		},
 		"app_9":{
-			"id":"9","name":"IconArchive","link":"http://www.iconarchive.com","title":"Icon Archive","image":"images/iconArchive.png"
+			"name":"IconArchive","link":"http://www.iconarchive.com","title":"Icon Archive","image":"images/iconArchive.png"
 		},
 		"app_10":{
-			"id":"10","name":"Awesome","link":"https://fontawesome.com","title":"Font Awesome","image":"images/Font Awesome.png"
+			"name":"Awesome","link":"https://fontawesome.com","title":"Font Awesome","image":"images/Font Awesome.png"
 		},
 		"app_11":{
-			"id":"11","name":"Phim mới","link":"http://www.phimmoi.net","title":"Phim mới","image":"images/phimmoi-square.png"
+			"name":"Phim mới","link":"http://www.phimmoi.net","title":"Phim mới","image":"images/phimmoi-square.png"
 		},
 		"app_12":{
-			"id":"12","name":"Vui ghê","link":"https://vuighe.net","title":"Vui ghê","image":"images/vuighe.png"
+			"name":"Vui ghê","link":"https://vuighe.net","title":"Vui ghê","image":"images/vuighe.png"
 		},
-
 		"app_13":{
-			"id":"13","name":"Tutorial","link":"https://www.tutorialspoint.com","title":"Tutorial","image":"images/tutorial.png"
+			"name":"Tutorial","link":"https://www.tutorialspoint.com","title":"Tutorial","image":"images/tutorial.png"
 		},
 		"app_14":{
-			"id":"14","name":"VinaSearch","link":"https://vinaresearch.net","title":"VinaSearch","image":"images/vinasearch.png"
+			"name":"VinaSearch","link":"https://vinaresearch.net","title":"VinaSearch","image":"images/vinasearch.png"
 		},
 		"app_15":{
-			"id":"15","name":"Mediafire","link":"https://www.mediafire.com","title":"Mediafire","image":"images/Mediafire.png"
+			"name":"Mediafire","link":"https://www.mediafire.com","title":"Mediafire","image":"images/Mediafire.png"
 		},
-		"app_16":{
-			"id":"16","name":"Tiki","link":"https://tiki.vn","title":"Tiki","image":"images/tiki.png"
+		"app_15":{
+			"name":"Up File","link":"http://upfile.vn","title":"Up File","image":"images/upfile.png"
 		},
 		"app_17":{
-			"id":"17","name":"Xaiandroid","link":"https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html","title":"Root và cài đặt sony m2","image":"images/xaiandroid.png"
+			"name":"Tiki","link":"https://tiki.vn","title":"Tiki","image":"images/tiki.png"
+		},
+		"app_18":{
+			"name":"Xaiandroid","link":"https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html","title":"Root và cài đặt sony m2","image":"images/xaiandroid.png"
 		}
 	}
 }
