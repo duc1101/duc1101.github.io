@@ -95,6 +95,9 @@
 		},
 		"app_19":{
 			"id":"19","name":"","link":"https://play.google.com","title":"Google plays","image":"images/Google-Play.png"
+		},
+		"app_20":{
+			"id":"20","name":"","link":"https://web.telegram.org","title":"Telegram","image":"images/telegram.png"
 		}
 
 	},
