@@ -147,13 +147,16 @@
 		"app_15":{
 			"name":"Mediafire","link":"https://www.mediafire.com","title":"Mediafire","image":"images/Mediafire.png"
 		},
-		"app_15":{
+		"app_16":{
 			"name":"Up File","link":"http://upfile.vn","title":"Up File","image":"images/upfile.png"
 		},
 		"app_17":{
-			"name":"Tiki","link":"https://tiki.vn","title":"Tiki","image":"images/tiki.png"
+			"name":"Draw","link":"https://www.draw.io","title":"Up File","image":"images/draw.png"
 		},
 		"app_18":{
+			"name":"Tiki","link":"https://tiki.vn","title":"Tiki","image":"images/tiki.png"
+		},
+		"app_19":{
 			"name":"Xaiandroid","link":"https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html","title":"Root và cài đặt sony m2","image":"images/xaiandroid.png"
 		}
 	}
