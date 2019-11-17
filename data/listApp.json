@@ -98,6 +98,9 @@
 		},
 		"app_20":{
 			"id":"20","name":"","link":"https://web.telegram.org","title":"Telegram","image":"images/telegram.png"
+		},
+		"app_21":{
+			"id":"21","name":"","link":"https://onedrive.live.com/","title":"One Drive","image":"images/onedrive.png"
 		}
 
 	},
