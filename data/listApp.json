@@ -101,6 +101,9 @@
 		},
 		"app_21":{
 			"id":"21","name":"","link":"https://onedrive.live.com/","title":"One Drive","image":"images/onedrive.png"
+		},
+		"app_22":{
+			"id":"22","name":"","link":"https://www.pinterest.com/","title":"Pinterest","image":"images/Pinterest.png"
 		}
 
 	},
