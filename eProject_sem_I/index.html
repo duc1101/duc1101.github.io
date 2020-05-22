@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="" ng-app="myApp" ng-controller="AppCtrl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="" href="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/48/owl-icon.png">
+	<title>Cambridge Hospital</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css  ">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="index.html">
+						<img src="images/CHA-Logo-Color.png" alt="main logo" class="mainLogo">
+					</a>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class=" helpCenter">
+								<span class="emergencyPhone"><i class="glyphicon glyphicon-plus text-danger"></i>  Emergency 24/7:<strong> (617) 665-1xxx</strong></span>
+								<br>
+								<span class="quickContact">
+									<i class="glyphicon glyphicon-phone-alt text-primary"> Hotline:<strong> 1900-XXXX</strong></i>
+									<br>
+									<i class="glyphicon glyphicon-envelope text-primary"> Email:<strong> HelpCenter@email.com</strong></i>
+								</span>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="helpCenter search">
+								<form action="#" class="">
+									<div class="input-group col-sm-12">
+										<input type="text" class="form-control" placeholder="Search" name="search">
+										<div class="input-group-btn">
+											<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar navbar-static-top navbar-default" role="navigation">
+		<div class="container-fluid bgNav">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header mainNav">
+				<button type="button" class="nav navbar-toggle buttNav" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="glyphicon glyphicon-menu-hamburger center-block"></i>
+					<!-- <span class="icon-bar"></span> -->
+					<small class="textMenu">menu</small>
+				</button>
+				<!-- <span class="navbar-brand" href="#">Menu</span> -->
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse navbar-right subMenu">
+				<ul class="nav navbar-nav">
+					<li class=""><a href="#"class="glyphicon glyphicon-home text-default" style="font-size: 20px"></a></li>
+					<li class="disabled"><a class="" href="#">News</a></li>
+					<li class=""><a href="#">Centres</a></li>
+					<!-- <li class=""><a href="#">Services</a></li> -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Health Checkup</a></li>
+							<li><a href="#">Cancer Care</a></li>
+							<li><a href="#">Women's Health</a></li>
+							<li><a href="#">Other Services</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Locations</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Abouts Us<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">General</a></li>
+							<li><a href="#">Derector Board</a></li>
+							<li><a href="#">Success Stories</a></li>
+							<li><a href="#">Organization Structure</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Department<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Doctor Schedule</a></li>
+							<li><a href="#">Sign up</a></li>
+							<li><a href="#">Pay & Account</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left formReponsive" role="search">
+					<div class="container input-group col-xs-12">
+						<input type="text" class="form-control" placeholder="Search" name="search">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+						</div>
+					</div>
+				</form>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+
+	<ng-view></ng-view>
+
+	
+	<footer>
+		<div class="container-fluid">
+			<div class="col-md-3 col-sm-6">
+				<div class="registerInfo">
+					<h4 style="color: white; font-weight: bold">Register to receive the latest information:</h4>
+					<form action="" method="POST" class="form-inline" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="">label</label>
+							<input type="email" class="form-control" id="" placeholder="Your email">
+						</div>
+						<button type="submit" class="btn btn-primary">register</button>
+					</form>
+					<div class="followUs">
+						<h5 style="color: white; font-weight: bold;">Follow us:</h5>
+						<ul class="CambridgeSocial">
+							<li><a href="https://www.facebook.com/CHAhealthcare" target="_blank"><em class="fab fa-facebook-square"></em></a><br>
+							</li>
+							<li><a href="https://twitter.com/challiance" target="_blank"><em class="fab fa-twitter-square"></em></a><br>
+							</li>
+							<li><a href="https://www.youtube.com/user/CambHealthAlliance" target="_blank"><em class="fab fa-youtube-square"></em></a><br>
+							</li>
+							<li><a href="https://www.linkedin.com/company/cambridge-health-alliance" target="_blank"><em class="fab fa-linkedin"></em></a><br>
+							</li>
+							<li class="last"><a href="https://www.instagram.com/cambhealthalliance/" target="_blank"><em class="fab fa-instagram"></em></a><br>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="proundTeaching">
+					<h4 style="color: white; font-weight: bold;">PROUND TEACHING HOSPITAL OF:</h4>
+					<a href="https://www.hsph.harvard.edu" style="padding-left: 5px"><img src="images/Harvard-T.H.-Chan-Logo-White.png" alt=""></a><br><br>
+					<a href="https://hms.harvard.edu"><img src="images/Harvard-Medical-School-Logo-White.png" alt=""></a><br><br>
+					<a href="https://www.hsdm.harvard.edu"><img src="images/Harvard-School-of-Dental-Medicine-Logo-White.png" alt=""></a>
+					<a href="https://www.tufts.edu/med"><img src="images/Tufts-School-of-Medicine_Logo-125px.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-md-5 col-sm-12">
+				<div class="cambridgeAlliance">
+					<h5 style="color: white; font-weight: bold;">Cambridge Health Alliance</h5>
+					<h6>1493 Cambridge St.</h6>
+					<h6>Cambridge, MA 02139</h6>
+					<h6>(617) 665-1000   |  TTY (617) 843-0744 |</h6>
+					<ul class="linksAlliance">	
+						<li><a href="/about/about-cha">About CHA</a></li>
+						<li><a href="/help-center/medical-bills">Facility</a></li>
+						<li><a href="/Blog/CHA-Blogs.aspx" target="_self">Centres</a></li>
+						<li><a href="/academic/cha-academics">Academics</a></li>
+						<li><a href="https://www.chacareers.org/" target="_blank">Careers</a></li>
+						<li><a href="/community/community">Community</a></li>
+						<li><a href="/about/contact-us">Contact Us</a></li>
+						<li><a href="/about/cha-foundation-test">Giving</a></li>
+						<li><a href="/location/locations">Locations</a></li>
+						<li><a href="/about/newsroom" target="_self">News</a></li>
+						<li><a href="/Help-Center/patient-notices.aspx" target="_self">Patient Notices</a></li>
+						<li><a href="/cha-services/services">Services</a></li>
+						<li><a href="/cha/vendorinformation">Vendor Information</a><br>
+						</li>
+						<li><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=lgy8nsmab&amp;p=oi&amp;m=1113015050443&amp;sit=fhmhs9xhb&amp;f=54d6a5b6-c6f5-4c6f-bb9a-f61e6cbe4a8a" target="_blank" title="Opens in new window">Sign up for CHA Newsletters</a></li>
+						<li class="last"><a href="/cha/site-map">Site Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+header{
+	background-color: #F8F1DEFF;
+}
+header>div.container{
+	/* margin-top: 11px; */
+}
+.mainLogo{
+	margin: 11px 0;
+	max-height: 60px;
+}
+div.helpCenter{
+	margin: 11px 0;
+}
+div.helpCenter.search{
+	padding-top: 16px;
+}
+div.helpCenter.search>form>div>input{
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+div.helpCenter.search>form>div>div>button.btn-default{
+	border-left: none;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+div.helpCenter.search>form>div>div>button.btn:hover{
+	background-color: white;
+	border: 1px solid #ccc;
+	border-left: none;
+}
+span.emergencyPhone>strong{
+	font-size: 16px;
+}
+/*-----------------------------------logo-----------------------------*/
+form.formReponsive{
+	display: none;
+}
+nav.navbar{
+	/* position: absolute; */
+}
+div.bgNav, div.mainNav{
+	background-color: #F25898FF;
+}
+
+div.subMenu>ul.navbar-nav>li>a{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+div.subMenu>ul.navbar-nav>li{
+	border-right: 1px #FFFFFF3F solid;
+}
+div.subMenu>ul.navbar-nav>li:last-child{
+	border-right: none;
+}
+div.subMenu>ul.navbar-nav>li>a:hover {
+	background-color: white;
+	opacity: .88;
+	box-shadow: 0 17px 19px -3px #ccc;
+	transition: 0.5s all;
+	transform: scale(1.1);
+
+}
+div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu{
+	min-width: 100%;
+	padding-left: 0;
+	/*left:0;*/
+	border-radius: 0;
+	padding-bottom: 0;
+}
+div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li:hover{
+	border-bottom: 1px solid black;
+}
+div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li>a{
+	padding-left: 6px;
+}
+div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li>a:hover{
+	background: -webkit-linear-gradient(white,, pink);
+	background: -o-linear-gradient(white,, pink):
+	background: -moz-linear-gradient(white, pink);
+	background: linear-gradient(white, pink);
+	padding-left: 8px;
+	transition: .6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------nav--------------------------------*/
+section>div.container{
+	box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.6), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
+	}
+	.leftBanner, .rightBanner{
+		padding-left: 0;
+		padding-right: 0;
+	}
+.rightBanner>.panel>.panel-heading{
+	border-radius: 0;
+	padding: 2px 11px;
+	border-bottom: none;
+	height: 100%;
+}
+.rightBanner>.panel{
+	border-radius: 0;
+	border-bottom: none;
+}
+.rightBanner>.panel>.panel-heading>p{
+	margin-bottom: 0;
+}
+.itemFounder{
+	margin: 0 11px;
+	padding: 11px;
+}
+.itemFounder>img{
+	width: auto;
+}
+
+
+
+
+	/* ----------------------------------------footer----------------------------- */
+	footer{
+		background-color: #036;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	div.registerInfo{
+		padding: 11px;
+	}
+	div.registerInfo>div.followUs>ul.CambridgeSocial{
+		list-style-type: none;
+		overflow: hidden;
+	}
+	div.registerInfo>div.followUs>ul.CambridgeSocial>li{
+		font-size: 32px;
+		float: left;
+		padding: 0 7px;
+		margin: 0 0 4px;
+	}
+	div.registerInfo>div.followUs>ul.CambridgeSocial>li>a{
+		color: white;
+	}
+	div.registerInfo>div.followUs>ul.CambridgeSocial>li>a:hover{
+		color:#d5a32a;
+		transition: .6s all;
+	}
+
+	div.proundTeaching{
+		padding: 11px;
+		border-left: 1px white solid;
+		border-right: 1px white solid;
+	}
+
+	div.cambridgeAlliance{
+		padding: 15px;
+		padding-bottom: 11px;
+		color: white;
+	}
+	div.cambridgeAlliance>ul.linksAlliance{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	div.cambridgeAlliance>ul.linksAlliance>li{
+		color: white;
+		float: left;
+		padding: 0 7px;
+		border-right: 1px solid;
+		margin: 0 0 4px;
+	}
+	div.cambridgeAlliance>ul.linksAlliance>li>a{
+		color: #d5a32a;
+		/* font-weight: bold; */
+	}
+
+	@media (max-width: 992px) {
+		div.proundTeaching{
+			border-left: 1px white solid;
+			border-right: none;
+		}
+
+		div.cambridgeAlliance{
+			border-top: 1px solid white;
+			margin-top: 11px;
+		}
+	}
+	@media (max-width: 768px) {
+		.mainLogo{
+			max-width: 100%;
+		}
+		div.helpCenter.search{
+			display: none;
+		}
+		form.formReponsive{
+			display: block;
+		}
+		form.formReponsive>div>div>button.btn-default{
+			border-left: none;
+		}
+		button.buttNav{
+			float: left;
+			margin: 1px 0 1px 8px;
+			padding: 0 8px;
+			border: none;
+			/* font-size: 18px; */
+			text-align: center;
+			font-weight: bold;
+			background-color: #337AB7FF;
+		}
+		button.buttNav>i{
+			font-size: 26px;
+			color: white;
+			margin: 0;
+		}
+		small.textMenu{
+			font-size: 11px;
+			/* font-weight: normal; */
+			margin: 0 !important ;
+			padding: 0 !important ;
+		}
+		.bgNav{
+			position: relative;
+		}
+		.subMenu{
+			position: absolute;
+			background-color: white;
+			opacity: .95;
+			width: 70%;
+			border: 1px #ccc solid;
+			/* transition: .5s; */
+			box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+		}
+		.subMenu>ul>li{
+			margin-right: 11%;
+			border-bottom: .5px black solid;
+		}
+		div.subMenu>ul.navbar-nav>li>a{
+			color: blue;
+			font-size: 16px;
+			/* 	font-weight: bold; */
+			/* 	padding-left: 24px; */
+			/* 	padding-right: 24px; */
+		}
+		div.subMenu>ul.navbar-nav>li>a.glyphicon-home{
+			color: #BC4247FF;
+		}
+		.subMenu>ul>li:hover{
+			padding-left: 11px;
+			transition: .6s;
+			background: white;
+			box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+		}
+
+
+
+		div.registerInfo{
+			border-bottom: 1px solid white;
+		}
+		div.proundTeaching{
+			padding: 11px;
+			border: none;
+			border-bottom: 1px solid white;
+		}
+		div.proundTeaching{
+			margin: 0;
+			border: none;
+		}
+	}
