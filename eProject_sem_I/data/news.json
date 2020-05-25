@@ -1,23 +1,23 @@
 [
 	{
 		"date":"01/11",
-		"img":"../images/news/news1.png",
+		"img":"images/news/news1.png",
 		"content":"Covid-19 town hall a conversation with waterloo regions hospitals"
 	},{
 		"date":"16/06",
-		"img":"../images/news/news2.jpg",
+		"img":"images/news/news2.jpg",
 		"content":"BBC Papworth hospital opens to patients after move to Cambridge - BBC News"
 	},{
 		"date":"23/05",
-		"img":"../images/news/new3.jpg",
+		"img":"images/news/new3.jpg",
 		"content":"My night shift in the intensive care unit at the Royal Papworth Hospital in Cambridge"
 	},{
 		"date":"18/05",
-		"img":"../images/news/news4.jpg",
+		"img":"images/news/news4.jpg",
 		"content":"CNBC.com For-profit hospitals expected to report modest 2Q 2018 profits"
 	},{
 		"date":"25/05",
-		"img":"../images/news/news5.jpg",
+		"img":"images/news/news5.jpg",
 		"content":"ABC News Inside one of the busiest ER's in the US during flu season"
 	}
 ]
