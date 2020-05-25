@@ -11,9 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css  ">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="fontawesome/css/all.css">
-	<script src="js/angular.min.js"></script>
-	<script src="js/angular-route.min.js"></script>
-	<script src="js/app.js"></script>
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -71,26 +69,20 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse navbar-right subMenu">
 				<ul class="nav navbar-nav">
-					<li class=""><a href="#"class="glyphicon glyphicon-home text-default" style="font-size: 20px"></a></li>
+					<li class=""><a href="#!/"class="glyphicon glyphicon-home text-default" style="font-size: 20px"></a></li>
 					<li class="disabled"><a class="" href="#">News</a></li>
 					<li class=""><a href="#">Centres</a></li>
 					<!-- <li class=""><a href="#">Services</a></li> -->
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Health Checkup</a></li>
+							<li><a href="">Health Checkup</a></li>
 							<li><a href="#">Cancer Care</a></li>
 							<li><a href="#">Women's Health</a></li>
 							<li><a href="#">Other Services</a></li>
 						</ul>
 					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Locations</a></li>
-						</ul>
-					</li>
+						<li><a href="#!/contact">Contact Us</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Abouts Us<b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -122,10 +114,95 @@
 			</div><!-- /.navbar-collapse -->
 		</div>
 	</nav>
+<ng-view></ng-view>
 
-	<ng-view></ng-view>
+			<div class="founder">
+				<div class="container">
+					<h2>Founder:</h2>
 
-	
+					<div class=" owl-carousel owl-theme carouselFounder">
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/dire.jpg" alt="" style="width: 160px;">
+							<div class="caption">
+								<h3>Director</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/citymana.png" alt="" style="width: 160px;">
+							<div class="caption">
+								<h3>City manager</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/vice.png" alt="" style="width: 160px;">
+							<div class="caption">
+								<h3>Vice</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/seniorass.png" alt="" style="width: 160px;">
+							<div class="caption">
+								<h3>senior Associate</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/found.png" alt="" style="width: 160px;">
+							<div class="caption">
+								<h3>Founding Communi</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/physi.png" alt="" style="width: 160px;">
+							<div class="Physician">
+								<h3>Founding Communi</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/senvi.jpg" alt="" style="width: 160px;">
+							<div class="Physician">
+								<h3>Senior Vice</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						<div class="item itemFounder">
+							<img class="img-circle" src="images/positions/assi.png" alt="" style="width: 160px;">
+							<div class="Physician">
+								<h3>Assistant City</h3>
+								<p>
+									Lorem ipsum dolor sit amet.
+								</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
 	<footer>
 		<div class="container-fluid">
 			<div class="col-md-3 col-sm-6">
@@ -200,6 +277,26 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		$('.carouselFounder').owlCarousel({
+			loop: true,
+			nav: true,
+			dots: false,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items: 2
+				},
+				1000:{
+					items: 4
+				}
+			}
+		});
+	</script>
 </body>
 </html>
