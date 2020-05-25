@@ -39,7 +39,7 @@ nav.navbar{
 	/* position: absolute; */
 }
 div.bgNav, div.mainNav{
-	background-color: #F25898FF;
+	background-color: #BB259AFF;
 }
 
 div.subMenu>ul.navbar-nav>li>a{
@@ -99,11 +99,11 @@ div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li>a:hover{
 /*-----------------------------------nav--------------------------------*/
 section>div.container{
 	box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.6), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
-	}
-	.leftBanner, .rightBanner{
-		padding-left: 0;
-		padding-right: 0;
-	}
+}
+.leftBanner, .rightBanner{
+	padding-left: 0;
+	padding-right: 0;
+}
 .rightBanner>.panel>.panel-heading{
 	border-radius: 0;
 	padding: 2px 11px;
@@ -117,6 +117,9 @@ section>div.container{
 .rightBanner>.panel>.panel-heading>p{
 	margin-bottom: 0;
 }
+.founder{
+	display: none;
+}
 .itemFounder{
 	margin: 0 11px;
 	padding: 11px;
@@ -124,156 +127,214 @@ section>div.container{
 .itemFounder>img{
 	width: auto;
 }
+div.achievements>img{
+	width: 50%;
+}
+
+/* ------------------------------------------------------contact------------------------ */
+.ctLocation>h2{
+	color: #002E5F;;
+	font-family: arial;
+	font-weight: bold;
+}
+
+
+.ctNews>.panel{
+	margin-top: 11px;
+	border-radius: 0;
+	border: none;
+	border-left: 1px solid #ccc;
+	-webkit-box-shadow:none;
+}
+.ctNews>.panel>.panel-heading{
+	border-radius: 0;
+}
+.ctNews>.panel>.panel-body{
+	border: none;
+}
+div.followUs>ul.CambridgeSocial{
+	list-style-type: none;
+	overflow: hidden;
+}
+div.followUs>ul.CambridgeSocial>li{
+	font-size: 32px;
+	float: left;
+	padding: 0 7px;
+	margin: 0 0 4px;
+}
+div.followUs>ul.CambridgeSocial>li>a{
+	/* color: white; */
+}
+div.followUs>ul.CambridgeSocial>li>a:hover{
+	color:#002E5F;;
+	transition: .6s all;
+}
+
+div.ctPhone>ul{
+	list-style-type: none;
+}
+
+div.ctPhone>div.cardVisit{
+
+}
+a.ctNews:hover{
+	color: #DF1A27FF
+}
+/* ------------------------------------------about------------------------------------- */
 
 
 
 
-	/* ----------------------------------------footer----------------------------- */
-	footer{
-		background-color: #036;
-		padding-top: 16px;
-		padding-bottom: 16px;
-	}
-	div.registerInfo{
-		padding: 11px;
-	}
-	div.registerInfo>div.followUs>ul.CambridgeSocial{
-		list-style-type: none;
-		overflow: hidden;
-	}
-	div.registerInfo>div.followUs>ul.CambridgeSocial>li{
-		font-size: 32px;
-		float: left;
-		padding: 0 7px;
-		margin: 0 0 4px;
-	}
-	div.registerInfo>div.followUs>ul.CambridgeSocial>li>a{
-		color: white;
-	}
-	div.registerInfo>div.followUs>ul.CambridgeSocial>li>a:hover{
-		color:#d5a32a;
-		transition: .6s all;
-	}
+/* ----------------------------------------footer----------------------------- */
+footer{
+	background-color: #036;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+div.registerInfo{
+	padding: 11px;
+}
+div.registerInfo>div.followUs>ul.CambridgeSocial{
+	list-style-type: none;
+	overflow: hidden;
+}
+div.registerInfo>div.followUs>ul.CambridgeSocial>li{
+	font-size: 32px;
+	float: left;
+	padding: 0 7px;
+	margin: 0 0 4px;
+}
+div.registerInfo>div.followUs>ul.CambridgeSocial>li>a{
+	color: white;
+}
+div.registerInfo>div.followUs>ul.CambridgeSocial>li>a:hover{
+	color:#d5a32a;
+	transition: .6s all;
+}
 
+div.proundTeaching{
+	padding: 11px;
+	border-left: 1px white solid;
+	border-right: 1px white solid;
+}
+
+div.cambridgeAlliance{
+	padding: 15px;
+	padding-bottom: 11px;
+	color: white;
+}
+div.cambridgeAlliance>ul.linksAlliance{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+div.cambridgeAlliance>ul.linksAlliance>li{
+	color: white;
+	float: left;
+	padding: 0 7px;
+	border-right: 1px solid;
+	margin: 0 0 4px;
+}
+div.cambridgeAlliance>ul.linksAlliance>li>a{
+	color: #d5a32a;
+	/* font-weight: bold; */
+}
+
+@media (max-width: 992px) {
 	div.proundTeaching{
-		padding: 11px;
 		border-left: 1px white solid;
-		border-right: 1px white solid;
+		border-right: none;
 	}
 
 	div.cambridgeAlliance{
-		padding: 15px;
-		padding-bottom: 11px;
-		color: white;
+		border-top: 1px solid white;
+		margin-top: 11px;
 	}
-	div.cambridgeAlliance>ul.linksAlliance{
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
+}
+@media (max-width: 768px) {
+	.mainLogo{
+		max-width: 100%;
 	}
-	div.cambridgeAlliance>ul.linksAlliance>li{
-		color: white;
+	div.helpCenter.search{
+		display: none;
+	}
+	form.formReponsive{
+		display: block;
+	}
+	form.formReponsive>div>div>button.btn-default{
+		border-left: none;
+	}
+	button.buttNav{
 		float: left;
-		padding: 0 7px;
-		border-right: 1px solid;
-		margin: 0 0 4px;
+		margin: 1px 0 1px 8px;
+		padding: 0 8px;
+		border: none;
+		/* font-size: 18px; */
+		text-align: center;
+		font-weight: bold;
+		background-color: #337AB7FF;
 	}
-	div.cambridgeAlliance>ul.linksAlliance>li>a{
-		color: #d5a32a;
-		/* font-weight: bold; */
+	button.buttNav>i{
+		font-size: 26px;
+		color: white;
+		margin: 0;
+	}
+	small.textMenu{
+		font-size: 11px;
+		/* font-weight: normal; */
+		margin: 0 !important ;
+		padding: 0 !important ;
+	}
+	.bgNav{
+		position: relative;
+	}
+	.subMenu{
+		position: absolute;
+		background-color: white;
+		opacity: .95;
+		width: 70%;
+		border: 1px #ccc solid;
+		/* transition: .5s; */
+		box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	}
+	.subMenu>ul>li{
+		margin-right: 11%;
+		border-bottom: .5px black solid;
+	}
+	div.subMenu>ul.navbar-nav>li>a{
+		color: blue;
+		font-size: 16px;
+		/* 	font-weight: bold; */
+		/* 	padding-left: 24px; */
+		/* 	padding-right: 24px; */
+	}
+	div.subMenu>ul.navbar-nav>li>a.glyphicon-home{
+		color: #BC4247FF;
+	}
+	.subMenu>ul>li:hover{
+		padding-left: 11px;
+		transition: .6s;
+		background: white;
+		box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 	}
 
-	@media (max-width: 992px) {
-		div.proundTeaching{
-			border-left: 1px white solid;
-			border-right: none;
-		}
-
-		div.cambridgeAlliance{
-			border-top: 1px solid white;
-			margin-top: 11px;
-		}
+	.hoVideo{
+		height: 100%;
 	}
-	@media (max-width: 768px) {
-		.mainLogo{
-			max-width: 100%;
-		}
-		div.helpCenter.search{
-			display: none;
-		}
-		form.formReponsive{
-			display: block;
-		}
-		form.formReponsive>div>div>button.btn-default{
-			border-left: none;
-		}
-		button.buttNav{
-			float: left;
-			margin: 1px 0 1px 8px;
-			padding: 0 8px;
-			border: none;
-			/* font-size: 18px; */
-			text-align: center;
-			font-weight: bold;
-			background-color: #337AB7FF;
-		}
-		button.buttNav>i{
-			font-size: 26px;
-			color: white;
-			margin: 0;
-		}
-		small.textMenu{
-			font-size: 11px;
-			/* font-weight: normal; */
-			margin: 0 !important ;
-			padding: 0 !important ;
-		}
-		.bgNav{
-			position: relative;
-		}
-		.subMenu{
-			position: absolute;
-			background-color: white;
-			opacity: .95;
-			width: 70%;
-			border: 1px #ccc solid;
-			/* transition: .5s; */
-			box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-		}
-		.subMenu>ul>li{
-			margin-right: 11%;
-			border-bottom: .5px black solid;
-		}
-		div.subMenu>ul.navbar-nav>li>a{
-			color: blue;
-			font-size: 16px;
-			/* 	font-weight: bold; */
-			/* 	padding-left: 24px; */
-			/* 	padding-right: 24px; */
-		}
-		div.subMenu>ul.navbar-nav>li>a.glyphicon-home{
-			color: #BC4247FF;
-		}
-		.subMenu>ul>li:hover{
-			padding-left: 11px;
-			transition: .6s;
-			background: white;
-			box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-		}
 
-
-
-		div.registerInfo{
-			border-bottom: 1px solid white;
-		}
-		div.proundTeaching{
-			padding: 11px;
-			border: none;
-			border-bottom: 1px solid white;
-		}
-		div.proundTeaching{
-			margin: 0;
-			border: none;
-		}
+	div.registerInfo{
+		border-bottom: 1px solid white;
+	}
+	div.proundTeaching{
+		padding: 11px;
+		border: none;
+		border-bottom: 1px solid white;
+	}
+	div.proundTeaching{
+		margin: 0;
+		border: none;
+	}
+	div.achievements>img{
+		width: 100%;
 	}
