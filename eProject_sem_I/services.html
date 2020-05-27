@@ -25,7 +25,17 @@
 	}
 	.sListSv>div>a>img{
 		padding-top: 11px;
-		height: auto;
+		width: 100%;
+	}
+	@media (max-width: 767px) {
+		.sListSv>div>a>img{
+			width: 75%;
+		}
+	}
+	@media (max-width: 479px) {
+		.sListSv>div>a>img{
+			width: 100%;
+		}
 	}
 </style>
 <section ng-controller="SerCtrl">
