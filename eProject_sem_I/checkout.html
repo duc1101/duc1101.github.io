@@ -1,128 +1,127 @@
-
-    <link rel="stylesheet" href="css/checkout.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
-  <section>
-    <div class="check-out-form">
-        <div class="container" style="  background-color: #f2f2f2; padding: 5px 20px 15px 20px; border: 1px solid lightgrey; border-radius: 3px;">
-          <form action="" id="checkForm">
+<link rel="stylesheet" href="css/checkout.css" />
+<link rel="stylesheet" href="fontawesome/css/all.css">
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+<section>
+  <div class="check-out-form">
+    <div class="container" style="  background-color: #f2f2f2; padding: 5px 20px 15px 20px; border: 1px solid lightgrey; border-radius: 3px;">
+      <form action="" id="checkForm">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Patient Account Information</h3>
+            <label><i class="fa fa-user"></i> Full Name</label>
+            <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John M. Doe"
+            />
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="john@example.com"
+            />
+            <label
+            ><i class="fas fa-address-card"></i> Address</label
+            >
+            <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="542 W. 15th Street"
+            />
+            <label for=""
+            ><i class="far fa-id-card"></i></i> Identity card number</label
+            >
+            <input
+            type="text"
+            id="id_number"
+            name="id_number"
+            placeholder="xxxxxxxxxxxxxxxxxx"
+            />
+            <label for=""
+            ><i class="fa fa-user"></i> Payer</label
+            >
+            <select id="payer" name="payer" class="payer">
+              <option value="patient">patient</option>
+              <option value="parents of the patient">parents of the patient</option>
+              <option value="siblings of the patient">siblings of the patient</option>
+              <option value="children of the patient">children of the patient</option>
+            </select>
+            <label for=""
+            ><i class="fas fa-hospital-user"></i> Patient code</label
+            >
+            <input
+            type="text"
+            id="patient_id"
+            name="patient_id"
+            placeholder="xxxxxxxxxxxxx"
+            />
+            <label for=""
+            ><i class="fas fa-hospital-user"></i> Medical code</label
+            >
+            <input
+            type="text"
+            id="medical_id"
+            name="medical_id"
+            placeholder="xxxxxxxxxxxxx"
+            />
+            <label for="city"><i class="fas fa-dollar-sign"></i> Payment Amount</label>
+            <input
+            type="text"
+            id="payment"
+            name="payment"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fab fa-cc-visa" style="color: navy;"></i>
+              <i class="fab fa-cc-amex" style="color: blue;"></i>
+              <i class="fab fa-cc-mastercard" style="color: red;"></i>
+              <i class="fab fa-cc-discover" style="color: orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input
+            type="text"
+            id="cname"
+            name="cardname"
+            placeholder="John More Doe"
+            />
+            <label for="ccnum">Credit card number</label>
+            <input
+            type="text"
+            id="ccnum"
+            name="cardnumber"
+            placeholder="1111-2222-3333-4444"
+            />
             <div class="row">
               <div class="col-md-6">
-                <h3>Patient Account Information</h3>
-                <label><i class="fa fa-user"></i> Full Name</label>
+                <label for="expyear">expiry</label>
                 <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="John M. Doe"
-                />
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="john@example.com"
-                />
-                <label
-                  ><i class="fas fa-address-card"></i> Address</label
-                >
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  placeholder="542 W. 15th Street"
-                />
-                <label for=""
-                  ><i class="far fa-id-card"></i></i> Identity card number</label
-                >
-                <input
-                  type="text"
-                  id="id_number"
-                  name="id_number"
-                  placeholder="xxxxxxxxxxxxxxxxxx"
-                />
-                <label for=""
-                  ><i class="fa fa-user"></i> Payer</label
-                >
-                <select id="payer" name="payer" class="payer">
-                    <option value="patient">patient</option>
-                    <option value="parents of the patient">parents of the patient</option>
-                    <option value="siblings of the patient">siblings of the patient</option>
-                    <option value="children of the patient">children of the patient</option>
-                  </select>
-                <label for=""
-                  ><i class="fas fa-hospital-user"></i> Patient code</label
-                >
-                <input
-                  type="text"
-                  id="patient_id"
-                  name="patient_id"
-                  placeholder="xxxxxxxxxxxxx"
-                />
-                <label for=""
-                  ><i class="fas fa-hospital-user"></i> Medical code</label
-                >
-                <input
-                  type="text"
-                  id="medical_id"
-                  name="medical_id"
-                  placeholder="xxxxxxxxxxxxx"
-                />
-                <label for="city"><i class="fas fa-dollar-sign"></i> Payment Amount</label>
-                <input
-                  type="text"
-                  id="payment"
-                  name="payment"
+                type="text"
+                id="expiry"
+                name="expiry"
+                placeholder="MM / YY"
                 />
               </div>
               <div class="col-md-6">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                  <i class="fab fa-cc-visa" style="color: navy;"></i>
-                  <i class="fab fa-cc-amex" style="color: blue;"></i>
-                  <i class="fab fa-cc-mastercard" style="color: red;"></i>
-                  <i class="fab fa-cc-discover" style="color: orange;"></i>
-                </div>
-                <label for="cname">Name on Card</label>
-                <input
-                  type="text"
-                  id="cname"
-                  name="cardname"
-                  placeholder="John More Doe"
-                />
-                <label for="ccnum">Credit card number</label>
-                <input
-                  type="text"
-                  id="ccnum"
-                  name="cardnumber"
-                  placeholder="1111-2222-3333-4444"
-                />
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="expyear">expiry</label>
-                    <input
-                      type="text"
-                      id="expiry"
-                      name="expiry"
-                      placeholder="MM / YY"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="cvc">CVV</label>
-                    <input type="text" id="cvc" name="cvc" placeholder="352" />
-                  </div>
-                </div>
+                <label for="cvc">CVV</label>
+                <input type="text" id="cvc" name="cvc" placeholder="352" />
               </div>
             </div>
-            <input type="submit" value="Continue to checkout" class="btn"/>
-          </form>
+          </div>
         </div>
-      </div>
+        <input type="submit" value="Continue to checkout" class="btn"/>
+      </form>
     </div>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/form-validation.js"></script>
+  </div>
+</div>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/form-validation.js"></script>
 <!--     <script src="js/simple.money.format.js"></script>
-    <script src="js/jquery.payform.min.js"></script> -->
-  </section>
+  <script src="js/jquery.payform.min.js"></script> -->
+</section>
