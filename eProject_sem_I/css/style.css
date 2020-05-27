@@ -41,13 +41,10 @@ nav.navbar{
 div.bgNav, div.mainNav{
 	background-color: #BB259AFF;
 }
-
 div.subMenu>ul.navbar-nav>li>a{
 	color: white;
-	font-size: 18px;
+	font-size: 17.5px;
 	font-weight: bold;
-	padding-left: 24px;
-	padding-right: 24px;
 }
 div.subMenu>ul.navbar-nav>li{
 	border-right: 1px #FFFFFF3F solid;
@@ -61,7 +58,6 @@ div.subMenu>ul.navbar-nav>li>a:hover {
 	box-shadow: 0 17px 19px -3px #ccc;
 	transition: 0.5s all;
 	transform: scale(1.1);
-
 }
 div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu{
 	min-width: 100%;
@@ -84,18 +80,6 @@ div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li>a:hover{
 	padding-left: 8px;
 	transition: .6s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------------nav--------------------------------*/
 section>div.container{
 	box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.6), 0 0px 20px 0 rgba(0, 0, 0, 0.4);
@@ -104,10 +88,12 @@ section>div.container{
 	padding-left: 0;
 	padding-right: 0;
 }
+.rightBanner>.panel{
+	-webkit-box-shadow: none;
+}
 .rightBanner>.panel>.panel-heading{
 	border-radius: 0;
 	padding: 2px 11px;
-	border-bottom: none;
 	height: 100%;
 }
 .rightBanner>.panel{
@@ -130,21 +116,18 @@ section>div.container{
 div.achievements>img{
 	width: 50%;
 }
-
-/* ------------------------------------------------------contact------------------------ */
+/* ------------------------------------------------------banner------------------------ */
 .ctLocation>h2{
-	color: #002E5F;;
+	color: #002E5F;
 	font-family: arial;
 	font-weight: bold;
 }
-
-
 .ctNews>.panel{
 	margin-top: 11px;
 	border-radius: 0;
 	border: none;
 	border-left: 1px solid #ccc;
-	-webkit-box-shadow:none;
+	-webkit-box-shadow: none;
 }
 .ctNews>.panel>.panel-heading{
 	border-radius: 0;
@@ -169,23 +152,103 @@ div.followUs>ul.CambridgeSocial>li>a:hover{
 	color:#002E5F;;
 	transition: .6s all;
 }
-
 div.ctPhone>ul{
 	list-style-type: none;
 }
-
 div.ctPhone>div.cardVisit{
-
 }
 a.ctNews:hover{
 	color: #DF1A27FF
 }
-/* ------------------------------------------about------------------------------------- */
+/* ------------------------------------------contact------------------------------------- */
+html,body {
+	font-family: sans-serif;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+.main_about h3 {
+	color:red;
+}
+.main_about h1 {
+	font-size: 45px;
+	font-weight: 400;
+}
+.img_about {
+	width: 350px;
+	margin:10px 0;
+	display: block;
+}
+/* css book appointment */
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+.sbm {
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+.has-feedback .form-control {
+	padding-right: 34px;
+}
+.has-feedback .form-control.input-sm,
+.has-feedback.form-group-sm .form-control {
+	padding-right: 30px;
+}
+.has-feedback .form-control.input-lg,
+.has-feedback.form-group-lg .form-control {
+	padding-right: 46px;
+}
+.has-feedback-left .form-control {
+	padding-right: 12px;
+	padding-left: 34px;
+}
+.has-feedback-left .form-control.input-sm,
+.has-feedback-left.form-group-sm .form-control {
+	padding-left: 30px;
+}
+.has-feedback-left .form-control.input-lg,
+.has-feedback-left.form-group-lg .form-control {
+	padding-left: 46px;
+}
+.has-feedback-left .form-control-feedback {
+	left: 0;
+}
+.form-control-feedback {
+	line-height: 34px !important;
+}
+.input-sm + .form-control-feedback,
+.form-horizontal .form-group-sm .form-control-feedback {
+	width: 30px;
+	height: 30px;
+	line-height: 30px !important;
+}
+.input-lg + .form-control-feedback,
+.form-horizontal .form-group-lg .form-control-feedback {
+	width: 46px;
+	height: 46px;
+	line-height: 46px !important;
+}
+.has-feedback label.sr-only ~ .form-control-feedback,
+.has-feedback label.sr-only ~ div .form-control-feedback {
+	top: 0;
+}
+@media (min-width: 768px) {
+	.form-inline .inline-feedback {
+		position: relative;
+		display: inline-block;
+	}
+	.form-inline .has-feedback .form-control-feedback {
+		top: 0;
+	}
+}
+.form-horizontal .has-feedback-left .form-control-feedback {
+	left: 15px;
+}
+/* ------------------------------------------about------------------------------- */
 
-
-
-
-/* ----------------------------------------footer----------------------------- */
+/* ----------------------------------------service----------------------------- */
 footer{
 	background-color: #036;
 	padding-top: 16px;
@@ -211,13 +274,11 @@ div.registerInfo>div.followUs>ul.CambridgeSocial>li>a:hover{
 	color:#d5a32a;
 	transition: .6s all;
 }
-
 div.proundTeaching{
 	padding: 11px;
 	border-left: 1px white solid;
 	border-right: 1px white solid;
 }
-
 div.cambridgeAlliance{
 	padding: 15px;
 	padding-bottom: 11px;
@@ -240,19 +301,20 @@ div.cambridgeAlliance>ul.linksAlliance>li>a{
 	color: #d5a32a;
 	/* font-weight: bold; */
 }
-
 @media (max-width: 992px) {
 	div.proundTeaching{
 		border-left: 1px white solid;
 		border-right: none;
 	}
-
 	div.cambridgeAlliance{
 		border-top: 1px solid white;
 		margin-top: 11px;
 	}
+	.ctNews>.panel{
+		border-left: none;
+	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.mainLogo{
 		max-width: 100%;
 	}
@@ -318,11 +380,9 @@ div.cambridgeAlliance>ul.linksAlliance>li>a{
 		background: white;
 		box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 	}
-
 	.hoVideo{
 		height: 100%;
 	}
-
 	div.registerInfo{
 		border-bottom: 1px solid white;
 	}
@@ -338,3 +398,4 @@ div.cambridgeAlliance>ul.linksAlliance>li>a{
 	div.achievements>img{
 		width: 100%;
 	}
+}
