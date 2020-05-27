@@ -1,0 +1,78 @@
+{
+	"service":{
+		"ts":{
+			"link":"#!/ts",
+			"title":"seafood services",
+			"img":"images/img_sv/img_sv1/dv_thai_san.jpg",
+			"descrip":"The happiest of parents and family is to see the baby born. To help mom The pregnancy has a healthy pregnancy and the birth process is carried out safely and smoothly, Da Hospital The International Cambridge Hospital Department has developed a package of maternity services to"
+		},
+		"tm":{
+			"link":"#!/tm",
+			"title":"cardiovascular treatment",
+			"img":"images/img_sv/img_sv1/tim_mach.jpg",
+			"descrip":"Usually, cardiologists will only examine in the morning at Clinic 1 and not the day Every appointment has a schedule. Therefore, patients should go to the clinic early to catch up and read the results within morning."
+		},
+		"xk":{
+			"link":"#!/xk",
+			"title":"opening our bone muscle",
+			"img":"images/img_sv/img_sv1/xuong_khop.jpg",
+			"descrip":"Currently, the Osteoarthritis Specialist Clinic, cambridge international hospital meets the condition Treating most musculoskeletal disorders of adults and some common diseases in children. Copper At the same time, the Hospital's Osteoarthritis Specialist also performed procedures and surgical treatments such as:"
+		},
+		"nk":{
+			"link":"#!/nk",
+			"title":"dental services",
+			"img":"images/img_sv/img_sv1/nha_khoa.jpg",
+			"descrip":"Cosmetic porcelain crown is the best cosmetic prosthesis method today. This method can completely overcome the cosmetic-related conditions of teeth such as yellowing,"
+		},
+		"xq":{
+			"link":"#!/cd",
+			"title":"image diagnostic service",
+			"img":"images/img_sv/img_sv1/chuan_doan_h_a.jpg",
+			"descrip":"Diagnostic imaging is one of the tools that helps a physician in making a diagnosis The disease is more accurate, thereby giving the best treatment regimen for patients. Specialist Diagnostic image belongs to Thu Cuc Medical System, helping diagnose and identify side lesions in the body through X-ray images, CT scans and other interventions, aiming coordinate patient care, meet the requirements of patients and treating doctors. Diagnostic Unit image Thu Cuc is committed to hygiene standards, ensuring safety and health for patients proceed to checkout."
+		},
+		"ut":{
+			"link":"#!/ut",
+			"title":"cancer treatment",
+			"img":"images/img_sv/img_sv1/ung_thu.jpg",
+			"descrip":" The package includes 53 checklists from clinical examination to blood tests for detecting any abnormalities often in the blood, liver - kidney diseases, looking for cancer markers; In-depth diagnostics such as internal screening, X-ray, ultrasound ... The doctor will base on the results of the physical examination and cancer screening letters, health status assessments and pathological findings (if any). The examination package is recommended to apply for both men and women of all ages, especially those with a history of disease or high risk of cancer letters."
+		}
+	},
+	"tutorial":{
+		"pat":{
+			"link":"#!/pa",
+			"title":"Inpatient treatment",
+			"img":"images/baner_bv/baner_bv1/quay_bv2.jpg",
+			"descrip":"After the visit, if you have an inpatient appointment, the doctor and nurse will guide you Choose a room & advance to you to hospital. Bed costs are calculated from the time of Quarter Guests check in until check out. The length of hospital stay per hour is based on room rates at the departments and divided by 1% of the hospital's price per day as follows:"
+		},
+		"Health":{
+			"link":"#!/he",
+			"title":"Health Insurance",
+			"img":"images/baner_bv/baner_bv1/phong_o2.jpg",
+			"descrip":"Please read carefully the rights and obligations of the patient, his relative to ensure Benefits of medical examination and treatment at Vinmec International General Hospital. Get a full examination / assessment of your health status and medical needs."
+		},
+		"Schedule":{
+			"link":"#!/sc",
+			"title":"making authorization",
+			"img":"images/baner_bv/baner_bv1/khoa_mo.jpg",
+			"descrip":"For your convenience, there is a need to copy medical records in case of not coming The hospital that authorizes another person to come. Below, Vinmec International General Hospital for guidance perform authorization to duplicate Medical Records. Fill out the power of attorney form, sign for confirmation, and certify the relative country competent (Ward, commune)."
+		},
+		"register":{
+			"link":"#!/re",
+			"title":"clinic appointment",
+			"img":"images/baner_bv/baner_bv1/chup chieu.jpg",
+			"descrip":"Vinmec Health System would like to thank you for always caring, trusting and using our services I. To ensure you are welcomed and served the best, Vinmec International General Hospital advises encourage you to make an appointment through the Call Center to avoid waiting."
+		},
+		"periodic":{
+			"link":"#!/pe",
+			"title":"online with doctors",
+			"img":"images/baner_bv/baner_bv1/anh_de.jpg",
+			"descrip":"The Distance Health Program at Vinmec Times City Hospital and Vinmec Central Park is the award new measures, meeting the health care needs of people in the context of the Covid-19 epidemic complicated movements. When participating in the Program, customers do not need to go to the hospital and still can Direct interaction when needed with doctors, nursing through specialized support tools, guaranteed quality and effectiveness of medical examination and treatment."
+		},
+		"obstetric":{
+			"link":"#!/ob",
+			"title":"obstetric",
+			"img":"images/baner_bv/baner_bv1/cho_kham.jpg",
+			"descrip":"If the health insurance card does not have registration for initial medical examination and treatment at Vinmec Hospital, a paper certificate is required transfer patients to Health Insurance according to form 02 / BYT.  Customers receive the hospital fee back under the Social Insurance (Social Insurance) regime and pay the amount"
+		}
+	}
+}
