@@ -56,23 +56,31 @@
 						<a class="btn btn-xs btn-primary" href="{{ value.link }}" role="button">Readmore...</a>
 					</div>
 				</div>
+				<ul class="pagination pull-right">
+					<li><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
 			</div>
 			<div class="col-md-4 ctNews" ng-controller="ConCtrl">
-					<div class="panel ">
-						<div class="panel-heading">
-							<h1 class="panel-title">News</h1>
-						</div>
-						<div class="panel-body">
-							<div class="list-group" ng-repeat="(key, value) in news">
-								<a href="#" class="list-group-item ctNews">
-									<h4 class="list-group-item-heading">The news: {{value.date}}</h4>
-									<img ng-src="{{value.img}}" style="width: 100%" class="center-block" alt="">
-									<p class="list-group-item-text">{{value.content}}</p>
-								</a>
-							</div>
+				<div class="panel ">
+					<div class="panel-heading">
+						<h1 class="panel-title">News</h1>
+					</div>
+					<div class="panel-body">
+						<div class="list-group" ng-repeat="(key, value) in news">
+							<a href="#" class="list-group-item ctNews">
+								<h4 class="list-group-item-heading">The news: {{value.date}}</h4>
+								<img ng-src="{{value.img}}" style="width: 100%" class="center-block" alt="">
+								<p class="list-group-item-text">{{value.content}}</p>
+							</a>
 						</div>
 					</div>
 				</div>
+			</div>
 		</div>
 	</div>
 </section>
