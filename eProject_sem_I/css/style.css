@@ -43,7 +43,7 @@ div.bgNav, div.mainNav{
 }
 div.subMenu>ul.navbar-nav>li>a{
 	color: white;
-	font-size: 17.5px;
+	font-size: 17px;
 	font-weight: bold;
 }
 div.subMenu>ul.navbar-nav>li{
