@@ -1,0 +1,68 @@
+<style>
+	.max-lines-title{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		min-height: 22px;
+	}
+	.max-lines-title>a{
+		text-transform: uppercase;
+	}
+	.max-lines{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+	}
+	.sListSvGu{
+		margin: 16px;
+	}
+	.sListSv{
+		padding: 16px 11px;
+	}
+	.sListSv>div>a>img{
+		padding-top: 11px;
+		height: 100%;
+	}
+</style>
+<section ng-controller="SerCtrl">
+	<div class="container">
+		<div class="sListSvGu">
+			<a class="btn btn-success active" href="#!/services" role="button">Services</a>
+			<a class="btn btn-success" href="#!/guides" role="button">Guide</a>
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row sListSv" ng-repeat="(key, value) in services">
+					<div class="col-md-4">
+						<a href="{{ value.link }}"><img ng-src="{{ value.img}}" alt="" class="center-block"></a>
+					</div>
+					<div class="col-md-8">
+						<h4 class="max-lines-title"><a href="{{ value.link }}">{{ value.title }}</a></h4>
+						<p class="max-lines">{{ value.descrip }}</p>
+						<a class="btn btn-xs btn-primary" href="{{ value.link }}" role="button">Readmore...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 ctNews" ng-controller="ConCtrl">
+					<div class="panel ">
+						<div class="panel-heading">
+							<h1 class="panel-title">News</h1>
+						</div>
+						<div class="panel-body">
+							<div class="list-group" ng-repeat="(key, value) in news">
+								<a href="#" class="list-group-item ctNews">
+									<h4 class="list-group-item-heading">The news: {{value.date}}</h4>
+									<img ng-src="{{value.img}}" style="width: 100%" class="center-block" alt="">
+									<p class="list-group-item-text">{{value.content}}</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</section>

@@ -5,13 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="" href="https://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/48/owl-icon.png">
-	<title>Cambridge Hospital</title>
+	<title>{{title}}</title>
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css  ">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="fontawesome/css/all.css">
-	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +18,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<a href="index.html">
+					<a href="#!/">
 						<img src="images/CHA-Logo-Color.png" alt="main logo" class="mainLogo">
 					</a>
 				</div>
@@ -67,41 +66,40 @@
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse navbar-right subMenu">
+			<div class="collapse navbar-collapse navbar-ex1-collapse center-block subMenu">
 				<ul class="nav navbar-nav">
 					<li class=""><a href="#!/"class="glyphicon glyphicon-home text-default" style="font-size: 20px"></a></li>
 					<li class="disabled"><a class="" href="#">News</a></li>
-					<li class=""><a href="#">Centres</a></li>
+					<li class=""><a href="#!/book_appointment">Appointment</a></li>
 					<!-- <li class=""><a href="#">Services</a></li> -->
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="">Health Checkup</a></li>
-							<li><a href="#">Cancer Care</a></li>
-							<li><a href="#">Women's Health</a></li>
-							<li><a href="#">Other Services</a></li>
+					<li><a href="#!/contact">Contact Us</a></li>
+					
+					<!-- <li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">Abouts Us<b class="caret"></b></a>
+						<ul class="dropdown-menu"> -->
+							<li><a href="#!/about">About Us</a></li>
+							<!-- <li><a href="" class="disabled" title="Empty!!!">Derector Board</a></li>
+							<li><a href="" class="disabled" title="Empty!!!">Success Stories</a></li>
+							<li><a href="" class="disabled" title="Empty!!!">Organization Structure</a></li>
 						</ul>
-					</li>
-						<li><a href="#!/contact">Contact Us</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Abouts Us<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">General</a></li>
-							<li><a href="#">Derector Board</a></li>
-							<li><a href="#">Success Stories</a></li>
-							<li><a href="#">Organization Structure</a></li>
+					</li> -->
+					<!-- <li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">Services & Guide<b class="caret"></b></a>
+						<ul class="dropdown-menu"> -->
+							<li><a href="#!/services">Services & Guide</a></li>
+						<!-- 	<li><a href="#!/guide">Tutorial</a></li>
 						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Department<b class="caret"></b></a>
+					</li> -->
+					<!-- <li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">Department<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Help Center</a></li>
 							<li><a href="#">Feedback</a></li>
 							<li><a href="#">Doctor Schedule</a></li>
-							<li><a href="#">Sign up</a></li>
-							<li><a href="#">Pay & Account</a></li>
-						</ul>
-					</li>
+							<li><a href="#">Sign up</a></li> -->
+							<li><a href="#!/acc$pay">Pay & Account</a></li>
+					<!-- 	</ul>
+					</li> -->
 				</ul>
 				<form class="navbar-form navbar-left formReponsive" role="search">
 					<div class="container input-group col-xs-12">
@@ -114,89 +112,89 @@
 			</div><!-- /.navbar-collapse -->
 		</div>
 	</nav>
-<ng-view></ng-view>
+	<ng-view></ng-view>
 
-			<div class="founder">
-				<div class="container">
-					<h2>Founder:</h2>
+	<div class="founder">
+		<div class="container">
+			<h2>Founder:</h2>
 
-					<div class=" owl-carousel owl-theme carouselFounder">
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/dire.jpg" alt="" style="width: 160px;">
-							<div class="caption">
-								<h3>Director</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/citymana.png" alt="" style="width: 160px;">
-							<div class="caption">
-								<h3>City manager</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/vice.png" alt="" style="width: 160px;">
-							<div class="caption">
-								<h3>Vice</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/seniorass.png" alt="" style="width: 160px;">
-							<div class="caption">
-								<h3>senior Associate</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/found.png" alt="" style="width: 160px;">
-							<div class="caption">
-								<h3>Founding Communi</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/physi.png" alt="" style="width: 160px;">
-							<div class="Physician">
-								<h3>Founding Communi</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/senvi.jpg" alt="" style="width: 160px;">
-							<div class="Physician">
-								<h3>Senior Vice</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						<div class="item itemFounder">
-							<img class="img-circle" src="images/positions/assi.png" alt="" style="width: 160px;">
-							<div class="Physician">
-								<h3>Assistant City</h3>
-								<p>
-									Lorem ipsum dolor sit amet.
-								</p>
-							</div>
-						</div>
-						
+			<div class=" owl-carousel owl-theme carouselFounder text-center">
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/dire.jpg" alt="" style="width: 160px;">
+					<div class="caption">
+						<h3>Director</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
 					</div>
 				</div>
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/citymana.png" alt="" style="width: 160px;">
+					<div class="caption">
+						<h3>City manager</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/vice.png" alt="" style="width: 160px;">
+					<div class="caption">
+						<h3>Vice</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/seniorass.png" alt="" style="width: 160px;">
+					<div class="caption">
+						<h3>senior Associate</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/found.png" alt="" style="width: 160px;">
+					<div class="caption">
+						<h3>Founding Communi</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/physi.png" alt="" style="width: 160px;">
+					<div class="Physician">
+						<h3>Founding Communi</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/senvi.jpg" alt="" style="width: 160px;">
+					<div class="Physician">
+						<h3>Senior Vice</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="item itemFounder">
+					<img class="img-circle center-block" src="images/positions/assi.png" alt="" style="width: 160px;">
+					<div class="Physician">
+						<h3>Assistant City</h3>
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+
 			</div>
+		</div>
+	</div>
 
 
 
@@ -281,22 +279,7 @@
 	<script src="js/angular-route.min.js"></script>
 	<script src="js/app.js"></script>
 	<script>
-		$('.carouselFounder').owlCarousel({
-			loop: true,
-			nav: true,
-			dots: false,
-			responsive:{
-				0:{
-					items:1
-				},
-				600:{
-					items: 2
-				},
-				1000:{
-					items: 4
-				}
-			}
-		});
+		
 	</script>
 </body>
 </html>
