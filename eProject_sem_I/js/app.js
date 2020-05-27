@@ -77,7 +77,7 @@ myApp.config(function ($routeProvider) {
 		controller: 'ConCtrl'
 	})
 	.when('/he', {
-		templateUrl: 'html/html_tutorial/health.html',
+		templateUrl: 'html/html_tutorial/Health.html',
 		controller: 'he'
 	})
 	.when('/ob', {
@@ -155,7 +155,6 @@ myApp.controller('Guide',function ($scope,$http) {
 			for(var key2 in list.data[key]){
 				if(key == 'tutorial'){
 					guides.push(list.data[key][key2]);
-					console.log(list.data[key][key2]);
 				}
 			}
 		}
