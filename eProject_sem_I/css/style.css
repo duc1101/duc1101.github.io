@@ -265,6 +265,7 @@ div.registerInfo{
 div.registerInfo>div.followUs>ul.CambridgeSocial{
 	list-style-type: none;
 	overflow: hidden;
+	padding-left: 11px;
 }
 div.registerInfo>div.followUs>ul.CambridgeSocial>li{
 	font-size: 32px;
