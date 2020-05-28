@@ -39,7 +39,7 @@ nav.navbar{
 	/* position: absolute; */
 }
 div.bgNav, div.mainNav{
-	background-color: #BB259AFF;
+	background-color: mediumvioletred;
 }
 div.subMenu>ul.navbar-nav>li>a{
 	color: white;
@@ -150,7 +150,7 @@ div.followUs>ul.CambridgeSocial>li>a{
 	/* color: white; */
 }
 div.followUs>ul.CambridgeSocial>li>a:hover{
-	color:#002E5F;;
+	color:#002E5F;
 	transition: .6s all;
 }
 div.ctPhone>ul{
