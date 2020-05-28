@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="css/signup.css" />
+<section>
+  <div class="signup-form">
+    <div class="container">
+      <form action="" id="register">
+        <div class="row">
+          <div class="title text-center">
+            <h3>Register user account</h3>
+          </div>
+          <div class="col-md-6">
+            <label><i class="fa fa-user"></i> Full Name</label>
+            <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John M. Doe"
+            />
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="john@example.com"
+            />
+            <label
+            ><i class="fas fa-lock"></i></i> Password</label
+            >
+            <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder=""
+            />
+            <label
+            ><i class="fas fa-lock"></i> Retype password</label
+            >
+            <input
+            type="password"
+            id="passwordReturn"
+            name="passwordReturn"
+            placeholder=""
+            />
+            <span id="pass_error"></span>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-9">
+                <label
+                ><i class="far fa-address-card"></i> Address</label
+                >
+                <input
+                type="address"
+                id="address"
+                name="address"
+                placeholder=""
+                />
+              </div>
+              <div class="col-md-3">
+                <label for=""
+                ><i class="fas fa-city"></i> City</label
+                >
+                <select id="city" name="city" class="sex">
+                  <option value=''>Select ...</option>
+                  <option value="London">London</option>
+                  <option value="Birmingham">Birmingham</option>
+                  <option value="Leeds">Leeds</option>
+                  <option value="Glasgow">Glasgow</option>
+                  <option value="Sheffield">Sheffield</option>
+                  <option value="Edinburgh">Edinburgh</option>
+                  <option value="Liverpool">Liverpool</option>
+                  <option value="Manchester">Manchester</option>
+                  <option value="Bristol">Bristol</option>
+                  <option value="Leicester">Leicester</option>
+                  <option value="Cardiff">Cardiff</option>
+                  <option value="Coventry">Coventry</option>
+                  <option value="Kingston_upon_Hull">Kingston upon Hull</option>
+                  <option value="Bradford">Bradford</option>
+                  <option value="Nottingham">Nottingham</option>
+                  <option value="Belfast">Belfast</option>
+                  <option value="Stoke-on-Trent">Stoke-on-Trent</option>
+                  <option value="Plymouth">Plymouth</option>
+                  <option value="Wolverhampton">Wolverhampton</option>
+                  <option value="Southampton">Southampton</option>
+                </select>
+              </div>
+            </div>
+            <label
+            ><i class="fas fa-phone-alt"></i> Phone</label
+            >
+            <input
+            type="phone"
+            id="phone"
+            name="phone"
+            placeholder=""
+            />
+            <label
+            ><i class="fas fa-birthday-cake"></i> Day of birth</label
+            >
+            <input type="date" name="birthday" id="birthday">
+            <label for=""
+            ><i class="fas fa-venus-mars"></i> Sex</label
+            >
+            <select id="sex" name="sex" class="sex">
+              <option value=''>Please select a gender</option>
+              <option value="male">Male</option>
+              <option value="female">female</option>
+              <option value="unknown">unknown</option>
+            </select>
+          </div> 
+          <div class="col-md-12">
+            <input type="checkbox" name="" id="" class="receive-check"> Receive our health information and programs via email.    
+          </div>
+        </div>
+        <div class="register-btn text-center">
+          <input type="submit" value="Register" class="btn"/>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/form-validation.js"></script>
+</section>
