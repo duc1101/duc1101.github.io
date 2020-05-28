@@ -66,10 +66,10 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'html/html_service/xuong_khop.html',
 		controller: 'xk'
 	})
-	// ----------------------------guide
-	.when('/guides', {
-		templateUrl: 'Guide.html',
-		controller: 'Guide',
+	// ----------------------------Instruction
+	.when('/Instructions', {
+		templateUrl: 'Instruction.html',
+		controller: 'InsCtrl',
 		controller: 'ConCtrl'
 	})
 	.when('/he', {
@@ -116,14 +116,11 @@ myApp.controller('AppCtrl', function ($scope,$http) {
 myApp.controller('ConCtrl', function ($scope,$http) {
 	$http.get('data/news.json').then(function(list){
 		$scope.news = list.data;
-		$scope.title = 'Contact';
 	});
 });
 myApp.controller('AboutCtrl',function () {
-	$scope.title = 'About Us';
 });
 myApp.controller('BookCtrl',function () {
-	$scope.title = 'Make an appointment';
 });
 myApp.controller('SerCtrl',function ($scope,$http) {
 	$http.get('data/service.json').then(function(list){
@@ -139,18 +136,18 @@ myApp.controller('SerCtrl',function ($scope,$http) {
 		$scope.services = services;
 	});
 });
-myApp.controller('Guide',function ($scope,$http) {
+myApp.controller('InsCtrl',function ($scope,$http) {
 	$http.get('data/service.json').then(function(list){
-		var guides =[];
+		var instructs =[];
 		for(var key in list.data){
 			for(var key2 in list.data[key]){
 				if(key == 'tutorial'){
-					guides.push(list.data[key][key2]);
+					instructs.push(list.data[key][key2]);
 					// console.log(list.data[key][key2]);
 				}
 			}
 		}
-		$scope.guides = guides;
+		$scope.instructs = instructs;
 	});
 });
 myApp.controller('cd',function () {
