@@ -74,11 +74,15 @@
 					<li><a href="#!/contact">Contact Us</a></li>
 					<li><a href="#!/about">About Us</a></li>
 					<li class="dropdown">
-						<a href="" class="dropdown-toggle" data-toggle="dropdown">Pay & Account<b class="caret"></b></a>
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-hide="account">Pay & Account<b class="caret"></b></a>
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-show="account"><img src="{{account.image}}" alt="" style="width: 20px;" class="img-circle"> {{account.name}}<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#!/acc$pay">Pay</a></li>
-							<li><a data-toggle="modal" href="#modal-id">Login</a></li>
-							<li><a href="#!/register">Register</a></li>
+							<li><a data-toggle="modal" href="#modal-id" ng-hide="account">Login</a></li>
+							<li>
+								<a href="#!/register" ng-hide="account">Register</a>
+								<a href="" ng-show="account" ng-click="log_out(this)">log out</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -252,13 +256,13 @@
 					<form action="" method="POST" class="text-center" role="form" id="login">
 						<div class="form-group text-left">
 							<label for="">Email</label>
-							<input type="text" class="form-control" id="email" name="email" placeholder="Input email or username">
+							<input type="text" class="form-control" id="email" name="email" placeholder="Ex: user1@gmail.com" ng-model="email">
 						</div>
 						<div class="form-group text-left">
 							<label for="">Password</label>
-							<input type="password" class="form-control" id="password" name="password" placeholder="Input password">
+							<input type="password" class="form-control" id="password" name="password" placeholder="Ex: 123456" ng-model="password">
 						</div>						
-						<button type="submit" class="btn btn-primary">LOGIN</button>
+						<a href="#!" type="button" class="btn btn-primary" ng-click="check_login()">LOGIN</a>
 					</form>
 				</div>
 				<div class="login-index text-center">
