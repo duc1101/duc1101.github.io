@@ -5,7 +5,9 @@
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 2;
-		min-height: 22px;
+		/*font-size: ;          cỡ chữ, đơn vị px */
+		/*line-height: X;         khoảng cách giữa các dòng, đơn vị em*/
+		min-height: 20px;
 	}
 	.max-lines-title>a{
 		text-transform: uppercase;
@@ -16,6 +18,11 @@
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 3;
+		/* font-size: 20px; */
+		/* line-height: 1.3em; */
+		/* color: #3b5998!important; */
+		/* margin: 0 0 5px; */
+		/* max-height: 52px; */
 	}
 	.sListSvGu{
 		margin: 16px;
@@ -38,17 +45,17 @@
 		}
 	}
 </style>
-<section ng-controller="SerCtrl">
+<section ng-controller="InsCtrl">
 	<div class="container">
 		<div class="sListSvGu">
-			<a class="btn btn-success active" href="#!/services" role="button">Services</a>
-			<a class="btn btn-success" href="#!/Instructions" role="button">Intruction</a>
+			<a class="btn btn-success" href="#!/services" role="button">Services</a>
+			<a class="btn btn-success active" href="#!/Instructions" role="button">Intruction</a>
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<div class="row sListSv" ng-repeat="(key, value) in services">
+				<div class="row sListSv" ng-repeat="(key, value) in instructs">
 					<div class="col-md-4">
-						<a href="{{ value.link }}"><img ng-src="{{ value.img}}" alt="" class="center-block"></a>
+						<a href="{{ value.link }}"><img ng-src="{{ value.img }}" alt="" class="center-block"></a>
 					</div>
 					<div class="col-md-8">
 						<h4 class="max-lines-title"><a href="{{ value.link }}">{{ value.title }}</a></h4>
@@ -70,7 +77,7 @@
 			<div class="col-md-4 ctNews" ng-controller="ConCtrl">
 				<div class="panel ">
 					<div class="panel-heading">
-						<h1 class="panel-title">News</h1>
+						<h1 class="panel-title">Newest</h1>
 					</div>
 					<div class="panel-body">
 						<div class="list-group" ng-repeat="(key, value) in news">
