@@ -107,10 +107,38 @@ myApp.config(function ($routeProvider) {
 	})
 });
 myApp.controller('AppCtrl', function ($scope,$http) {
-	$http.get('data/founder.json').then(function(list){
-		$scope.founders = list.data;
-		$scope.title = 'Cambridge Hospital';
-		// console.log($scope.founders);
+	$scope.title = 'Cambridge Hospital';
+	// ---------------------------------login------------------------------
+	$http.get('data/users.json').then(function(listUser){
+		$scope.account = false;
+		var getData = sessionStorage.getItem('saveDataLogin');
+		if(getData){
+			$scope.account = angular.fromJson(getData);//chuyển lại từ json sang đối tượng JS
+		}
+		$scope.check_login = function(){
+			var password=$scope.password;
+			var email=$scope.email;
+			var check = check_acc(email, password);
+			// console.log(check);
+			if(check){
+				$scope.account = check; //gán truyền qua view
+				var convertJson = angular.toJson(check);//chuyển sang json
+				sessionStorage.setItem ('saveDataLogin',convertJson);
+			}
+			function check_acc(mail,pass){
+				for(var key in listUser.data){
+					if(listUser.data[key].email==mail && listUser.data[key].pass == pass){
+						return listUser.data[key];
+					}
+				}
+				return false;
+			};
+		}
+		$scope.log_out = function(log_out){
+			sessionStorage.removeItem('saveDataLogin');
+			$scope.account = false;
+			// location.reload();
+		}
 	});
 });
 myApp.controller('ConCtrl', function ($scope,$http) {
