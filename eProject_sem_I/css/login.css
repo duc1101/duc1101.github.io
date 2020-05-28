@@ -1,0 +1,21 @@
+/* .modal-login .modal-content .modal-header {
+  margin-bottom: 20px;
+} */
+.modal-login .modal-content .login-body .form-group {
+  width: 80%;
+  margin: 20px auto;
+}
+.modal-login .modal-content .login-body input {
+  border-radius: 0;
+}
+.modal-login .modal-content .login-body button {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 0;
+}
+.modal-login .modal-content .login-body .login-index {
+  margin-top: 15px;
+}

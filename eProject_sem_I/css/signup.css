@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+.signup-form {
+  padding: 30px 0;
+}
+.container {
+  background-color: white;
+  padding: 5px 20px 15px 20px;
+  box-shadow: 2px 5px 6px #888888;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
+.sex {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+div.register-btn>input.btn {
+  background-color: #2196f3;
+  color: white;
+  padding: 12px;
+  margin: 15px;
+  border: none;
+  width: 40%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+div.register-btn>input.btn:hover {
+  background-color: #df3333;
+  color: white;
+}
+.receive-check {
+  width: 10px;
+}
+.title h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+span.price {
+  float: right;
+  color: grey;
+}
+form .error {
+  color: #ff0000;
+  font-size: small;
+  font-style: italic;
+}

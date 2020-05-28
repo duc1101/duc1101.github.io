@@ -43,7 +43,7 @@ div.bgNav, div.mainNav{
 }
 div.subMenu>ul.navbar-nav>li>a{
 	color: white;
-	font-size: 17px;
+	font-size: 16.5px;
 	font-weight: bold;
 }
 div.subMenu>ul.navbar-nav>li{
@@ -71,6 +71,7 @@ div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li:hover{
 }
 div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li>a{
 	padding-left: 6px;
+	font-weight: bold;
 }
 div.subMenu>ul.navbar-nav>li.dropdown>ul.dropdown-menu>li>a:hover{
 	background: -webkit-linear-gradient(white,, pink);
@@ -249,6 +250,8 @@ h1 {
 /* ------------------------------------------about------------------------------- */
 
 /* ----------------------------------------service----------------------------- */
+/*----------------------------------------------guide------------------------------*/
+/*-----------------------------------------------register---------------------------------------*/
 footer{
 	background-color: #036;
 	padding-top: 16px;
