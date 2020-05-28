@@ -66,10 +66,6 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'html/html_service/xuong_khop.html',
 		controller: 'xk'
 	})
-
-
-
-
 	// ----------------------------guide
 	.when('/guides', {
 		templateUrl: 'Guide.html',
@@ -77,7 +73,7 @@ myApp.config(function ($routeProvider) {
 		controller: 'ConCtrl'
 	})
 	.when('/he', {
-		templateUrl: 'html/html_tutorial/Health.html',
+		templateUrl: 'html/html_tutorial/health.html',
 		controller: 'he'
 	})
 	.when('/ob', {
@@ -100,24 +96,21 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'html/html_tutorial/Schedule.html',
 		controller: 'sc'
 	})
-
-
-
-
-
 	// ------------------------------------
 	.when('/acc$pay', {
 		templateUrl: 'checkout.html',
 		controller: 'CheckCtrl'
 	})
-
+	.when('/register', {
+		templateUrl: 'signup.html',
+		controller: 'SignCtrl'
+	})
 });
 myApp.controller('AppCtrl', function ($scope,$http) {
 	$http.get('data/founder.json').then(function(list){
 		$scope.founders = list.data;
 		$scope.title = 'Cambridge Hospital';
 		// console.log($scope.founders);
-
 	});
 });
 myApp.controller('ConCtrl', function ($scope,$http) {
@@ -128,7 +121,6 @@ myApp.controller('ConCtrl', function ($scope,$http) {
 });
 myApp.controller('AboutCtrl',function () {
 	$scope.title = 'About Us';
-
 });
 myApp.controller('BookCtrl',function () {
 	$scope.title = 'Make an appointment';
@@ -141,7 +133,6 @@ myApp.controller('SerCtrl',function ($scope,$http) {
 				if(key == 'service'){
 					services.push(list.data[key][key2]);
 					// console.log(list.data[key][key2]);
-
 				}
 			}
 		}
@@ -155,6 +146,7 @@ myApp.controller('Guide',function ($scope,$http) {
 			for(var key2 in list.data[key]){
 				if(key == 'tutorial'){
 					guides.push(list.data[key][key2]);
+					// console.log(list.data[key][key2]);
 				}
 			}
 		}
@@ -162,39 +154,28 @@ myApp.controller('Guide',function ($scope,$http) {
 	});
 });
 myApp.controller('cd',function () {
-	
-
-});myApp.controller('nk',function () {
-	
-
-});myApp.controller('ts',function () {
-	
-
-});myApp.controller('tm',function () {
-	
-
-});myApp.controller('ut',function () {
-	
-
-});myApp.controller('xk',function () {
-	
-
-});myApp.controller('he',function () {
-	
-
-});myApp.controller('ob',function () {
-	
-
-});myApp.controller('pa',function () {
-	
-
-});myApp.controller('pe',function () {
-	
-
-});myApp.controller('re',function () {
-	
-
-});myApp.controller('sc',function () {
-	
-
+});
+myApp.controller('nk',function () {
+});
+myApp.controller('ts',function () {
+});
+myApp.controller('tm',function () {
+});
+myApp.controller('ut',function () {
+});
+myApp.controller('xk',function () {
+});
+myApp.controller('he',function () {
+});
+myApp.controller('ob',function () {
+});
+myApp.controller('pa',function () {
+});
+myApp.controller('pe',function () {
+});
+myApp.controller('re',function () {
+});
+myApp.controller('sc',function () {
+});
+myApp.controller('SignCtrl',function () {
 });

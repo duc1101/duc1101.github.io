@@ -1,9 +1,4 @@
 $(document).ready(function () {
-  //Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
-  // $('#payment').simpleMoneyFormat();
-  // $('#ccnum').payform('formatCardNumber');
-  // $('#expiry').payform('formatCardExpiry');
-  // $('#cvc').payform('formatCardCVC');
   $('#checkForm').validate({
     rules: {
       name: 'required',
@@ -24,10 +19,6 @@ $(document).ready(function () {
         required: true,
         number: true,
       },
-      // ccnum: {
-      //   required: true,
-      //   creditcard: true,
-      // },
     },
     messages: {
       name: 'Name may not be blank',
@@ -42,6 +33,105 @@ $(document).ready(function () {
       payment: {
         required: 'Payment amount may not be blank',
         number: 'Format must be a number',
+      },
+    },
+  });
+});
+$(document).ready(function () {
+  $('#register').submit(function () {
+    var _password = $.trim($('#password').val());
+    var _passwordReturn = $.trim($('#passwordReturn').val());
+    var _return = true;
+    if (_password != _passwordReturn) {
+      $('#pass_error').text('The password entered is incorrect');
+      _return = false;
+    } else {
+      $('#pass_error').text('');
+    }
+  });
+  $.validator.addMethod('check_phone', function (value) {
+    return /^[0][9|3|8][0-9]{8}$/.test(value);
+  });
+  $.validator.addMethod('check_pass', function (value) {
+    return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}$/.test(value);
+  });
+  $('#register').validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      address: {
+        required: true,
+      },
+      phone: {
+        required: true,
+        check_phone: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      password: {
+        required: true,
+        minlength: 6,
+      },
+      city: {
+        required: true,
+      },
+      sex: {
+        required: true,
+      },
+      birthday: {
+        required: true,
+      },
+    },
+    messages: {
+      name: {
+        required: 'Name may not be blank',
+      },
+      address: {
+        required: 'Address may not be blank',
+      },
+      phone: {
+        required: 'Phone may not be blank',
+        check_phone: 'The phone number is not in the correct format',
+      },
+      email: {
+        required: 'Email may not be blank',
+        email: '*Email is not in the correct format',
+      },
+      password: {
+        required: 'Password may not be blank',
+        minlength: 'Password is at least 6 characters',
+      },
+      city: {
+        required: 'city may not be blank',
+      },
+      sex: {
+        required: 'Please select a gender',
+      },
+      birthday: {
+        required: 'sdsadss',
+      },
+    },
+  });
+  $('#login').validate({
+    email: {
+      required: true,
+      email: true,
+    },
+    password: {
+      required: true,
+      minlength: 6,
+    },
+    messages: {
+      email: {
+        required: 'Email may not be blank',
+        email: '*Email is not in the correct format',
+      },
+      password: {
+        required: 'Password may not be blank',
+        minlength: 'Password is at least 6 characters',
       },
     },
   });
