@@ -73,7 +73,7 @@ myApp.config(function ($routeProvider) {
 		controller: 'ConCtrl'
 	})
 	.when('/he', {
-		templateUrl: 'html/html_tutorial/health.html',
+		templateUrl: 'html/html_tutorial/Health.html',
 		controller: 'he'
 	})
 	.when('/ob', {
