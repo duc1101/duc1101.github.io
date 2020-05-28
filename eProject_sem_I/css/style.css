@@ -42,6 +42,8 @@ div.bgNav, div.mainNav{
 	background-color: mediumvioletred;
 }
 div.subMenu>ul.navbar-nav>li>a{
+	padding-left: 18px;
+	padding-right: 18px;
 	color: white;
 	font-size: 16.5px;
 	font-weight: bold;
@@ -305,6 +307,10 @@ div.cambridgeAlliance>ul.linksAlliance>li>a{
 	/* font-weight: bold; */
 }
 @media (max-width: 992px) {
+	div.subMenu>ul.navbar-nav>li>a{
+		padding-left: 11px;
+		padding-right: 11px;
+	}
 	div.proundTeaching{
 		border-left: 1px white solid;
 		border-right: none;
