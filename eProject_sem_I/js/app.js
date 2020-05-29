@@ -106,7 +106,7 @@ myApp.config(function ($routeProvider) {
 		controller: 'SignCtrl'
 	})
 });
-myApp.controller('AppCtrl', function ($scope,$http) {
+myApp.controller('AppCtrl', function ($scope,$http,$window) {
 	$scope.title = 'Cambridge Hospital';
 	// ---------------------------------login------------------------------
 	$http.get('data/users.json').then(function(listUser){
@@ -127,7 +127,7 @@ myApp.controller('AppCtrl', function ($scope,$http) {
 			}else{
 				// confirm('Account incorrect!!! Register?');
 				if(confirm('Account incorrect!!! Register?')){
-					window.location.href = 'https://mrduc0616.github.io/eProject_sem_I/#!/register';
+					$window.location.href = 'https://mrduc0616.github.io/eProject_sem_I/#!/register';
 				}
 			}
 			function check_acc(mail,pass){
