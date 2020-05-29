@@ -74,14 +74,14 @@
 					<li><a href="#!/contact">Contact Us</a></li>
 					<li><a href="#!/about">About Us</a></li>
 					<li class="dropdown">
-						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-hide="account">Pay & Account<b class="caret"></b></a>
-						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-show="account"><img ng-src="{{account.image}}" alt="" style="width: 20px;" class="img-circle" ng-show="account"> {{account.name}}<b class="caret"></b></a>
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-hide="inforUser">Pay & Account<b class="caret"></b></a>
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-show="inforUser"><img src="http://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/32/Office-Girl-icon.png" alt="" style="width: 20px;" class="img-circle"> {{inforUser.name}}<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#!/acc$pay">Pay</a></li>
-							<li><a data-toggle="modal" href="#modal-id" ng-hide="account">Login</a></li>
+							<li><a data-toggle="modal" href="#modal-id" ng-hide="inforUser">Login</a></li>
 							<li>
-								<a href="#!/register" ng-hide="account">Register</a>
-								<a href="" ng-show="account" ng-click="log_out(this)">log out</a>
+								<a href="#!/register" ng-hide="inforUser">Register</a>
+								<a href="" ng-show="inforUser" ng-click="log_out(this)">log out</a>
 							</li>
 						</ul>
 					</li>
@@ -245,31 +245,54 @@
 	</footer>
 	<!-- ----------------modal register----------------------------- -->
 	<div class="modal fade modal-login" id="modal-id">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" > &times;
-					</button>
-					<h4 class="modal-title">Login account</h4>
-				</div>
-				<div class="login-body">
-					<form action="" method="POST" class="text-center" role="form" id="login">
-						<div class="form-group text-left">
-							<label for="">Email</label>
-							<input type="text" class="form-control" id="email" name="email" placeholder="Ex: user1@gmail.com" ng-model="email">
-						</div>
-						<div class="form-group text-left">
-							<label for="">Password</label>
-							<input type="password" class="form-control" id="password" name="password" placeholder="Ex: 123456" ng-model="password">
-						</div>						
-						<button type="button" class="btn btn-primary" ng-click="check_login()">LOGIN</button>
-					</form>
-				</div>
-				<div class="login-index text-center">
-					<p>Don't have an acount? <a href="signup.html" class="text-danger">Register now</a></p>
-				</div>
-			</div>
-		</div>
+		  <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">Login account</h4>
+          </div>
+          <div class="login-body">
+            <div class="form-group text-left">
+              <label for="">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                ng-model="email"
+                placeholder="Input email or username"
+              />
+            </div>
+            <div class="form-group text-left">
+              <label for="">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                ng-model="password"
+                placeholder="Input password"
+              />
+            </div>
+            <button type="button" class="btn btn-primary" ng-click="login()">
+              LOGIN
+            </button>
+          </div>
+          <div class="login-index text-center">
+            <p>
+              Don't have an acount?
+              <a href="signup.html" class="text-danger">Register now</a>
+            </p>
+          </div>
+        </div>
+      </div>
 	</div>
 	<!-- ------------------------------------------------- -->
 <!-- 	<script src="JS/jquery.validate.min.js"></script>

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/signup.css" />
-<section>
+<section  ng-controller="AppCtrl">
   <div class="signup-form">
-    <div class="container">
+    <div class="container" style="background-color: white; padding: 5px 20px 15px 20px; box-shadow: 2px 5px 6px #888888;">
       <form action="" id="register">
         <div class="row">
           <div class="title text-center">
@@ -9,57 +9,24 @@
           </div>
           <div class="col-md-6">
             <label><i class="fa fa-user"></i> Full Name</label>
-            <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="John M. Doe"
-            />
+            <input type="text" id="name" name="name" placeholder="John M. Doe" ng-model="user.name"/>
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="john@example.com"
-            />
-            <label
-            ><i class="fas fa-lock"></i></i> Password</label
-            >
-            <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder=""
-            />
-            <label
-            ><i class="fas fa-lock"></i> Retype password</label
-            >
-            <input
-            type="password"
-            id="passwordReturn"
-            name="passwordReturn"
-            placeholder=""
-            />
+            <input type="text" id="email" name="email" placeholder="john@example.com" ng-model="user.email"/>
+            <label><i class="fas fa-lock"></i></i> Password</label>
+            <input type="password" id="password" name="password" ng-model="user.password"/>
+            <label><i class="fas fa-lock"></i> Retype password</label>
+            <input type="password" id="passwordReturn" name="passwordReturn" placeholder="" ng-model="user.passwordReturn"/>
             <span id="pass_error"></span>
           </div>
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-9">
-                <label
-                ><i class="far fa-address-card"></i> Address</label
-                >
-                <input
-                type="address"
-                id="address"
-                name="address"
-                placeholder=""
-                />
+                <label><i class="far fa-address-card"></i> Address</label>
+                <input type="address" id="address" name="address" placeholder="" ng-model="user.address"/>
               </div>
               <div class="col-md-3">
-                <label for=""
-                ><i class="fas fa-city"></i> City</label
-                >
-                <select id="city" name="city" class="sex">
+                <label for=""><i class="fas fa-city"></i> City</label>
+                <select id="city" name="city" class="sex" ng-model="user.city">
                   <option value=''>Select ...</option>
                   <option value="London">London</option>
                   <option value="Birmingham">Birmingham</option>
@@ -87,20 +54,11 @@
             <label
             ><i class="fas fa-phone-alt"></i> Phone</label
             >
-            <input
-            type="phone"
-            id="phone"
-            name="phone"
-            placeholder=""
-            />
-            <label
-            ><i class="fas fa-birthday-cake"></i> Day of birth</label
-            >
-            <input type="date" name="birthday" id="birthday">
-            <label for=""
-            ><i class="fas fa-venus-mars"></i> Sex</label
-            >
-            <select id="sex" name="sex" class="sex">
+            <input type="phone" id="phone" name="phone" ng-model="user.phone"/>
+            <label><i class="fas fa-birthday-cake"></i> Day of birth</label>
+            <input type="date" name="birthday" id="birthday" ng-model="user.birthday">
+            <label for=""><i class="fas fa-venus-mars"></i> Sex</label>
+            <select id="sex" name="sex" class="sex" ng-model="user.sex">
               <option value=''>Please select a gender</option>
               <option value="male">Male</option>
               <option value="female">female</option>
@@ -112,11 +70,11 @@
           </div>
         </div>
         <div class="register-btn text-center">
-          <input type="submit" value="Register" class="btn"/>
+          <button type="submit" class="btn" ng-click="add_user()">Register</button>
         </div>
       </form>
     </div>
   </div>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/form-validation.js"></script>
 </section>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/form-validation.js"></script>
