@@ -127,7 +127,7 @@ myApp.controller('AppCtrl', function ($scope,$http) {
 			}else{
 				// confirm('Account incorrect!!! Register?');
 				if(confirm('Account incorrect!!! Register?')){
-					window.location.href = '/eProject_sem_I/index.html#!/register';
+					window.location.href = 'eProject_sem_I/index.html#!/register';
 				}
 			}
 			function check_acc(mail,pass){
