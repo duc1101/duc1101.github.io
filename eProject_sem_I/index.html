@@ -75,7 +75,7 @@
 					<li><a href="#!/about">About Us</a></li>
 					<li class="dropdown">
 						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-hide="account">Pay & Account<b class="caret"></b></a>
-						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-show="account"><img src="{{account.image}}" alt="" style="width: 20px;" class="img-circle"> {{account.name}}<b class="caret"></b></a>
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" ng-show="account"><img ng-src="{{account.image}}" alt="" style="width: 20px;" class="img-circle" ng-show="account"> {{account.name}}<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#!/acc$pay">Pay</a></li>
 							<li><a data-toggle="modal" href="#modal-id" ng-hide="account">Login</a></li>
@@ -262,7 +262,7 @@
 							<label for="">Password</label>
 							<input type="password" class="form-control" id="password" name="password" placeholder="Ex: 123456" ng-model="password">
 						</div>						
-						<a href="#!" type="button" class="btn btn-primary" ng-click="check_login()">LOGIN</a>
+						<button type="button" class="btn btn-primary" ng-click="check_login()">LOGIN</button>
 					</form>
 				</div>
 				<div class="login-index text-center">
