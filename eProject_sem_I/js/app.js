@@ -124,6 +124,11 @@ myApp.controller('AppCtrl', function ($scope,$http) {
 				$scope.account = check; //gán truyền qua view
 				var convertJson = angular.toJson(check);//chuyển sang json
 				sessionStorage.setItem ('saveDataLogin',convertJson);
+			}else{
+				// confirm('Account incorrect!!! Register?');
+				if(confirm('Account incorrect!!! Register?')){
+					window.location.href = '/index.html#!/register';
+				}
 			}
 			function check_acc(mail,pass){
 				for(var key in listUser.data){
@@ -133,6 +138,7 @@ myApp.controller('AppCtrl', function ($scope,$http) {
 				}
 				return false;
 			};
+			location.reload();
 		}
 		$scope.log_out = function(log_out){
 			sessionStorage.removeItem('saveDataLogin');
