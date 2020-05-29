@@ -4,10 +4,7 @@
 .signup-form {
   padding: 30px 0;
 }
-div.signup-form>.container {
-  background-color: white;
-  padding: 5px 20px 15px 20px;
-  box-shadow: 2px 5px 6px #888888;
+.container {
 }
 
 input {
@@ -34,7 +31,7 @@ label {
   font-size: 24px;
 }
 
-div.register-btn>input.btn {
+div.register-btn>button.btn {
   background-color: #2196f3;
   color: white;
   padding: 12px;
@@ -46,7 +43,7 @@ div.register-btn>input.btn {
   font-size: 17px;
 }
 
-div.register-btn>input.btn:hover {
+div.register-btn>button.btn:hover {
   background-color: #df3333;
   color: white;
 }
