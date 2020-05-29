@@ -36,116 +36,125 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'book_appointment.html',
 		controller: 'BookCtrl'
 	})
-	// ---------------------------service
-	.when('/services', {
-		templateUrl: 'services.html',
-		controller: 'SerCtrl',
-		controller: 'ConCtrl'
-	})
-	.when('/cd', {
-		templateUrl: 'html/html_service/chuan_doan.html',
-		controller: 'cd'
-	})
-	.when('/nk', {
-		templateUrl: 'html/html_service/nhakhoa.html',
-		controller: 'nk'
-	})
-	.when('/ts', {
-		templateUrl: 'html/html_service/thai_san.html',
-		controller: 'ts'
-	})
-	.when('/tm', {
-		templateUrl: 'html/html_service/tim_mach.html',
-		controller: 'tm'
-	})
-	.when('/ut', {
-		templateUrl: 'html/html_service/ung_thu.html',
-		controller: 'ut'
-	})
-	.when('/xk', {
-		templateUrl: 'html/html_service/xuong_khop.html',
-		controller: 'xk'
-	})
-	// ----------------------------Instruction
-	.when('/Instructions', {
-		templateUrl: 'Instruction.html',
-		controller: 'InsCtrl',
-		controller: 'ConCtrl'
-	})
-	.when('/he', {
-		templateUrl: 'html/html_tutorial/Health.html',
-		controller: 'he'
-	})
-	.when('/ob', {
-		templateUrl: 'html/html_tutorial/obstetric.html',
-		controller: 'ob'
-	})
-	.when('/pa', {
-		templateUrl: 'html/html_tutorial/pat.html',
-		controller: 'pa'
-	})
-	.when('/pe', {
-		templateUrl: 'html/html_tutorial/periodic.html',
-		controller: 'pe'
-	})
-	.when('/re', {
-		templateUrl: 'html/html_tutorial/register.html',
-		controller: 're'
-	})
-	.when('/sc', {
-		templateUrl: 'html/html_tutorial/Schedule.html',
-		controller: 'sc'
-	})
-	// ------------------------------------
-	.when('/acc$pay', {
-		templateUrl: 'checkout.html',
-		controller: 'CheckCtrl'
-	})
-	.when('/register', {
-		templateUrl: 'signup.html',
-		controller: 'SignCtrl'
-	})
+// ---------------------------service
+.when('/services', {
+	templateUrl: 'services.html',
+	controller: 'SerCtrl',
+	controller: 'ConCtrl'
+})
+.when('/cd', {
+	templateUrl: 'html/html_service/chuan_doan.html',
+	controller: 'cd'
+})
+.when('/nk', {
+	templateUrl: 'html/html_service/nhakhoa.html',
+	controller: 'nk'
+})
+.when('/ts', {
+	templateUrl: 'html/html_service/thai_san.html',
+	controller: 'ts'
+})
+.when('/tm', {
+	templateUrl: 'html/html_service/tim_mach.html',
+	controller: 'tm'
+})
+.when('/ut', {
+	templateUrl: 'html/html_service/ung_thu.html',
+	controller: 'ut'
+})
+.when('/xk', {
+	templateUrl: 'html/html_service/xuong_khop.html',
+	controller: 'xk'
+})
+// ----------------------------Instruction
+.when('/Instructions', {
+	templateUrl: 'Instruction.html',
+	controller: 'InsCtrl',
+	controller: 'ConCtrl'
+})
+.when('/he', {
+	templateUrl: 'html/html_tutorial/Health.html',
+	controller: 'he'
+})
+.when('/ob', {
+	templateUrl: 'html/html_tutorial/obstetric.html',
+	controller: 'ob'
+})
+.when('/pa', {
+	templateUrl: 'html/html_tutorial/pat.html',
+	controller: 'pa'
+})
+.when('/pe', {
+	templateUrl: 'html/html_tutorial/periodic.html',
+	controller: 'pe'
+})
+.when('/re', {
+	templateUrl: 'html/html_tutorial/register.html',
+	controller: 're'
+})
+.when('/sc', {
+	templateUrl: 'html/html_tutorial/Schedule.html',
+	controller: 'sc'
+})
+// ------------------------------------
+.when('/acc$pay', {
+	templateUrl: 'checkout.html',
+	controller: 'CheckCtrl'
+})
+.when('/register', {
+	templateUrl: 'signup.html',
+	controller: 'SignCtrl'
+})
 });
-myApp.controller('AppCtrl', function ($scope,$http,$window) {
+myApp.controller('AppCtrl', function ($scope,$http) {
 	$scope.title = 'Cambridge Hospital';
 	// ---------------------------------login------------------------------
-	$http.get('data/users.json').then(function(listUser){
-		$scope.account = false;
-		var getData = sessionStorage.getItem('saveDataLogin');
-		if(getData){
-			$scope.account = angular.fromJson(getData);//chuyển lại từ json sang đối tượng JS
+	$scope.isLogin = false;
+	$scope.datas = [];
+	if (localStorage.getItem('user-list')) {
+		$scope.datas = angular.fromJson(localStorage.getItem('user-list'));
+	}
+	if (sessionStorage.getItem('login')) {
+		$scope.isLogin = true;
+	}
+	$scope.add_user = function () {
+		$scope.datas.push($scope.user);
+		$scope.user = null;
+		localStorage.setItem('user-list', angular.toJson($scope.datas));
+		window.location.href = '/index.html#!/';
+	};
+	$scope.login = function () {
+		var user = check_login($scope.email, $scope.password);
+		if (user) {
+			sessionStorage.setItem('login', angular.toJson(user));
+			$scope.isLogin = true;
+			$scope.inforUser = user; //gán truyền qua view
+			var chuyen_json = angular.toJson(user);//chuyển sang json
+			sessionStorage.setItem ('user-list',chuyen_json);
+			$('#modal-id').modal('hide');
+			alert('success');
+		} else {
+			$scope.isLogin = false;
+			alert('Account information is invalid');
 		}
-		$scope.check_login = function(){
-			var password=$scope.password;
-			var email=$scope.email;
-			var check = check_acc(email, password);
-			// console.log(check);
-			if(check){
-				$scope.account = check; //gán truyền qua view
-				var convertJson = angular.toJson(check);//chuyển sang json
-				sessionStorage.setItem ('saveDataLogin',convertJson);
-			}else{
-				// confirm('Account incorrect!!! Register?');
-				if(confirm('Account incorrect!!! Register?')){
-					$window.location.href = 'https://mrduc0616.github.io/eProject_sem_I/#!/register';
-				}
+	};
+	$scope.log_out = function(out){
+		if(confirm('Logout???')){
+			// localStorage.clear();
+			sessionStorage.removeItem('user-list');
+			localStorage.removeItem('user-list');
+			$scope.inforUser = false;
+			alert('success');
+		}
+	}
+	function check_login(email, password) {
+		for (var key in $scope.datas) {
+			if ($scope.datas[key].email == email && $scope.datas[key].password == password){
+				return $scope.datas[key];
 			}
-			function check_acc(mail,pass){
-				for(var key in listUser.data){
-					if(listUser.data[key].email==mail && listUser.data[key].pass == pass){
-						return listUser.data[key];
-					}
-				}
-				return false;
-			};
-			location.reload();
 		}
-		$scope.log_out = function(log_out){
-			sessionStorage.removeItem('saveDataLogin');
-			$scope.account = false;
-			// location.reload();
-		}
-	});
+		return false;
+	};
 });
 myApp.controller('ConCtrl', function ($scope,$http) {
 	$http.get('data/news.json').then(function(list){
@@ -163,12 +172,12 @@ myApp.controller('SerCtrl',function ($scope,$http) {
 			for(var key2 in list.data[key]){
 				if(key == 'service'){
 					services.push(list.data[key][key2]);
-					// console.log(list.data[key][key2]);
-				}
-			}
-		}
-		$scope.services = services;
-	});
+// console.log(list.data[key][key2]);
+}
+}
+}
+$scope.services = services;
+});
 });
 myApp.controller('InsCtrl',function ($scope,$http) {
 	$http.get('data/service.json').then(function(list){
@@ -177,12 +186,12 @@ myApp.controller('InsCtrl',function ($scope,$http) {
 			for(var key2 in list.data[key]){
 				if(key == 'tutorial'){
 					instructs.push(list.data[key][key2]);
-					// console.log(list.data[key][key2]);
-				}
-			}
-		}
-		$scope.instructs = instructs;
-	});
+// console.log(list.data[key][key2]);
+}
+}
+}
+$scope.instructs = instructs;
+});
 });
 myApp.controller('cd',function () {
 });
