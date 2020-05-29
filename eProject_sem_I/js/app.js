@@ -121,7 +121,7 @@ myApp.controller('AppCtrl', function ($scope,$http) {
 		$scope.datas.push($scope.user);
 		$scope.user = null;
 		localStorage.setItem('user-list', angular.toJson($scope.datas));
-		window.location.href = '/index.html#!/';
+		window.location.href = 'https://mrduc0616.github.io/eProject_sem_I/';
 	};
 	$scope.login = function () {
 		var user = check_login($scope.email, $scope.password);
