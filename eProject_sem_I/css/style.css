@@ -164,10 +164,8 @@ a.ctNews:hover{
 	color: #DF1A27FF
 }
 /* ------------------------------------------contact------------------------------------- */
-html,body {
-	font-family: sans-serif;
-}
-img {
+
+.about_ho img {
 	max-width: 100%;
 	height: auto;
 }
@@ -178,10 +176,10 @@ img {
 	font-size: 45px;
 	font-weight: 400;
 }
-.img_about {
-	width: 350px;
+div.img_about>img {
+	/* width: 350px; */
 	margin:10px 0;
-	display: block;
+	/* display: block; */
 }
 /* css book appointment */
 h1 {
