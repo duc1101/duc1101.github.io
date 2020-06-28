@@ -1,6 +1,8 @@
 $('.carouselFounder').owlCarousel({
 	loop: true,
 	nav: true,
+	autoplay: true,
+	autoplayTimeout: 1606,
 	dots: false,
 	responsive:{
 		0:{
