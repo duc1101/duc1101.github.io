@@ -83,11 +83,11 @@
 	"mainRight":{
 		"1":
 		{
-			"id":1,"sty":"","link":"https://www.instagram.com","title":"Instagram","image":"images/Instagram.png"
+			"id":1,"sty":"","link":"https://www.instagram.com","title":"Instagram","image":"images/instagram.png"
 		},
 		"2":
 		{
-			"id":2,"sty":"margin-top: 4px;","link":"https://twitter.com","title":"Twitter","image":"images/Twitter.png"
+			"id":2,"sty":"margin-top: 4px;","link":"https://twitter.com","title":"Twitter","image":"images/twitter.png"
 		},
 		"3":
 		{
@@ -95,35 +95,35 @@
 		},
 		"4":
 		{
-			"id":4,"sty":"margin-left: -4px; margin-bottom: 4px; margin-top: -4px;","link":"https://zingmp3.vn","title":"Zing mp3","image":"images/Zingmp3.png"
+			"id":4,"sty":"margin-left: -4px; margin-bottom: 4px; margin-top: -4px;","link":"https://zingmp3.vn","title":"Zing mp3","image":"images/zingmp3.png"
 		},
 		"5":
 		{
-			"id":5,"sty":"margin-bottom: 4px;","link":"https://www.nhaccuatui.com","title":"Nhạc của tui","image":"images/Nhaccuatui.png"
+			"id":5,"sty":"margin-bottom: 4px;","link":"https://www.nhaccuatui.com","title":"Nhạc của tui","image":"images/nhaccuatui.png"
 		},
 		"6":
 		{
-			"id":6,"sty":"margin-bottom: 4px;","link":"https://microsoft.com","title":"Microsoft","image":"images/Microsoft.png"
+			"id":6,"sty":"margin-bottom: 4px;","link":"https://microsoft.com","title":"Microsoft","image":"images/microsoft.png"
 		},
 		"7":
 		{
-			"id":7,"sty":"margin-left: -5px;","link":"https://dropbox.com","title":"Dropbox","image":"images/Dropbox.png"
+			"id":7,"sty":"margin-left: -5px;","link":"https://dropbox.com","title":"Dropbox","image":"images/dropbox.png"
 		},
 		"8":
 		{
-			"id":8,"sty":"margin-top: -3px;","link":"https://outlook.com","title":"Outlook","image":"images/Outlook.png"
+			"id":8,"sty":"margin-top: -3px;","link":"https://outlook.com","title":"Outlook","image":"images/outlook.png"
 		},
 		"9":
 		{
-			"id":9,"sty":"margin-top: -3px;","link":"https://telegram.com","title":"Telegram","image":"images/Telegram.png"
+			"id":9,"sty":"margin-top: -3px;","link":"https://telegram.com","title":"Telegram","image":"images/telegram.png"
 		},
 		"10":
 		{
-			"id":10,"sty":"margin-top: -3px;","link":"https://lazada.vn","title":"lazada","image":"images/Lazada.png"
+			"id":10,"sty":"margin-top: -3px;","link":"https://lazada.vn","title":"lazada","image":"images/lazada.png"
 		},
 		"11":
 		{
-			"id":11,"sty":"","link":"https://tiki.vn","title":"tiki","image":"images/Tiki.png"
+			"id":11,"sty":"","link":"https://tiki.vn","title":"tiki","image":"images/tiki.png"
 		}
 	}
 }
