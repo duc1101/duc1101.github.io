@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>💖💞ĐứÇ💝💘</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="images/logo.png">
   <meta name="description" content="This pages made for my knowleage">
   <meta name="author" content="Đức - Đoàn Văn Đức">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="fontawesome/css/all.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="clock(); nhay();" id="body">
+<body onload="clock(); nhay();" id="body" onresize="checkMenu();">
   <button type="button" class="btn btn-info p-0 btn-assis" id="assistive-left"><img src="images/assistive.png" alt=""></button>
   <header id="header" class="">
     <div class="container-xl">
@@ -67,7 +67,7 @@
     </div>
   </header>
   <!-- /header -->
-  <div class="container-fluid bg-success">
+  <div id="hide-menu">
   </div>
   <div class="container-xl main">
     <div class="row">
@@ -75,14 +75,14 @@
         <div class="row">
           <div class="col-6">
             <div class="row">
-              <div class="col-3 col-sm-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:4">
+              <div class="col-3 col-sm-6 p-sm-1 p-md-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:4">
                 <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" id="left{{value.id}}"></a>
               </div>
             </div>
           </div>
           <div class="col-6">
             <div class="row">
-              <div class="col-3 col-sm-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:4:4">
+              <div class="col-3 col-sm-6 p-sm-1 p-md-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:4:4">
                 <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" id="left{{value.id}}"></a>
               </div>
             </div>
@@ -91,7 +91,7 @@
         <div class="row">
           <div class="col-3 col-sm-6">
             <div class="row">
-              <div class="col-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:2:8">
+              <div class="col-6 p-sm-1 p-md-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:2:8">
                 <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" id="left{{value.id}}"></a>
               </div>
             </div>
@@ -101,9 +101,9 @@
             <!-- <iframe src="../data/dfgh2).mp4" allowfullscreen> -->
             </iframe>
           </div>
-          <div class="col-3 col-sm-6 order-sm-2">
+          <div class="col-3 col-sm-6 order-sm-1 p-md-2">
             <div class="row">
-              <div class="col-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:2:10">
+              <div class="col-6 p-sm-1 p-md-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:2:10">
                 <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
               </div>
             </div>
@@ -114,7 +114,7 @@
 
         <ng-view></ng-view>
       </div>
-      <div class="col-sm-2 main-right ">
+      <div class="col-sm-1 p-md-2 pl-2 pr-2 main-right ">
         <table class="table table-bordered table-inverse table-hover">
           <thead>
             <tr>
