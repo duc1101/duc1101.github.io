@@ -103,11 +103,11 @@ function clock(){
 			bgimg.style.backgroundImage = 'url("../images/5h.jpg")';
 		}else if(d.getHours() < 8){
 			bgimg.style.backgroundImage = 'url("../images/8h.jpg")';
-		}else if(d.getHours() < 11){
-			bgimg.style.backgroundImage = 'url("../images/11h.jpg")';
-		}else if(d.getHours() < 16){
-			bgimg.style.backgroundImage = 'url("../images/16h.jpg")';
-		}else if(d.getHours() < 19){
+		}else if(d.getHours() < 15){
+			bgimg.style.backgroundImage = 'url("../images/15h.jpg")';
+		}else if(d.getHours() < 18){
+			bgimg.style.backgroundImage = 'url("../images/18h.jpg")';
+		}else if(d.getHours() < 20){
 			bgimg.style.backgroundImage = 'url("../images/20h.jpg")';
 		}
 		else{
