@@ -115,6 +115,19 @@ function clock(){
 		}
 	},1000);
 };
+function checkMenu(){
+	var mainLeft = document.getElementById("mainLeft");
+	var assisLeft = document.getElementById("assistive-left");
+	var hideMenu = document.getElementById("hide-menu");
+	if(window.matchMedia('(max-width: 575px)').matches){
+		mainLeft.style.display = "none";
+		assisLeft.style.display = "block";
+	}else{
+		mainLeft.style.display = "block";
+		assisLeft.style.display = "none";
+		hideMenu.style.zIndex = "-5";
+	}
+};
 $(document).ready(function(){
 	$("#assistive-left").click(function(){
 		$("#assistive-left").hide(0,function(){
@@ -123,17 +136,14 @@ $(document).ready(function(){
 				height: "toggle",
 				top: "16%",
 				left: "9%"
-			});
+			},300);
+			$("#hide-menu").css("z-index", "100")
 		});
 	});
-	$(window).resize(function(){
-		$("#mainLeft").show(0,function(){
-			$("#assistive-left").hide()
-		});
-	});
-	$(".main").click(function(){
+	$("#hide-menu").click(function(){
 		$("#mainLeft").hide(350,function(){
-			$("#assistive-left").show()
+			$("#assistive-left").show();
+			$("#hide-menu").css("z-index", "-5")
 		});
 	});
 });
