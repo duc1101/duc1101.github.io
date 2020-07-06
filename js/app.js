@@ -118,14 +118,14 @@ function clock(){
 function checkMenu(){
 	var mainLeft = document.getElementById("mainLeft");
 	var assisLeft = document.getElementById("assistive-left");
-	var hideMenu = document.getElementById("hide-menu");
+	var bgMenu = document.getElementById("bg-menu-l");
 	if(window.matchMedia('(max-width: 575px)').matches){
 		mainLeft.style.display = "none";
 		assisLeft.style.display = "block";
 	}else{
 		mainLeft.style.display = "block";
 		assisLeft.style.display = "none";
-		hideMenu.style.zIndex = "-5";
+		bgMenu.style.zIndex = "-5";
 	}
 };
 $(document).ready(function(){
@@ -135,15 +135,15 @@ $(document).ready(function(){
 				width: "toggle",
 				height: "toggle",
 				top: "16%",
-				left: "9%"
+				left: "7%"
 			},300);
-			$("#hide-menu").css("z-index", "100")
+			$("#bg-menu-l").css("z-index", "100")
 		});
 	});
-	$("#hide-menu").click(function(){
+	$("#bg-menu-l").click(function(){
 		$("#mainLeft").hide(350,function(){
 			$("#assistive-left").show();
-			$("#hide-menu").css("z-index", "-5")
+			$("#bg-menu-l").css("z-index", "-5")
 		});
 	});
 });
