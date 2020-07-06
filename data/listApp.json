@@ -1,0 +1,129 @@
+{
+	"0":{
+		"app_1":{
+			"id":1,"name":"","link":"https://myaccount.google.com","title":"My Account","image":"images/acc.png"
+		},
+		"app_2":{
+			"id":2,"name":"","link":"https://google.com","title":"Google","image":"images/Google.png"
+		},
+		"app_3":{
+			"id":3,"name":"","link":"https://mail.google.com","title":"Gmail","image":"images/GMail.png"
+		},
+		"app_4":{
+			"id":4,"name":"","link":"https://drive.google.com","title":"Drive","image":"images/GDrive.png"
+		},
+		"app_5":{
+			"id":5,"name":"","link":"https://translate.google.com","title":"Translate","image":"images/GTranslate.png"
+		},
+		"app_6":{
+			"id":6,"name":"","link":"https://www.google.com/maps","title":"Maps","image":"images/GMap.png"
+		},
+		"app_7":{
+			"id":7,"name":"","link":"https://photos.google.com","title":"Google Photos","image":"images/GPhoto.png"
+		},
+		"app_8":{
+			"id":8,"name":"","link":"https://contacts.google.com","title":"Contacts","image":"images/GContact.png"
+		},
+		"app_9":{
+			"id":9,"name":"","link":"https://calendar.google.com","title":"Calendar","image":"images/GCalendar.png"
+		},
+		"app_10":{
+			"id":10,"name":"","link":"https://earth.google.com/web","title":"Google Earth","image":"images/GEarth.png"
+		},
+		"app_11":{
+			"id":11,"name":"","link":"https://www.google.com.vn/imghp?hl=vi&tab=ii&authuser=0","title":"Hình ảnh","image":"images/GCamera.png"
+		},
+		
+		"app_12":{
+			"id":12,"name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Web Store","image":"images/GStore.png"
+		}
+	},
+	"mainLeft":{
+		"1":
+		{
+			"id":1,"sty":"margin-top: 4px;","link":"https://www.facebook.com","title":"Facebook","image":"images/Facebook.png"
+		},
+		"2":
+		{
+			"id":2,"sty":"","link":"https://chat.zalo.me","title":"Chat Zalo","image":"images/Zalo.png"
+		},
+		"3":
+		{
+			"id":3,"sty":"margin-left: 4px; margin-bottom: 4px; margin-top: -4px;","link":"https://mega.nz","title":"Mega","image":"images/Mega.png"
+		},
+		"4":
+		{
+			"id":4,"sty":"margin-top: -4px;","link":"https://www.youtube.com","title":"You Tube","image":"images/Youtube.png"
+		},
+		"5":
+		{
+			"id":5,"sty":"margin-bottom: 4px;","link":"https://mediafire.com","title":"Mediafire","image":"images/Mediafire.png"
+		},
+		"6":
+		{
+			"id":6,"sty":"margin-bottom: 4px;","link":"https://fshare.vn","title":"Fshare","image":"images/Fshare.png"
+		},
+		"7":
+		{
+			"id":7,"sty":"margin-left: 5px;","link":"https://onedrive.com","title":"One Drive","image":"images/Onedrive.png"
+		},
+		"8":
+		{
+			"id":8,"sty":"margin-top: -3px;","link":"https://github.com","title":"Github","image":"images/Github.png"
+		},
+		"9":
+		{
+			"id":9,"sty":"margin-top: -3px;","link":"https://skype.com","title":"Skype","image":"images/Skype.png"
+		},
+		"10":
+		{
+			"id":10,"sty":"margin-top: -3px;","link":"https://shopee.vn","title":"Shopee","image":"images/Shopee.png"
+		}
+	},
+	"mainRight":{
+		"1":
+		{
+			"id":1,"sty":"","link":"https://www.instagram.com","title":"Instagram","image":"images/Instagram.png"
+		},
+		"2":
+		{
+			"id":2,"sty":"margin-top: 4px;","link":"https://twitter.com","title":"Twitter","image":"images/Twitter.png"
+		},
+		"3":
+		{
+			"id":3,"sty":"margin-top: -4px;","link":"https://phimmoi.com","title":"Phim mới","image":"images/phimmoi.png"
+		},
+		"4":
+		{
+			"id":4,"sty":"margin-left: -4px; margin-bottom: 4px; margin-top: -4px;","link":"https://zingmp3.vn","title":"Zing mp3","image":"images/Zingmp3.png"
+		},
+		"5":
+		{
+			"id":5,"sty":"margin-bottom: 4px;","link":"https://www.nhaccuatui.com","title":"Nhạc của tui","image":"images/Nhaccuatui.png"
+		},
+		"6":
+		{
+			"id":6,"sty":"margin-bottom: 4px;","link":"https://microsoft.com","title":"Microsoft","image":"images/Microsoft.png"
+		},
+		"7":
+		{
+			"id":7,"sty":"margin-left: -5px;","link":"https://dropbox.com","title":"Dropbox","image":"images/Dropbox.png"
+		},
+		"8":
+		{
+			"id":8,"sty":"margin-top: -3px;","link":"https://outlook.com","title":"Outlook","image":"images/Outlook.png"
+		},
+		"9":
+		{
+			"id":9,"sty":"margin-top: -3px;","link":"https://telegram.com","title":"Telegram","image":"images/Telegram.png"
+		},
+		"10":
+		{
+			"id":10,"sty":"margin-top: -3px;","link":"https://lazada.vn","title":"lazada","image":"images/Lazada.png"
+		},
+		"11":
+		{
+			"id":11,"sty":"","link":"https://tiki.vn","title":"tiki","image":"images/Tiki.png"
+		}
+	}
+}
