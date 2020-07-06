@@ -17,7 +17,41 @@ body{
 	background-attachment: fixed;
 	position: relative;
 }
-#hide-menu{
+/* ----------------------header----------------------- */
+header .container-xl{
+	background-image: url('../images/grass.png');
+	background-size: auto 36px;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+#duc{
+	display: block;
+	vertical-align: middle;
+	font-size: 160%;
+	font-family: Niconne;
+	transition: 1.5s all;
+	z-index: 11;
+	cursor: pointer;
+}
+/* ------------------socical------------------- */
+ul.socical-me{
+	list-style-type: none;
+	width: auto;
+}
+ul.socical-me>li{
+	font-size: 180%;
+	float: left;
+	padding: 0 3px;
+}
+ul.socical-me>li>a{
+	color: black;
+}
+ul.socical-me>li>a:hover{
+	color: #d5a32a;
+	transition: .6s all;
+}
+
+#bg-menu-l{
 	position: absolute;
 	width: 100vw;
 	height: 100%;
@@ -113,8 +147,6 @@ iframe{
 .form-custom{
 	position: relative;
 	width: 69%;
-	height: 36px !important;
-	height: auto;
 	border-bottom-right-radius: 11px;
 	border-bottom-left-radius: 11px;
 	border-bottom: 3px double red;
@@ -131,6 +163,7 @@ iframe{
 	background-color: transparent;
 	border: none;
 	color: white;
+	outline: none;
 }
 .btn-custom{
 	width: 36px;
@@ -152,14 +185,34 @@ iframe{
 }
 .main-right{
 }
-#duc{
-	display: block;
-	vertical-align: middle;
-	font-size: 2.7vmax;
-	font-family: Niconne;
-	transition: 1.5s all;
-	z-index: 11;
-	cursor: pointer;
+
+@media (max-width: 575px) {
+	.btn-assis{
+		display: block;
+		position: absolute;
+		top: 9%;
+		z-index: 999;
+	}
+	.main-left{
+		display: none;
+		position: absolute;
+		width: 86%;
+		height: auto;
+		overflow: hidden;
+		/* top: 16%; */
+		/* left: 4%; */
+		/* right: 0%; */
+		z-index: 1101;
+		background-color: #000;
+		opacity: 0.74;
+		border-radius: 11px;
+	}
+	.main-left img{
+		opacity: 1 !important;
+	}
+	.main-center{
+		/* position: static; */
+	}
 }
 
 @media (max-width: 380px) {
@@ -173,63 +226,6 @@ iframe{
 	.footHeart>a>img{
 	}
 }
-@media (max-width: 575px) {
-	.btn-assis{
-		display: block;
-		position: absolute;
-		top: 9%;
-		z-index: 999;
-	}
-	.main-left{
-		display: none;
-		position: absolute;
-		width: 82%;
-		height: auto;
-		overflow: hidden;
-		top: 16%;
-		left: 9%;
-		z-index: 1101;
-		background-color: #000;
-		opacity: 0.7;
-		border-radius: 11px;
-	}
-	.main-left img{
-		opacity: 1 !important;
-	}
-	.main-center{
-		/* position: static; */
-	}
-}
 
 
 
-
-
-/* ----------------------header----------------------- */
-header{
-	/* border: 1px solid red; */
-}
-header .container-xl{
-	background-image: url('../images/grass.png');
-	background-size: auto 36px;
-	background-repeat: repeat-x;
-	background-position: bottom;
-}
-
-/* ------------------socical------------------- */
-ul.socical-me{
-	list-style-type: none;
-	width: auto;
-}
-ul.socical-me>li{
-	font-size: 2.4vmax;
-	float: left;
-	padding: 0 3px;
-}
-ul.socical-me>li>a{
-	color: black;
-}
-ul.socical-me>li>a:hover{
-	color:#d5a32a;
-	transition: .6s all;
-}
