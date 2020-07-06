@@ -17,6 +17,13 @@ body{
 	background-attachment: fixed;
 	position: relative;
 }
+#hide-menu{
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	z-index: -5;
+	background-color: transparent;
+}
 .clock{
 	padding: 0;
 	color: red;
@@ -181,7 +188,7 @@ iframe{
 		overflow: hidden;
 		top: 16%;
 		left: 9%;
-		z-index: 1000;
+		z-index: 1101;
 		background-color: #000;
 		opacity: 0.7;
 		border-radius: 11px;
