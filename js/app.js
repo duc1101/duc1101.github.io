@@ -99,12 +99,19 @@ function clock(){
 		hour.innerHTML = (d.getHours() < 10) ? '0'+d.getHours() : d.getHours();
 		minute.innerHTML = ':'+((d.getMinutes() < 10) ? '0'+d.getMinutes() : d.getMinutes()); 
 		second.innerHTML = ':'+((d.getSeconds() < 10) ? '0'+d.getSeconds() : d.getSeconds());
-		if(d.getHours() < 10){
-			// bgimg.style.backgroundImage = 'url("https://image.freepik.com/free-photo/beautiful-outdoor-nature-landscape-sea-beach-with-coconut-palm-tree_74190-8417.jpg")';
+		if(d.getHours() < 5){
+			bgimg.style.backgroundImage = 'url("../images/5h.jpg")';
+		}else if(d.getHours() < 8){
+			bgimg.style.backgroundImage = 'url("../images/8h.jpg")';
+		}else if(d.getHours() < 11){
+			bgimg.style.backgroundImage = 'url("../images/11h.jpg")';
 		}else if(d.getHours() < 16){
-			// bgimg.style.backgroundImage = 'url("https://image.freepik.com/free-vector/landscape-background-ocean-day-time_1639-10107.jpg")';
-		}else{
-			// bgimg.style.backgroundImage = 'url("../images/bg1.jpg")';
+			bgimg.style.backgroundImage = 'url("../images/16h.jpg")';
+		}else if(d.getHours() < 19){
+			bgimg.style.backgroundImage = 'url("../images/20h.jpg")';
+		}
+		else{
+			bgimg.style.backgroundImage = 'url("../images/24h.jpg")';
 		}
 	},1000);
 };
