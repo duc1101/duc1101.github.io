@@ -41,43 +41,43 @@
 	"mainLeft":{
 		"1":
 		{
-			"id":1,"sty":"margin-top: 4px;","link":"https://www.facebook.com","title":"Facebook","image":"images/Facebook.png"
+			"id":1,"sty":"margin-top: 4px;","link":"https://www.facebook.com","title":"Facebook","image":"images/facebook.png"
 		},
 		"2":
 		{
-			"id":2,"sty":"","link":"https://chat.zalo.me","title":"Chat Zalo","image":"images/Zalo.png"
+			"id":2,"sty":"","link":"https://chat.zalo.me","title":"Chat Zalo","image":"images/zalo.png"
 		},
 		"3":
 		{
-			"id":3,"sty":"margin-left: 4px; margin-bottom: 4px; margin-top: -4px;","link":"https://mega.nz","title":"Mega","image":"images/Mega.png"
+			"id":3,"sty":"margin-left: 4px; margin-bottom: 4px; margin-top: -4px;","link":"https://mega.nz","title":"Mega","image":"images/mega.png"
 		},
 		"4":
 		{
-			"id":4,"sty":"margin-top: -4px;","link":"https://www.youtube.com","title":"You Tube","image":"images/Youtube.png"
+			"id":4,"sty":"margin-top: -4px;","link":"https://www.youtube.com","title":"You Tube","image":"images/youtube.png"
 		},
 		"5":
 		{
-			"id":5,"sty":"margin-bottom: 4px;","link":"https://mediafire.com","title":"Mediafire","image":"images/Mediafire.png"
+			"id":5,"sty":"margin-bottom: 4px;","link":"https://mediafire.com","title":"Mediafire","image":"images/mediafire.png"
 		},
 		"6":
 		{
-			"id":6,"sty":"margin-bottom: 4px;","link":"https://fshare.vn","title":"Fshare","image":"images/Fshare.png"
+			"id":6,"sty":"margin-bottom: 4px;","link":"https://fshare.vn","title":"Fshare","image":"images/fshare.png"
 		},
 		"7":
 		{
-			"id":7,"sty":"margin-left: 5px;","link":"https://onedrive.com","title":"One Drive","image":"images/Onedrive.png"
+			"id":7,"sty":"margin-left: 5px;","link":"https://onedrive.com","title":"One Drive","image":"images/onedrive.png"
 		},
 		"8":
 		{
-			"id":8,"sty":"margin-top: -3px;","link":"https://github.com","title":"Github","image":"images/Github.png"
+			"id":8,"sty":"margin-top: -3px;","link":"https://github.com","title":"Github","image":"images/github.png"
 		},
 		"9":
 		{
-			"id":9,"sty":"margin-top: -3px;","link":"https://skype.com","title":"Skype","image":"images/Skype.png"
+			"id":9,"sty":"margin-top: -3px;","link":"https://skype.com","title":"Skype","image":"images/skype.png"
 		},
 		"10":
 		{
-			"id":10,"sty":"margin-top: -3px;","link":"https://shopee.vn","title":"Shopee","image":"images/Shopee.png"
+			"id":10,"sty":"margin-top: -3px;","link":"https://shopee.vn","title":"Shopee","image":"images/shopee.png"
 		}
 	},
 	"mainRight":{
