@@ -1,0 +1,38 @@
+<style>
+	.main-center{
+		display: block;
+		/* background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ; */
+		background-size: 100%;
+		width: 100%;
+	}
+</style>
+<div class="row app-center">
+	<div class="col">
+		<div class="row test-left">
+			<div class="col-3 heart-left" style="" ng-repeat="(key, value) in mainLeft">
+				<a class="" href="{{value.link}}" title="{{value.title}}">
+					<img ng-src="{{value.image}}" alt="" style="{{value.sty}}">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- ------------------------------------------------- -->
+	<div class="col">
+		<div class="row test-left">
+			<div class="col-3 heart-right" ng-repeat="(key, value) in mainRight">
+				<a class="" href="{{value.link}}" title="{{value.title}}">
+					<img ng-src="{{value.image}}" alt="" style="{{value.sty}}" id="id{{value.id}}">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- ------------------------------------------------ -->
+	<div class="mx-auto d-block search-youtube">
+		<form class="form-inline" method="GET" action="https://www.youtube.com/search" autocomplete="on">
+			<div class="form-group-sm mx-auto mb-0 d-block form-custom">
+				<input type="text" class="input-custom" name="q" style="font-family: Niconne; font-size: 26px;" placeholder="Search youtube...">
+				<button type="submit" class="float-right btn p-0 btn-custom" name="btng"><img src="images/search-youtube.png" alt="" title="Tìm kiếm trên youtube"></button>
+			</div>
+		</form>
+	</div>
+</div>
