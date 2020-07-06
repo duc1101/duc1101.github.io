@@ -1,121 +1,142 @@
 <!DOCTYPE html>
 <html ng-app="myApp" ng-controller="AppCtrl">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>💖💞ĐứÇ💝💘</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/logo.png">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <meta charset="utf-8">
+  <title>💖💞ĐứÇ💝💘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="This pages made for my knowleage">
+  <meta name="author" content="Đức - Đoàn Văn Đức">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="_body" onload="nhay();clock();show_button();" onresize="show_button();">
-	<nav class="row">
-		<div class="col-xs-5 text-center duc" id="duc">
-			<name id="m">M</name>
-			<name id="r">r</name>
-			<name id="ch">.</name>
-			<name id="d">D</name>
-			<name id="u">U</name>
-			<name id="c">C</name>
-		</div>
-		<div id="" class="col-xs-3 text-center nav_clock">
-			<span id="hour" style=""></span>
-			<span id="minute" style=""></span>
-			<span id="second" style="color: blue; font-size: 20px;"></span>
-		</div>
-		<div class="col-xs-4 text-right mail_duc">
-			<button type="button" id="bu_mail" onclick="show_menu()">mr.duc0616@gmail.com</button>
-			<span class="" id="sp_mail">mr.duc0616@gmail.com</span>
-		</div>
-	</nav>
-	<div class="row application">
-		<div class="col-sm-3 _container app_left " id="show_app_left">
-			<div class="row">
-				<div class="col-xs-3 row">
-					<div class="col-xs-6 col-sm-12 sub_app" ng-repeat="(key, value) in leftApp | limitTo:2:0">
-						<a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-					</div>
-				</div>
-				<div class="col-xs-6 row">
-					<div class="col-xs-3 col-sm-6 sub_app" ng-repeat="(key, value) in leftApp | limitTo:4:2">
-						<a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-					</div>
-				</div>
-				<div class="col-xs-3 row">
-					<div class="col-xs-6 col-sm-12 sub_app" ng-repeat="(key, value) in leftApp | limitTo:2:6">
-						<a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-12 row container-fluid">
-				<div class="col-xs-3 col-sm-6 row">
-					<div class="col-xs-6  sub_app" ng-repeat="(key, value) in leftApp | limitTo:2:8">
-						<a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-					</div>
-					<div class="col-xs-6  sub_app _hide">
-						<a href="birthday/pttt.html" title="Web demo birthday"><img src="images/Gift-icon.png" alt=""></a>
-					</div>
-				</div>
-				<div class="col-xs-3 col-xs-push-6 col-sm-6 col-sm-push-0 row">
-					<div class="col-xs-6  sub_app" ng-repeat="(key, value) in leftApp | limitTo:2:10">
-						<a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-					</div>
-					<div class="col-xs-6  sub_app _hide">
-					</div>
-				</div>
-				<div class="col-xs-6 col-xs-pull-3 col-sm-12 col-sm-pull-0 _container">
-			<ng-view></ng-view>
-		</div>
-	</div>
-</div>
-<div class="col-sm-7 app_middle ">
-	<div class=" col-xs-6 row _container">
-		<div class="row">
-			<div class="col-xs-3 app_main_mid" ng-repeat="(key, value) in centerAppMain | limitTo:4:0">
-				<a href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-			</div>
-		</div>
-	</div>
-	<div class="col-xs-6 row _container">
-		<div class="row">
-			<div class="col-xs-3 app_main_mid" ng-repeat="(key, value) in centerAppMain | limitTo:4:4">
-				<a href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-			</div>
-		</div>
-	</div>
-	<span class="title_youtube">Tìm nhanh trên YouTube...</span>
-	<FORM method="GET" action="https://www.youtube.com/search" autocomplete="on">
-		<input type="text" name="q" placeholder="Search youtube...">
-		<button type="submit" name="btng"><img src="images/search_youtube_videos_you_tube_look-512.png" alt="" title="Tìm kiếm trên youtube"></button>
-	</FORM>
-	<div class="row custom">
-		<div class=" col-xs-6 row _container">
-			<div class="col-xs-3 app_add"  ng-repeat="(key, value) in centerAppMain" ng-show="key % 2 == 0 && key > 7">
-				<a href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-			</div>
-		</div>
-		<div class=" col-xs-6 row _container">
-			<div class="col-xs-3 app_add" ng-repeat="(key, value) in centerAppMain" ng-show="key % 2 != 0 && key > 7">
-				<a href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="row col-sm-2 app_right _container">
-	<div class="col-xs-4 col-sm-12" ng-repeat="(key, value) in rightApp">
-		<a href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
-		<a href="{{value.link}}" title="{{value.title}}">{{value.name}}</a>
-	</div>
-</div>
-</div>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/angular.min.js"></script>
-<script type="text/javascript" src="js/angular-route.min.js"></script>
-<script src="js/jquery-2.1.1.min.js"></script>
-<script src="js/jquery.snow.js"></script>	
-<script type="text/javascript" src="js/mr.duc.js"></script>
+<body onload="clock(); nhay();" id="body">
+  <button type="button" class="btn btn-info p-0 btn-assis" id="assistive-left"><img src="images/assistive.png" alt=""></button>
+  <header id="header" class="">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="d-block">
+            <div class="d-inline text-left duc" id="duc">
+              <name class="mrDuc">M</name>
+              <name class="mrDuc">r</name>
+              <name class="mrDuc">.</name>
+              <name class="mrDuc">D</name>
+              <name class="mrDuc">U</name>
+              <name class="mrDuc">C</name>
+            </div>
+            <div class="d-inline float-right p-0 m-0 text-right clock">
+              <span id="hour" style=""></span>
+              <span id="minute" style=""></span>
+              <span id="second" style="color: blue; font-size: 20px;"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col pl-0 pr-0 pl-sm-3">
+              <div class="socical">
+                <ul class="socical-me my-auto p-0 text-justify">
+                  <li><a href="" target="_blank"><em class="fab fa-facebook-square"></em></a><br>
+                  </li>
+                  <li><a href="" target="_blank"><em class="fab fa-instagram"></em></a><br>
+                  </li>
+                  <li><a href="" target="_blank"><em class="fab fa-twitter-square"></em></a><br>
+                  </li>
+                  <li class="last"><a href="" target="_blank"><em class="fab fa-linkedin"></em></a><br>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="contact">
+                <span class="contact-me">
+                  &nbsp;<i class="fas fa-mobile-alt"><small class="text-primary">&nbsp;+84385.xxx.115</small></i>
+                  <br>
+                  <i class="far fa-envelope"><small class="text-primary"> mr.duc0616@gmail.com</small></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /header -->
+  <div class="container-fluid bg-success">
+  </div>
+  <div class="container-xl main">
+    <div class="row">
+      <div class="col-sm-3 pl-4 pr-4 main-left" id="mainLeft">
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3 col-sm-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:4">
+                <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" id="left{{value.id}}"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3 col-sm-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:4:4">
+                <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" id="left{{value.id}}"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 col-sm-6">
+            <div class="row">
+              <div class="col-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:2:8">
+                <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" id="left{{value.id}}"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-12 order-sm-6 p-0">
+           <iframe src="https://www.youtube.com/embed/is8SfylIwmg?&controls=1&playlist=is8SfylIwmg&loop=1" allowfullscreen>
+            <!-- <iframe src="../data/dfgh2).mp4" allowfullscreen> -->
+            </iframe>
+          </div>
+          <div class="col-3 col-sm-6 order-sm-2">
+            <div class="row">
+              <div class="col-6 p-sm-2 p-1" ng-repeat="(key, value) in leftApp | limitTo:2:10">
+                <a class="" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-7 main-center">
+
+        <ng-view></ng-view>
+      </div>
+      <div class="col-sm-2 main-right ">
+        <table class="table table-bordered table-inverse table-hover">
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery first, then Popper.js and Bootstrap JS. -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
