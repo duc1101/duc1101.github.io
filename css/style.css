@@ -50,7 +50,7 @@ iframe{
 }
 .btn-assis img{
 	width: 100%;
-	opacity: .7;
+	opacity: .58;
 }
 .btn-assis img:hover{
 	opacity: 1;
@@ -177,7 +177,7 @@ iframe{
 	.btn-assis{
 		display: block;
 		position: absolute;
-		top: 10%;
+		top: 9%;
 		z-index: 999;
 	}
 	.main-left{
