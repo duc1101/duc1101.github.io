@@ -33,7 +33,6 @@
 		"app_11":{
 			"id":11,"name":"","link":"https://www.google.com.vn/imghp?hl=vi&tab=ii&authuser=0","title":"Hình ảnh","image":"images/GCamera.png"
 		},
-		
 		"app_12":{
 			"id":12,"name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Web Store","image":"images/GStore.png"
 		}
@@ -124,6 +123,50 @@
 		"11":
 		{
 			"id":11,"sty":"","link":"https://tiki.vn","title":"tiki","image":"images/tiki.png"
+		}
+	},
+	"2":{
+		"app_1":{
+			"name":"Duolingo","link":"https://www.duolingo.com","title":"Duolingo - học tiếng anh giao tiếp","image":"images/duolingo.png"
+		},
+		"app_2":{
+			"name":"W3shool","link":"https://www.w3schools.com","title":"W3shool","image":"images/w3shools.png"
+		},
+		"app_3":{
+			"name":"Links vip","link":"https://linksvip.net","title":"Links vip - get Link Fshare 4share","image":"images/link-vip.png"
+		},
+		"app_4":{
+			"name":"Wikipedia","link":"https://www.wikipedia.org","title":"Wikipedia","image":"images/wikipedia.png"
+		},
+		"app_5":{
+			"name":"Cam Bridge","link":"https://dictionary.cambridge.org/vi/dictionary/english/bridge","title":"Cam Bridge","image":"images/Cambridge.png"
+		},
+		"app_6":{
+			"name":"Chia sẻ","link":"http://chiase.io","title":"Chia sẻ","image":"images/chiase.png"
+		},
+		"app_7":{
+			"name":"Icon Archive","link":"http://www.iconarchive.com","title":"Icon Archive","image":"images/iconArchive.png"
+		},
+		"app_8":{
+			"name":"Awesome","link":"https://fontawesome.com","title":"Font Awesome","image":"images/awesome.png"
+		},
+		"app_9":{
+			"name":"Vui ghê","link":"https://vuighe.net","title":"Vui ghê","image":"images/vuighe.png"
+		},
+		"app_10":{
+			"name":"Tutorial","link":"https://www.tutorialspoint.com","title":"Tutorial","image":"images/tutorial.png"
+		},
+		"app_11":{
+			"name":"VinaSearch","link":"https://vinaresearch.net","title":"VinaSearch","image":"images/vinasearch.png"
+		},
+		"app_12":{
+			"name":"Up File","link":"http://upfile.vn","title":"Up File","image":"images/upfile.png"
+		},
+		"app_13":{
+			"name":"Draw","link":"https://www.draw.io","title":"Up File","image":"images/draw.png"
+		},
+		"app_14":{
+			"name":"Xaiandroid","link":"https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html","title":"Root và cài đặt sony m2","image":"images/xaiandroid.png"
 		}
 	}
 }
