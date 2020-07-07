@@ -111,22 +111,15 @@
         </div>
       </div>
       <div class="col-sm-7 main-center">
-
         <ng-view></ng-view>
       </div>
-      <div class="col-sm-2 p-md-2 pl-2 pr-2 main-right ">
-        <table class="table table-bordered table-inverse table-hover">
-          <thead>
-            <tr>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-sm-2 main-right">
+       <div class="row pt-2 appRight">
+          <ul class="col-6 col-sm-12 list-group list-group-horizontal pr-2 app-right" ng-repeat="(key, value) in rightApp">
+           <a class="list-group-item pt-0 pb-0 pr-0" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" class="d-block my-auto mx-auto"></a>
+           <a class="list-group-item p-0 pl-1 limit-1" href="{{value.link}}" title="{{value.title}}">{{value.name}}</a>
+         </ul>
+       </div>
       </div>
     </div>
   </div>

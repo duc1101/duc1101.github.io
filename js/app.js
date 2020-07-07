@@ -10,22 +10,27 @@ myApp.controller('HomeCtrl',function ($scope) {
 	$scope.demo;
 });
 myApp.controller('AppCtrl',function ($scope,$http) {
-	$http.get('data/listApp.json').then(function(listCenter){
+	$http.get('data/listApp.json').then(function(itemList){
 		var leftApp = [];
 		var rightApp = [];
 		var mainLeft = [];
 		var mainRight = [];
-		for(var key in listCenter.data){
+		for(var key in itemList.data){
 			if(key == '0'){
-				for(key2 in listCenter.data[key]){
-					leftApp.push(listCenter.data[key][key2]);
+				for(key2 in itemList.data[key]){
+					leftApp.push(itemList.data[key][key2]);
+				}
+			}
+			else if(key == '2'){
+				for(key2 in itemList.data[key]){
+					rightApp.push(itemList.data[key][key2]);
 				}
 			}
 			else if(key == 'mainLeft'){
 				var j = 1;
 				for(var i = 0; i < 32; i++){
 					if(i==1||i==2||i==4||i==7||i==8||i==12||i==16||i==21||i==26||i==31){
-						mainLeft.push(listCenter.data[key][j]);
+						mainLeft.push(itemList.data[key][j]);
 						j++;
 					}else{
 						mainLeft.push(i);
@@ -36,7 +41,7 @@ myApp.controller('AppCtrl',function ($scope,$http) {
 				var j = 1;
 				for(var i = 0; i < 32; i++){
 					if(i==1||i==2||i==4||i==7||i==11||i==15||i==19||i==22||i==25||i==28||i==31){
-						mainRight.push(listCenter.data[key][j]);
+						mainRight.push(itemList.data[key][j]);
 						j++;
 					}else{
 						mainRight.push(i);
@@ -47,6 +52,7 @@ myApp.controller('AppCtrl',function ($scope,$http) {
 		$scope.leftApp = leftApp;
 		$scope.mainLeft = mainLeft;
 		$scope.mainRight = mainRight;
+		$scope.rightApp = rightApp;
 	});
 });
 function nhay(){
