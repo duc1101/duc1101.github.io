@@ -96,12 +96,12 @@ iframe{
 	width: 100%;
 }
 .main-left a:hover img{
-	transform: rotateY(9600deg);
+	transform: rotateY(11turn);
 	transition: 16s;
 }
 #left7:hover, #left2:hover, #left10:hover{
-	transform: rotateZ(3600deg);
-	transition: 16s;
+	transform: rotateZ(111turn);
+	transition: 60s;
 }
 .main-center{
 	border: 1px solid;
@@ -178,9 +178,52 @@ iframe{
 	right: 87.5%;
 	bottom: -13%;
 }
-.main-right{
+.appRight{
+	height: 68vh;
+	/* width: 100%; */
+	border-bottom: 1px solid #ccc;
+	/* overflow-wrap: break-word; */
+	/* word-wrap: break-word; */
+	/* white-space: normal; */
+	overflow: scroll;
+}
+ul.app-right{
+	max-height: 28px; 
+	margin-bottom: 6px;
+	/* width: 100%; */
+}
+ul.app-right a{
+	text-decoration: none;
+	height: 24px;
+	vertical-align: middle;
+	background-color: transparent;
+	border: none;
+	color: white;
+}
+ul.app-right a.limit-1:hover{
+	padding-left: 8px !important;
+	color: violet;
+}
+ul.app-right a>img{
+	width: 22px;
+}
+.limit-1{
+	/* giới hạn cho tên trong 1 dòng */
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
+div.addr-scroll{
+	/* cuộn dòng cho văn bản dài */
+	display: block;
+	float: left;
+	width: 85%;
+	height: 3em;
+	white-space: normal; 
+	overflow: scroll;
+	/*text-overflow: ;*/
+}
 @media (max-width: 575px) {
 	.btn-assis{
 		display: block;
@@ -211,7 +254,6 @@ iframe{
 }
 
 @media (max-width: 380px) {
-
 	.main-center .col-3, .main-center .col-6{
 		padding-left: 3px;
 		padding-right: 3px
