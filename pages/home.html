@@ -9,7 +9,7 @@
 <div class="row app-center">
 	<div class="col">
 		<div class="row app-m-left">
-			<div class="col-3 heart-left" style="" ng-repeat="(key, value) in mainLeft">
+			<div class="col-3 heart-left" style="" ng-repeat="(key, value) in mainLeft | limitTo:32">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
 					<img ng-src="{{value.image}}" alt="" style="{{value.sty}}" id="id{{value.id}}">
 				</a>
@@ -19,7 +19,7 @@
 	<!-- ------------------------------------------------- -->
 	<div class="col">
 		<div class="row app-m-right">
-			<div class="col-3 heart-right" ng-repeat="(key, value) in mainRight">
+			<div class="col-3 heart-right" ng-repeat="(key, value) in mainRight | limitTo:32">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
 					<img ng-src="{{value.image}}" alt="" style="{{value.sty}}" id="id{{value.id}}">
 				</a>
@@ -30,9 +30,10 @@
 	<div class="mx-auto d-block search-youtube">
 		<form class="form-inline" method="GET" action="https://www.youtube.com/search" autocomplete="on">
 			<div class="form-group-sm mx-auto mb-0 d-block form-custom">
-				<input type="text" class="input-custom" name="q" style="font-family: Niconne; font-size: 26px;" placeholder="Search youtube...">
+				<input type="text" class="input-custom" name="q" placeholder="Search youtube...">
 				<button type="submit" class="float-right btn p-0 btn-custom" name="btng"><img src="images/search-youtube.png" alt="" title="Tìm kiếm trên youtube"></button>
 			</div>
 		</form>
 	</div>
+	
 </div>
