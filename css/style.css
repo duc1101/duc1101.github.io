@@ -68,21 +68,16 @@ iframe{
 	border: 2px solid red;
 	border-radius: 5px;
 }
-.btn-assis{
+#assistive-left{
 	display: none;
 	border: none;
 	background-color: transparent;
 	width: 11%;
+	opacity: .3;
 }
-.btn-assis:hover{
-	background-color: transparent;
-}
-.btn-assis img{
+#assistive-left img{
 	width: 100%;
-	opacity: .58;
-}
-.btn-assis img:hover{
-	opacity: 1;
+	/* opacity: .3; */
 }
 .main-left{
 	position: static;
@@ -220,11 +215,15 @@ div.addr-scroll{
 	iframe{
 		height: 28vw;
 	}
-	.btn-assis{
+	#assistive-left{
 		display: block;
 		position: absolute;
 		top: 42%;
 		z-index: 999;
+	}
+	#assistive-left:hover{
+		background-color: transparent;
+		opacity: 1 !important;
 	}
 	.main{
 		position: relative;
