@@ -6,6 +6,10 @@
 	font-family:led_7;
 	src:url('../fonts/digital-7.ttf') format('truetype');
 }
+@font-face {
+	font-family:Srisakdi-Bold;
+	src:url('../fonts/Srisakdi-Bold.ttf') format('truetype');
+}
 body{
 	min-height: 100vh;
 	width: 100%;
@@ -151,6 +155,8 @@ iframe{
 	background-color: transparent;
 	border: none;
 	color: white;
+	font-family: Srisakdi-Bold;
+	font-size: 22px;
 	outline: none;
 }
 .btn-custom{
