@@ -138,7 +138,7 @@ $(document).ready(function(){
 	$("#assistive-left").click(function(){
 		$("#assistive-left").hide(0,function(){
 			$("#mainLeft").animate({
-				bottom: "50%",
+				bottom: "56%",
 				left: "7%",
 				width: "toggle",
 				height: "toggle"
