@@ -68,6 +68,7 @@ ul.socical-me>li>a:hover{
 }
 iframe{
 	width: 100%;
+	height: 16vw;
 	margin: 11px auto;
 	border: 2px solid red;
 	border-radius: 5px;
@@ -177,7 +178,7 @@ iframe{
 	bottom: -13%;
 }
 .appRight{
-	max-height: 212px;
+	max-height: 20vw;
 	border-bottom: 1px solid #ccc;
 	overflow: scroll;
 }
@@ -219,7 +220,7 @@ div.addr-scroll{
 }
 @media (max-width: 575px) {
 	iframe{
-		height: 28vw;
+		height: 30vw;
 	}
 	#assistive-left{
 		display: block;
