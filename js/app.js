@@ -138,7 +138,7 @@ $(document).ready(function(){
 	$("#assistive-left").click(function(){
 		$("#assistive-left").hide(0,function(){
 			$("#mainLeft").animate({
-				bottom: "56%",
+				bottom: "50%",
 				left: "7%",
 				width: "toggle",
 				height: "toggle"
@@ -149,7 +149,7 @@ $(document).ready(function(){
 	$("#bg-menu-l").click(function(){
 		$("#mainLeft").hide(350,function(){
 			$("#bg-menu-l").css("z-index", "-5");
-			$("#assistive-left").animate({opacity: "1"},0).show().delay(2000).animate({opacity: ".3"},0);
+			$("#assistive-left").animate({opacity: "1"},0).show().delay(2000).animate({opacity: ".38"},0);
 		});
 	});
 });
