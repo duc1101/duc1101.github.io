@@ -163,7 +163,7 @@ iframe{
 .btn-custom{
 	width: 36px;
 }
-.search-youtube img{
+.search-youtube img{8
 	width: 36px;
 	background-color: transparent;
 }
@@ -250,6 +250,9 @@ div.addr-scroll{
 	.main-left img{
 		opacity: 1 !important;
 	}
+.appRight{
+max-height: 250px;
+} 
 }
 
 @media (max-width: 380px) {
