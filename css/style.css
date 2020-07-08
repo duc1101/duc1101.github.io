@@ -231,7 +231,7 @@ div.addr-scroll{
 	}
 	.main-left{
 		display: none;
-		position: absolute;
+		position: fixed;
 		width: 86%;
 		height: auto;
 		overflow: hidden;
