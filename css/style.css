@@ -217,8 +217,8 @@ div.addr-scroll{
 	}
 	#assistive-left{
 		display: block;
-		position: absolute;
-		top: 42%;
+		position: fixed;
+		top: 50%;
 		z-index: 999;
 	}
 	#assistive-left:hover{
