@@ -5,28 +5,44 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'pages/home.html',
 		controller: 'HomeCtrl'
 	})
-});
-myApp.controller('HomeCtrl',function ($scope) {
-	$scope.demo;
+	.when('/kw', {
+		templateUrl: 'pages/win-key.html',
+		controller: 'kwCtrl'
+	})
 });
 myApp.controller('AppCtrl',function ($scope,$http) {
 	$http.get('data/listApp.json').then(function(itemList){
 		var leftApp = [];
 		var rightApp = [];
-		var mainLeft = [];
-		var mainRight = [];
+		var custom = [];
 		for(var key in itemList.data){
 			if(key == '0'){
 				for(key2 in itemList.data[key]){
 					leftApp.push(itemList.data[key][key2]);
 				}
 			}
-			else if(key == '2'){
+			else if(key == '1'){
 				for(key2 in itemList.data[key]){
 					rightApp.push(itemList.data[key][key2]);
 				}
 			}
-			else if(key == 'mainLeft'){
+			else if(key == '2'){
+				for(key2 in itemList.data[key]){
+					custom.push(itemList.data[key][key2]);
+				}
+			}
+		}
+		$scope.leftApp = leftApp;
+		$scope.rightApp = rightApp;
+		$scope.custom = custom;
+	});
+});
+myApp.controller('HomeCtrl',function ($scope,$http) {
+	$http.get('data/listApp.json').then(function(itemList){
+		var mainRight = [];
+		var mainLeft = [];
+		for(var key in itemList.data){
+			if(key == 'mainLeft'){
 				var j = 1;
 				for(var i = 0; i < 32; i++){
 					if(i==1||i==2||i==4||i==7||i==8||i==12||i==16||i==21||i==26||i==31){
@@ -49,21 +65,35 @@ myApp.controller('AppCtrl',function ($scope,$http) {
 				}
 			}
 		}
-		$scope.leftApp = leftApp;
 		$scope.mainLeft = mainLeft;
 		$scope.mainRight = mainRight;
-		$scope.rightApp = rightApp;
+	});
+});
+myApp.controller('kwCtrl',function ($scope,$http) {
+	$http.get('data/wk.json').then(function(item){
+		var kw = [];
+		// var mainLeft = [];
+		for(var key in item.data){
+			kw[key] = [];
+			for(var key2 in item.data[key]){
+				kw[key].push(item.data[key][key2]);
+			}
+		}
+		$scope.w10 = kw['w10'];
+		$scope.w81 = kw['w81'];
+		$scope.w8 = kw['w8'];
+		$scope.w7 = kw['w7'];
 	});
 });
 function nhay(){
-	var d = document.querySelectorAll('name.mrDuc');
+	var d = document.querySelectorAll('a.mrDuc');
 	var bdy = document.querySelector('.main-center');
 	var color_table = ['red','orange','yellow','green','aqua','blue','white'];
 	var time = 0;
 	var count =2;
 	setInterval(function(){
 		bdy.style.borderColor = color_table[time];
-		//gậy như ý
+		//co dãn
 		if(time>1){
 			if(time%6==1){
 				d[0].style.color = color_table[count];
@@ -97,9 +127,8 @@ function nhay(){
 	},111);
 };
 function clock(){
+	var hdimg = document.getElementById("head-con");
 	var bgimg = document.getElementById("body");
-	var bg_table = ['url("images/bg.jpg")','url("images/bg1.jpg")','url("images/bg2.jpg")','url("images/bg3.jpg")','url("images/bg4.jpg")'];
-	var bg_table_2 = ['url("images/bg5.jpg")','url("images/bg6.jpg")','url("images/bg7.jpg")','url("images/bg8.jpg")'];
 	setInterval(function(){
 		var d = new Date();
 		hour.innerHTML = (d.getHours() < 10) ? '0'+d.getHours() : d.getHours();
@@ -115,9 +144,16 @@ function clock(){
 			bgimg.style.backgroundImage = 'url("../images/18h.jpg")';
 		}else if(d.getHours() < 20){
 			bgimg.style.backgroundImage = 'url("../images/20h.jpg")';
-		}
-		else{
+		}else{
 			bgimg.style.backgroundImage = 'url("../images/24h.jpg")';
+		};
+		// --------------------------
+		if(d.getMonth()>3){
+			hdimg.style.backgroundImage = 'url("../images/sum.png")';
+		}else if(d.getMonth()>6){
+			hdimg.style.backgroundImage = 'url("../images/fall.png")';
+		}else if(d.getMonth()>9){
+			hdimg.style.backgroundImage = 'url("../images/win.png")';
 		}
 	},1000);
 };
