@@ -1,67 +1,76 @@
 {
-	"0":{
-		"app_1":{
-			"id":1,"name":"","link":"https://myaccount.google.com","title":"My Account","image":"https://p7.hiclipart.com/preview/297/506/380/computer-icons-user-interface-google-account-my-account-icon.jpg"
+	"0":[
+		{
+			"id": 1, "link": "https://myaccount.google.com", "title": "My Account", "image": "https://p7.hiclipart.com/preview/297/506/380/computer-icons-user-interface-google-account-my-account-icon.jpg"
 		},
-		"app_2":{
-			"id":2,"name":"","link":"https://google.com","title":"Google","image":"images/Google.png"
+		{
+			"id": 2, "link": "https://google.com", "title": "Google", "image": "images/Google.png"
 		},
-		"app_3":{
-			"id":3,"name":"","link":"https://mail.google.com","title":"Gmail","image":"images/GMail.png"
+		{
+			"id": 3, "link": "https://mail.google.com", "title": "Gmail", "image": "images/GMail.png"
 		},
-		"app_4":{
-			"id":4,"name":"","link":"https://drive.google.com","title":"Drive","image":"images/GDrive.png"
+		{
+			"id": 4, "link": "https://drive.google.com", "title": "Drive", "image": "images/GDrive.png"
 		},
-		"app_5":{
-			"id":5,"name":"","link":"https://translate.google.com","title":"Translate","image":"images/GTranslate.png"
+		{
+			"id": 5, "link": "https://translate.google.com", "title": "Translate", "image": "images/GTranslate.png"
 		},
-		"app_6":{
-			"id":6,"name":"","link":"https://www.google.com/maps","title":"Maps","image":"images/GMap.png"
+		{
+			"id": 6, "link": "https://www.google.com/maps", "title": "Maps", "image": "images/GMap.png"
 		},
-		"app_7":{
-			"id":7,"name":"","link":"https://photos.google.com","title":"Google Photos","image":"images/GPhoto.png"
+		{
+			"id": 7, "link": "https://photos.google.com", "title": "Google Photos", "image": "images/GPhoto.png"
 		},
-		"app_8":{
-			"id":8,"name":"","link":"https://contacts.google.com","title":"Contacts","image":"images/GContact.png"
+		{
+			"id": 8, "link": "https://contacts.google.com", "title": "Contacts", "image": "images/GContact.png"
 		},
-		"app_9":{
-			"id":9,"name":"","link":"https://calendar.google.com","title":"Calendar","image":"images/GCalendar.png"
+		{
+			"id": 9, "link": "https://calendar.google.com", "title": "Calendar", "image": "images/GCalendar.png"
 		},
-		"app_10":{
-			"id":10,"name":"","link":"https://earth.google.com/web","title":"Google Earth","image":"images/GEarth.png"
+		{
+			"id": 10, "link": "https://earth.google.com/web", "title": "Google Earth", "image": "images/GEarth.png"
 		},
-		"app_11":{
-			"id":11,"name":"","link":"https://www.google.com.vn/imghp?hl=vi&tab=ii&authuser=0","title":"Hình ảnh","image":"images/GCamera.png"
+		{
+			"id": 11, "link": "https://www.google.com.vn/imghp?hl=vi&tab=ii&authuser=0", "title": "Hình ảnh", "image": "images/GCamera.png"
 		},
-		"app_12":{
-			"id":12,"name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Chrome Web Store","image":"images/GStore.png"
+		{
+			"id": 12, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Chrome Web Store", "image": "images/GStore.png"
 		},
-		"app_13":{
-			"id":12,"name":"","link":"https://play.google.com/store","title":"Google Play","image":"https://www.gstatic.com/android/market_images/web/favicon_v2.ico"
+		{
+			"id": 13, "link": "https://play.google.com/store", "title": "Google Play", "image": "https://www.gstatic.com/android/market_images/web/favicon_v2.ico"
 		},
-		"app_14":{
-			"id":12,"name":"","link":"https://keep.google.com","title":"Google Keep","image":"https://ssl.gstatic.com/keep/icon_128.png"
+		{
+			"id": 14, "link": "https://keep.google.com", "title": "Google Keep", "image": "https://ssl.gstatic.com/keep/icon_128.png"
 		},
-		"app_15":{
-			"id":12,"name":"","link":"https://docs.google.com/spreadsheets","title":"Google Sheets","image":"https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico"
+		{
+			"id": 15, "link": "https://docs.google.com/spreadsheets", "title": "Google Sheets", "image": "https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico"
 		},
-		"app_16":{
-			"id":12,"name":"","link":"https://about.google/intl/vi/products","title":"More...","image":"https://previews.123rf.com/images/valentint/valentint1611/valentint161105470/66212130-more-icon-more-website-button-on-white-background-.jpg"
+		{
+			"id": 16, "link": "https://about.google/intl/vi/products", "title": "More...", "image": "https://previews.123rf.com/images/valentint/valentint1611/valentint161105470/66212130-more-icon-more-website-button-on-white-background-.jpg"
 		},
-		"app_17":{
-			"id":12,"name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Web Store","image":"images/GStore.png"
+		{
+			"id": 17, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
 		},
-		"app_18":{
-			"id":12,"name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Web Store","image":"images/GStore.png"
+		{
+			"id": 18, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
 		},
-		"app_19":{
-			"id":12,"name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Web Store","image":"images/GStore.png"
+		{
+			"id": 19, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
 		},
-		"app_20":{
-			"id":12,"name":"","link":"https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon","title":"Web Store","image":"images/GStore.png"
+		{
+			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+		},
+		{
+			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+		},
+		{
+			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+		},
+		{
+			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
 		}
 
-	},
+	],
 	"mainLeft":{
 		"1":
 		{
@@ -150,48 +159,56 @@
 			"id":11,"sty":"","link":"https://tiki.vn","title":"tiki","image":"images/tiki.png"
 		}
 	},
-	"2":{
-		"app_1":{
-			"name":"Duolingo","link":"https://www.duolingo.com","title":"Duolingo - học tiếng anh giao tiếp","image":"images/duolingo.png"
+	"1":[
+		{
+			"link": "https://www.duolingo.com", "name": "Duolingo - học tiếng anh giao tiếp", "image": "images/duolingo.png"
 		},
-		"app_2":{
-			"name":"Cam Bridge","link":"https://dictionary.cambridge.org/vi/dictionary/english/bridge","title":"Cam Bridge","image":"images/cambridge.png"
+		{
+			"link": "https://dictionary.cambridge.org/vi/dictionary/english/bridge", "name": "Cam Bridge", "image": "images/cambridge.png"
 		},
-		"app_3":{
-			"name":"W3shool","link":"https://www.w3schools.com","title":"W3shool","image":"images/w3shools.png"
+		{
+			"link": "https://www.w3schools.com", "name": "W3shool", "image": "images/w3shools.png"
 		},
-		"app_4":{
-			"name":"Tutorial","link":"https://www.tutorialspoint.com","title":"Tutorial","image":"images/tutorial.png"
+		{
+			"link": "https://www.tutorialspoint.com", "name": "Tutorial", "image": "images/tutorial.png"
 		},
-		"app_5":{
-			"name":"Wikipedia","link":"https://www.wikipedia.org","title":"Wikipedia","image":"images/wikipedia.png"
+		{
+			"link": "https://www.wikipedia.org", "name": "Wikipedia", "image": "images/wikipedia.png"
 		},
-		"app_6":{
-			"name":"Links vip","link":"https://linksvip.net","title":"Links vip - get Link Fshare 4share","image":"images/link-vip.png"
+		{
+			"link": "https://linksvip.net", "name": "Links vip - get Link Fshare 4share", "image": "images/link-vip.png"
 		},
-		"app_7":{
-			"name":"Awesome","link":"https://fontawesome.com","title":"Font Awesome","image":"images/awesome.png"
+		{
+			"link": "https://fontawesome.com", "name": "Font Awesome", "image": "images/awesome.png"
 		},
-		"app_8":{
-			"name":"Icon Archive","link":"http://www.iconarchive.com","title":"Icon Archive","image":"images/iconArchive.png"
+		{
+			"link": "http://www.iconarchive.com", "name": "Icon Archive", "image": "images/iconArchive.png"
 		},
-		"app_9":{
-			"name":"Chia sẻ","link":"http://chiase.io","title":"Chia sẻ","image":"images/chiase.png"
+		{
+			"link": "http://chiase.io", "name": "Chia sẻ", "image": "images/chiase.png"
 		},
-		"app_10":{
-			"name":"Vui ghê","link":"https://vuighe.net","title":"Vui ghê","image":"images/vuighe.png"
+		{
+			"link": "https://vuighe.net", "name": "Vui ghê", "image": "images/vuighe.png"
 		},
-		"app_11":{
-			"name":"VinaSearch","link":"https://vinaresearch.net","title":"VinaSearch","image":"images/vinasearch.png"
+		{
+			"link": "https://vinaresearch.net", "name": "VinaSearch", "image": "images/vinasearch.png"
 		},
-		"app_12":{
-			"name":"Up File","link":"http://upfile.vn","title":"Up File","image":"images/upfile.png"
+		{
+			"link": "http://upfile.vn", "name": "Up File", "image": "images/upfile.png"
 		},
-		"app_13":{
-			"name":"Draw","link":"https://www.draw.io","title":"Up File","image":"images/draw.png"
+		{
+			"link": "https://www.draw.io", "name": "Draw", "image": "images/draw.png"
 		},
-		"app_14":{
+		{
+			"link": "https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html", "name": "Root và cài đặt sony m2", "image": "images/xaiandroid.png"
+		}
+	],
+	"2":[ 
+		{
+			"name":"Key Active Windows kms","link":"#!/kw","title":"","image":"images/duolingo.png"
+		},
+		{
 			"name":"Xài android","link":"https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html","title":"Root và cài đặt sony m2","image":"images/xaiandroid.png"
 		}
-	}
+	]
 }
