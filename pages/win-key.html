@@ -1,0 +1,68 @@
+<style>
+	.main-center{
+		max-height: 100vw !important;
+		overflow: scroll;
+		padding-bottom: 0;
+	}
+</style>
+<div class="container-fluid pl-0 pr-0 pt-3 small">
+	<div class="card text-center">
+		<div class="card-body pl-1 pr-1 pb-0" >
+			<h4 class="card-title">KMS client setup keys - by Microsoft</h4>
+			<a href="https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys" class="card-link"><strong>See more: Microsoft</strong></a>
+			<h6 class="card-subtitle mb-2 text-muted text-left text-primary">Windows 10, all supported Semi-Annual Channel versions</h6>
+			<p class="card-text">
+				<table class="table table-hover table-responsive table-sm">
+					<tr class="">
+						<td><strong>Operating system edition</strong></td>
+						<td><strong>KMS Client Setup Key</strong></td>
+					</tr>
+					<tr ng-repeat="(key, value) in w10" class="small">
+						<td class="text-left">{{value.name}}</td>
+						<td class="text-left">{{value.k}}</td>
+					</tr>
+				</table>
+			</r>
+			<h6 class="card-subtitle mb-2 text-muted text-left text-primary">Windows 8.1</h6>
+			<p class="card-text">
+				<table class="table table-hover table-responsive table-sm">
+					<tr class="">
+						<td><strong>Operating system edition</strong></td>
+						<td><strong>KMS Client Setup Key</strong></td>
+					</tr>
+					<tr ng-repeat="(key, value) in w81" class="small">
+						<td class="text-left">{{value.name}}</td>
+						<td class="text-left">{{value.k}}</td>
+					</tr>
+				</table>
+			</p>
+			<h6 class="card-subtitle mb-2 text-muted text-left text-primary">Windows 8</h6>
+			<p class="card-text">
+				<table class="table table-hover table-responsive table-sm">
+					<tr class="">
+						<td><strong>Operating system edition</strong></td>
+						<td><strong>KMS Client Setup Key</strong></td>
+					</tr>
+					<tr ng-repeat="(key, value) in w8" class="small">
+						<td class="text-left">{{value.name}}</td>
+						<td class="text-left">{{value.k}}</td>
+					</tr>
+				</table>
+			</p>
+			<h6 class="card-subtitle mb-2 text-muted text-left text-primary">Windows 7</h6>
+			<p class="card-text">
+				<table class="table table-hover table-responsive table-sm">
+					<tr class="">
+						<td><strong>Operating system edition</strong></td>
+						<td><strong>KMS Client Setup Key</strong></td>
+					</tr>
+					<tr ng-repeat="(key, value) in w7" class="small">
+						<td class="text-left">{{value.name}}</td>
+						<td class="text-left">{{value.k}}</td>
+					</tr>
+				</table>
+			</p>
+		</div>
+		<a class="btn btn-info btn-sm float-right" href="https://gist.github.com/CHEF-KOCH/29cac70239eed583ad1c96dcb6de364b" role="button">KMS digiboy</a>
+	</div>
+</div>

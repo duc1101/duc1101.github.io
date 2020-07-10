@@ -17,17 +17,17 @@
 <body onload="clock(); nhay();" id="body" onresize="checkMenu();">
   <button type="button" class="btn btn-info p-0 btn-assis" id="assistive-left"><img src="images/assistive.png" alt=""></button>
   <header id="header" class="">
-    <div class="container-xl">
+    <div class="container-xl" id="head-con">
       <div class="row">
         <div class="col-sm-6">
           <div class="d-block">
             <div class="d-inline text-left duc" id="duc">
-              <name class="mrDuc">M</name>
-              <name class="mrDuc">r</name>
-              <name class="mrDuc">.</name>
-              <name class="mrDuc">D</name>
-              <name class="mrDuc">U</name>
-              <name class="mrDuc">C</name>
+              <a class="mrDuc" href="/">M</a>
+              <a class="mrDuc" href="/">r</a>
+              <a class="mrDuc" href="/">.</a>
+              <a class="mrDuc" href="/">D</a>
+              <a class="mrDuc" href="/">U</a>
+              <a class="mrDuc" href="/">C</a>
             </div>
             <div class="d-inline float-right p-0 m-0 text-right clock">
               <span id="hour" style=""></span>
@@ -40,7 +40,7 @@
           <div class="row">
             <div class="col pl-0 pr-0">
               <div class="socical">
-                <ul class="socical-me my-auto p-0 text-justify">
+                <ul class="socical-me my-auto p-0 text-justify text-danger">
                   <li class="socical-icon"><a href="https://fb.com/mr.duc0616" target="_blank"><em class="fab fa-facebook-square"></em></a><br>
                   </li>
                   <li class="socical-icon"><a href="https://instagram.com/mr.duc0616" target="_blank"><em class="fab fa-instagram"></em></a><br>
@@ -53,11 +53,11 @@
               </div>
             </div>
             <div class="col pl-0 pr-0">
-              <div class="contact">
+              <div class="text-danger contact">
                 <span class="contact-me">
-                  &nbsp;<i class="fas fa-mobile-alt text-warning"><small class="text-primary">&nbsp;+84385.xxx.115</small></i>
+                  &nbsp;<i class="fas fa-mobile-alt text-warning"><small class="text-danger">&nbsp;+84385.xxx.115</small></i>
                   <br>
-                  <i class="far fa-envelope text-warning"><small class="text-body font-weight-bold"> mr.duc0616@gmail.com</small></i>
+                  <i class="far fa-envelope text-warning"><small class="text-body font-weight-bold text-danger"> mr.duc0616@gmail.com</small></i>
                 </span>
               </div>
             </div>
@@ -150,14 +150,14 @@
         <div class="row">
           <div class="col-6 col-sm-12 p-2 appRight">
             <ul class="list-group list-group-horizontal mb-2 app-right" ng-repeat="(key, value) in rightApp">
-              <a class="list-group-item p-0" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" class=""></a>
-              <a class="list-group-item p-0 pl-1 limit-1" href="{{value.link}}" title="{{value.title}}">{{value.name}}</a>
+              <a class="list-group-item p-0" href="{{value.link}}" title="{{value.name}}"><img ng-src="{{value.image}}" class=""></a>
+              <a class="list-group-item p-0 pl-1 limit-1" href="{{value.link}}" title="{{value.name}}">{{value.name}}</a>
             </ul>
           </div>
           <div class="col-6 col-sm-12 p-2 appRight">
-            <ul class="list-group list-group-horizontal mb-3 m-sm-2 app-right" ng-repeat="(key, value) in rightApp">
-              <a class="list-group-item p-0" href="{{value.link}}" title="{{value.title}}"><img ng-src="{{value.image}}" class=""></a>
-              <a class="list-group-item p-0 pl-1 limit-1" href="{{value.link}}" title="{{value.title}}">{{value.name}}</a>
+            <ul class="list-group list-group-horizontal mb-3 m-sm-2 app-right" ng-repeat="(key, value) in custom">
+              <a class="list-group-item p-0" href="{{value.link}}" title="{{value.name}}"><img ng-src="{{value.image}}" class=""></a>
+              <a class="list-group-item p-0 pl-1 limit-1" href="{{value.link}}" title="{{value.name}}">{{value.name}}</a>
             </ul>
           </div>
         </div>
