@@ -37,6 +37,10 @@ body{
 #duc>a{
 	text-decoration: none;
 }
+.contact-me small:hover{
+	background-color: white;
+	border-radius: 4px;
+}
 /* ------------------socical------------------- */
 ul.socical-me{
 	list-style-type: none;
