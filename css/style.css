@@ -98,8 +98,8 @@ iframe{
 	width: 100%;
 }
 .main-left a:hover img{
-	transform: rotateY(11turn);
-	transition: 16s;
+	transform: rotateY(80turn);
+	transition: 50s;
 }
 #left7:hover, #left2:hover, #left10:hover{
 	transform: rotateZ(111turn);
@@ -219,9 +219,9 @@ div.addr-scroll{
 	overflow: scroll;
 }
 @media (max-width: 575px) {
-body{
-Background-size: auto 100vh;
-} 
+	body{
+		background-size: auto 100vh;
+	}
 	iframe{
 		height: 30vw;
 	}
