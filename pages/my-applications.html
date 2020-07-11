@@ -6,7 +6,10 @@
 				<table class="table table-hover table-sm">
 					<tr ng-repeat="(key, value) in app" class="w-100">
 						<td class="text-left">
-							<a href="{{value.l}}" class="list-item pt-1 pb-1">{{value.name}}</a>
+							<a href="{{value.l}}" class="w-100 pt-1 pb-1 col-12">
+								<div class="spinner-grow text-danger float-left pr-2" style="width: 11px; height: 11px;"></div>
+								{{value.name}}
+							</a>
 						</td>
 					</tr>
 				</table>
