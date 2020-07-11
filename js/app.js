@@ -9,6 +9,10 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'pages/win-key.html',
 		controller: 'kwCtrl'
 	})
+	.when('/list-app', {
+		templateUrl: 'pages/my-applications.html',
+		controller: 'perApp'
+	})
 });
 myApp.controller('AppCtrl',function ($scope,$http) {
 	$http.get('data/listApp.json').then(function(itemList){
@@ -85,6 +89,16 @@ myApp.controller('kwCtrl',function ($scope,$http) {
 		$scope.w7 = kw['w7'];
 	});
 });
+myApp.controller('perApp',function ($scope,$http) {
+	$http.get('data/myApp.json').then(function(item){
+		var app = [];
+		for(var key in item.data){
+			app.push(item.data[key]);
+		}
+		$scope.app = app;
+		});
+});
+
 function nhay(){
 	var d = document.querySelectorAll('a.mrDuc');
 	var bdy = document.querySelector('.main-center');
