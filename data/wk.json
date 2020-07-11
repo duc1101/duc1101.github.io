@@ -1,6 +1,8 @@
 {
 	"w10":[
-		{"name": "Windows 10 Pro", "k": "W269N-WFGWX-YVC9B-4J6C9-T83GX"},
+		{"name": "Windows 10 Home", "k": "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99"},
+		{"name": "Windows 10 Home N", "k": "3KHY7-WNT83-DGQKR-F7HPR-844BM"},
+		{"name": "Windows 10 Home Single Language", "k": "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH"},
 		{"name": "Windows 10 Pro N", "k": "MH37W-N47XK-V7XM9-C7227-GCQG9"},
 		{"name": "Windows 10 Education", "k": "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2"},
 		{"name": "Windows 10 Education N", "k": "2WH4N-8QGBV-H22JP-CT43Q-MDWWJ"},
