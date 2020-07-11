@@ -220,7 +220,7 @@ div.addr-scroll{
 }
 @media (max-width: 575px) {
 body{
-Background-size: 100vh auto;
+Background-size: auto 100vh;
 } 
 	iframe{
 		height: 30vw;
