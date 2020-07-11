@@ -205,10 +205,10 @@
 	],
 	"2":[ 
 		{
-			"name":"Key Active Windows kms","link":"#!/kw","title":"","image":"https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/48/Key-icon.png"
+			"name":"Key Active Windows kms","link":"#!/kw", "image":"https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/48/Key-icon.png"
 		},
 		{
-			"name":"Xài android","link":"https://xaiandroid.com/root-va-cai-dat-twrp-recovery-cho-sony-xperia-m2-d2305-firmware18-0-a-1-30.html","title":"Root và cài đặt sony m2","image":"images/xaiandroid.png"
+			"name":"List applications","link":"/list-app", "image":"https://icons.iconarchive.com/icons/janosch500/tropical-waters-folders/48/Applications-icon.png"
 		}
 	]
 }
