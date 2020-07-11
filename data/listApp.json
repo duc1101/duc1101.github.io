@@ -208,7 +208,7 @@
 			"name":"Key Active Windows kms","link":"#!/kw", "image":"https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/48/Key-icon.png"
 		},
 		{
-			"name":"List applications","link":"/list-app", "image":"https://icons.iconarchive.com/icons/janosch500/tropical-waters-folders/48/Applications-icon.png"
+			"name":"List applications","link":"#!/list-app", "image":"https://icons.iconarchive.com/icons/janosch500/tropical-waters-folders/48/Applications-icon.png"
 		}
 	]
 }

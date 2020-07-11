@@ -1,5 +1,16 @@
-<div class="container-fluid">
-	<div class="list-group" ng-repeat="(key, value) in app">
-		<a href="{{value.link}}" class="list-group-item list-group-item-action pt-1 pb-1">{{value.name}}</a>
+<div class="container-fluid pl-0 pr-0 pt-3 small">
+	<div class="card text-center">
+		<div class="card-body pl-1 pr-1 pb-0" >
+			<h4 class="card-title text-primary">Some portable and install:</h4>
+			<p class="card-text">
+				<table class="table table-hover table-sm">
+					<tr ng-repeat="(key, value) in app" class="w-100">
+						<td class="text-left">
+							<a href="{{value.l}}" class="list-item pt-1 pb-1">{{value.name}}</a>
+						</td>
+					</tr>
+				</table>
+			</p>
+		</div>
 	</div>
 </div>
