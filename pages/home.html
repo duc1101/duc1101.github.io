@@ -36,10 +36,10 @@
 		</form>
 	</div>
 </div>
-<div class="row  app-center app-cen-foot">
-		<div class="col">
-		<div class="row app-m-left">
-			<div class="col-3 heart-left" style="" ng-repeat="(key, value) in mainLeft | limitTo:16">
+<div class="row app-cen-foot">
+	<div class="col">
+		<div class="row ">
+			<div class="col-3 mb-2" style="" ng-repeat="(key, value) in mainLeft | limitTo:16">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
 					<img ng-src="{{value.image}}" alt="" style="" id="id{value.id}}">
 				</a>
@@ -48,8 +48,8 @@
 	</div>
 	<!-- ------------------------------------------------- -->
 	<div class="col">
-		<div class="row app-m-right">
-			<div class="col-3 heart-right" ng-repeat="(key, value) in mainRight | limitTo:16">
+		<div class="row ">
+			<div class="col-3 mb-2" ng-repeat="(key, value) in mainRight | limitTo:16">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
 					<img ng-src="{{value.image}}" alt="" style="" id="id{{value.id}}">
 				</a>
