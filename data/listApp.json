@@ -236,8 +236,12 @@
 		},
 		{
 			"name": "VietinBank Ipay","link": "https://ebanking.vietinbank.vn/", "image": "https://ebanking.vietinbank.vn/rcas/portal/vietinbank-theme/images/favicon.ico"
-		},{
+		},
+		{
 			"name": "Agribank Ibank","link": "https://ibank.agribank.com.vn/", "image": "images/Agribank.ico"
+		},
+		{
+			"name": "Techcombank E-Banking","link": "https://ib.techcombank.com.vn/", "image": "https://ib.techcombank.com.vn/blank.ico"
 		}
 	]
 }
