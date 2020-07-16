@@ -45,6 +45,7 @@ myApp.controller('HomeCtrl',function ($scope,$http) {
 	$http.get('data/listApp.json').then(function(itemList){
 		var mainRight = [];
 		var mainLeft = [];
+		var mainFoot = [];
 		for(var key in itemList.data){
 			if(key == 'mainLeft'){
 				var j = 1;
@@ -68,9 +69,15 @@ myApp.controller('HomeCtrl',function ($scope,$http) {
 					}
 				}
 			}
+			else if(key == 'mainFoot'){
+				for(var key2 in itemList.data[key]){
+						mainFoot.push(itemList.data[key][key2]);
+				}
+			}
 		}
 		$scope.mainLeft = mainLeft;
 		$scope.mainRight = mainRight;
+		$scope.mainFoot = mainFoot;
 	});
 });
 myApp.controller('kwCtrl',function ($scope,$http) {
