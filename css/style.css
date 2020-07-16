@@ -101,7 +101,7 @@ iframe{
 	transform: rotateY(80turn);
 	transition: 50s;
 }
-#left7:hover, #left2:hover, #left10:hover{
+#left2:hover, #left7:hover, #left10:hover{
 	transform: rotateZ(111turn);
 	transition: 60s;
 }
