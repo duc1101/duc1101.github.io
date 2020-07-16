@@ -235,7 +235,9 @@
 			"name": "VietcomBank Digital","link": "https://vcbdigibank.vietcombank.com.vn/", "image": "https://vcbdigibank.vietcombank.com.vn/assets/images/favicon.ico"
 		},
 		{
-			"name": "VietinBank Ipay","link": "https://ebanking.vietinbank.vn", "image": "https://ebanking.vietinbank.vn/rcas/portal/vietinbank-theme/images/favicon.ico"
+			"name": "VietinBank Ipay","link": "https://ebanking.vietinbank.vn/", "image": "https://ebanking.vietinbank.vn/rcas/portal/vietinbank-theme/images/favicon.ico"
+		},{
+			"name": "Agribank Ibank","link": "https://ibank.agribank.com.vn/", "image": "images/Agribank.ico"
 		}
 	]
 }
