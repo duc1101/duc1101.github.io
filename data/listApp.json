@@ -224,6 +224,12 @@
 		},
 		{
 			"name":"List applications","link":"#!/list-app", "image":"https://icons.iconarchive.com/icons/janosch500/tropical-waters-folders/48/Applications-icon.png"
+		},
+		{
+			"name":"VP Bank online","link":"https://online.vpbank.com.vn/", "image":"https://online.vpbank.com.vn/cb/web/grafx/banklogos/favicon.ico"
+		},
+		{
+			"name":"MB Bank online","link":"https://online.mbbank.com.vn/", "image":"https://online.mbbank.com.vn/retail/img/logo-title.ico"
 		}
 	]
 }
