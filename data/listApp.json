@@ -1,7 +1,7 @@
 {
 	"0":[
 		{
-			"id": 1, "link": "https://myaccount.google.com", "title": "My Account", "image": "https://p7.hiclipart.com/preview/297/506/380/computer-icons-user-interface-google-account-my-account-icon.jpg"
+			"id": 1, "link": "https://myaccount.google.com", "title": "My Account", "image": "images/GAccount.png"
 		},
 		{
 			"id": 2, "link": "https://google.com", "title": "Google", "image": "images/Google.png"
@@ -37,37 +37,52 @@
 			"id": 12, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Chrome Web Store", "image": "images/GStore.png"
 		},
 		{
-			"id": 13, "link": "https://play.google.com/store", "title": "Google Play", "image": "https://www.gstatic.com/android/market_images/web/favicon_v2.ico"
+			"id": 13, "link": "https://play.google.com/store", "title": "Google Play", "image": "images/GPlay.png"
 		},
 		{
-			"id": 14, "link": "https://keep.google.com", "title": "Google Keep", "image": "https://ssl.gstatic.com/keep/icon_128.png"
+			"id": 14, "link": "https://keep.google.com", "title": "Google Keep", "image": "images/GKeep.png"
 		},
 		{
-			"id": 15, "link": "https://docs.google.com/spreadsheets", "title": "Google Sheets", "image": "https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico"
+			"id": 15, "link": "https://docs.google.com/spreadsheets", "title": "Google Sheets", "image": "images/GSheet.png"
 		},
 		{
-			"id": 16, "link": "https://about.google/intl/vi/products", "title": "More...", "image": "https://previews.123rf.com/images/valentint/valentint1611/valentint161105470/66212130-more-icon-more-website-button-on-white-background-.jpg"
+			"id": 16, "link": "https://about.google/intl/vi/products", "title": "More...", "image": "images/more.png"
 		},
 		{
-			"id": 17, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+			"id": 17, "link": "https://www.icloud.com/", "title": "Apple Icloud", "image": "images/AAcc.png"
 		},
 		{
-			"id": 18, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+			"id": 18, "link": "https://www.icloud.com/photos/", "title": "Photos", "image": "images/APhotos.png"
 		},
 		{
-			"id": 19, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+			"id": 19, "link": "https://www.icloud.com/iclouddrive/", "title": "Icloud drive", "image": "images/AIcloud.png"
 		},
 		{
-			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+			"id": 20, "link": "https://www.icloud.com/contacts/", "title": "Contacts", "image": "images/AContact.png"
 		},
 		{
-			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+			"id": 21, "link": "https://www.icloud.com/mail", "title": "Mail", "image": "images/AMail.png"
 		},
 		{
-			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+			"id": 22, "link": "https://www.icloud.com/calendar/", "title": "Calendar", "image": "images/ACalendar.png"
 		},
 		{
-			"id": 20, "link": "https://chrome.google.com/webstore/category/extensions?utm_source=chrome-ntp-icon", "title": "Web Store", "image": "images/GStore.png"
+			"id": 23, "link": "https://www.icloud.com/notes/", "title": "Note", "image": "images/ANote.png"
+		},
+		{
+			"id": 24, "link": "https://www.icloud.com/find/", "title": "Find my phone", "image": "images/AFind.png"
+		},
+		{
+			"id": 25, "link": "https://www.icloud.com/fmf/", "title": "Find friend", "image": "images/AFriend.png"
+		},
+		{
+			"id": 26, "link": "https://www.icloud.com/pages/", "title": "Pages", "image": "images/APage.png"
+		},
+		{
+			"id": 27, "link": "https://www.icloud.com/reminders/", "title": "Reminders", "image": "images/AReminder.png"
+		},
+		{
+			"id": 28, "link": "https://www.icloud.com/keynote/", "title": "Keynote", "image": "images/AKeynote.png"
 		}
 
 	],
