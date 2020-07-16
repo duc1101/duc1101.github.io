@@ -35,5 +35,25 @@
 			</div>
 		</form>
 	</div>
-	
+</div>
+<div class="row app-cen-foot">
+		<div class="col">
+		<div class="row app-m-left">
+			<div class="col-3 heart-left" style="" ng-repeat="(key, value) in mainLeft | limitTo:16">
+				<a class="" href="{{value.link}}" title="{{value.title}}">
+					<img ng-src="{{value.image}}" alt="" style="" id="id{value.id}}">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- ------------------------------------------------- -->
+	<div class="col">
+		<div class="row app-m-right">
+			<div class="col-3 heart-right" ng-repeat="(key, value) in mainRight | limitTo:16">
+				<a class="" href="{{value.link}}" title="{{value.title}}">
+					<img ng-src="{{value.image}}" alt="" style="" id="id{{value.id}}">
+				</a>
+			</div>
+		</div>
+	</div>
 </div>
