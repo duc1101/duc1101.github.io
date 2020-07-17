@@ -112,7 +112,7 @@
 		},
 		"7":
 		{
-			"id":7,"sty":"margin-left: 5px;","link":"https://onedrive.com","title":"One Drive","image":"images/onedrive.png"
+			"id":7,"sty":"margin-left: 5px;","link":"https://onedrive.com","title":"One Drive","image":"images/MOnedrive.png"
 		},
 		"8":
 		{
@@ -120,7 +120,7 @@
 		},
 		"9":
 		{
-			"id":9,"sty":"margin-top: -3px;","link":"https://skype.com","title":"Skype","image":"images/skype.png"
+			"id":9,"sty":"margin-top: -3px;","link":"https://telegram.com","title":"Telegram","image":"images/telegram.png"
 		},
 		"10":
 		{
@@ -154,11 +154,11 @@
 		},
 		"7":
 		{
-			"id":7,"sty":"margin-left: -5px;","link":"https://dropbox.com","title":"Dropbox","image":"images/dropbox.png"
+			"id":7,"sty":"margin-left: -5px;","link":"https://dropbox.com","title":"Dropbox","image":"images/MDropbox.png"
 		},
 		"8":
 		{
-			"id":8,"sty":"margin-top: -3px;","link":"https://outlook.com","title":"Outlook","image":"images/outlook.png"
+			"id":8,"sty":"margin-top: -3px;","link":"https://outlook.com","title":"Outlook","image":"images/MOutlook.png"
 		},
 		"9":
 		{
@@ -175,20 +175,66 @@
 	},
 	"mainFoot":[
 		{
-			"link": "https://microsoft.com", "title": "Microsoft", "image": "images/microsoft.png"
+			"link": "https://microsoft.com", "title": "Microsoft", "image": "images/Microsoft.png"
 		},
 		{
-			"link":"https://skype.com","title":"Skype","image":"images/skype.png"
+			"link":"https://www.office.com","title":"Office","image":"images/MOffice.png"
 		},
 		{
-			"link":"https://onedrive.com","title":"One Drive","image":"images/onedrive.png"
+			"link":"https://skype.com","title":"Skype","image":"images/MSkype.png"
 		},
 		{
-			"link":"https://dropbox.com","title":"Dropbox","image":"images/dropbox.png"
+			"link":"https://www.office.com/launch/word/","title":"Microsoft Word","image":"images/MWord.png"
 		},
 		{
-			"link":"https://outlook.com","title":"Outlook","image":"images/outlook.png"
+			"link":"https://onedrive.com","title":"One Drive","image":"images/MOnedrive.png"
+		},
+		{
+			"link":"https://www.office.com/launch/excel/","title":"Microsoft Excel","image":"images/MExcel.png"
+		},
+		{
+			"link":"https://dropbox.com","title":"Dropbox","image":"images/MDropbox.png"
+		},
+		{
+			"link":"https://www.office.com/launch/powerpoint/","title":"Microsoft Powerpoint","image":"images/MPower.png"
+		},
+		{
+			"link":"https://outlook.com","title":"Outlook","image":"images/MOutlook.png"
+		},
+		{
+			"link":"https://www.onenote.com/notebooks/","title":"Microsoft OneNote","image":"images/MOnenote.png"
+		},
+		{
+			"link":"https://outlook.live.com/calendar/","title":"Microsoft Calendar","image":"images/MCalendar.png"
+		},
+		{
+			"link":"https://to-do.microsoft.com/tasks/","title":"Microsoft Todo","image":"images/MTodo.png"
+		},
+		{
+			"link":"https://account.xiaomi.com/","title":"Mi Account","image":"images/MiAcc.png"
+		},
+		{
+			"link":"https://us.i.mi.com/gallery/h5","title":"Mi Photos","image":"images/MiPhotos.png"
+		},
+		{
+			"link":"https://us.i.mi.com/v1#sms/full","title":"Mi Message","image":"images/MiMess.png"
+		},
+		{
+			"link":"https://us.i.mi.com/v1#contact/","title":"Mi Contacts","image":"images/MiContact.png"
+		},
+		{
+			"link":"https://us.i.mi.com/note/h5","title":"Mi Note","image":"images/MiNote.png"
+		},
+		{
+			"link":"https://us.i.mi.com/v1#record","title":"Mi Records","image":"images/MiRecord.png"
+		},
+		{
+			"link":"https://us.i.mi.com/mobile/find","title":"Mi Find","image":"images/MiFind.png"
+		},
+		{
+			"link":"https://us.i.mi.com/?_locale=vi_VN#/setting","title":"Mi Setting","image":"images/MiSetting.png"
 		}
+
 	],
 	"1":[
 		{

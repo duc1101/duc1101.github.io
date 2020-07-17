@@ -107,6 +107,7 @@ iframe{
 }
 .main-center{
 	border: 1px solid;
+	border-radius: 11px;
 }
 .main-center .col-3{
 	padding-left: 6px;
@@ -183,7 +184,7 @@ iframe{
 .app-cen-foot{
 	padding-top: 16%;
 }
-.app-cen-foot img{
+.app-cen-foot img,.app-cen-foot-2 img{
 	width: 100%;
 	background-color: transparent;
 	border-radius: 11px;
@@ -191,7 +192,7 @@ iframe{
 	z-index: 11;
 	opacity: .76;
 }
-.app-cen-foot .col-3:hover img{
+.app-cen-foot .col-3:hover img,.app-cen-foot-2 .col-3:hover img{
 	position: relative;
 	opacity: 1;
 	top: -2px;
@@ -270,9 +271,6 @@ div.addr-scroll{
 	}
 	.main-left img{
 		opacity: 1 !important;
-	}
-	.main-center{
-		min-height: 130vw;
 	}
 	.appRight{
 		max-height: 250px;

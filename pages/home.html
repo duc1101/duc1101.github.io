@@ -1,9 +1,5 @@
 <style>
 	.main-center{
-		display: block;
-		/* background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ; */
-		background-size: 100%;
-		width: 100%;
 	}
 </style>
 <div class="row app-center">
@@ -36,10 +32,11 @@
 		</form>
 	</div>
 </div>
+<!-- ------------------------------------------- -->
 <div class="row app-cen-foot">
 	<div class="col">
 		<div class="row ">
-			<div class="col-3 mb-2" style="" ng-repeat="(key, value) in mainFoot" ng-show="key % 2 == 0">
+			<div class="col-3 mb-2" ng-repeat="(key, value) in mainFoot" ng-show="key % 2 == 0 && key < 12">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
 					<img ng-src="{{value.image}}" alt="" style="" id="">
 				</a>
@@ -49,7 +46,28 @@
 	<!-- ------------------------------------------------- -->
 	<div class="col">
 		<div class="row ">
-			<div class="col-3 mb-2" ng-repeat="(key, value) in mainFoot" ng-show="key %2 != 0">
+			<div class="col-3 mb-2" ng-repeat="(key, value) in mainFoot" ng-show="key %2 != 0 && key < 12">
+				<a class="" href="{{value.link}}" title="{{value.title}}">
+					<img ng-src="{{value.image}}" alt="" style="" id="">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row app-cen-foot-2">
+	<div class="col-6">
+		<div class="row ">
+			<div class="col-3 mb-2" style="" ng-repeat="(key, value) in mainFoot" ng-show="key % 2 == 0 && key > 11">
+				<a class="" href="{{value.link}}" title="{{value.title}}">
+					<img ng-src="{{value.image}}" alt="" style="" id="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- ------------------------------------------------- -->
+	<div class="col-6">
+		<div class="row ">
+			<div class="col-3 mb-2" ng-repeat="(key, value) in mainFoot" ng-show="key %2 != 0 && key > 11">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
 					<img ng-src="{{value.image}}" alt="" style="" id="">
 				</a>
