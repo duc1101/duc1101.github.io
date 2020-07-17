@@ -39,7 +39,7 @@
 <div class="row app-cen-foot">
 	<div class="col">
 		<div class="row ">
-			<div class="col-3 mb-2" style="" ng-repeat="(key, value) in mainLeft | limitTo:16">
+			<div class="col-3 mb-2" style="" ng-repeat="(key, value) in mainFoot" ng-show="key % 2 == 0">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
 					<img ng-src="{{value.image}}" alt="" style="" id="id{value.id}}">
 				</a>
@@ -49,9 +49,9 @@
 	<!-- ------------------------------------------------- -->
 	<div class="col">
 		<div class="row ">
-			<div class="col-3 mb-2" ng-repeat="(key, value) in mainRight | limitTo:16">
+			<div class="col-3 mb-2" ng-repeat="(key, value) in mainFoot">
 				<a class="" href="{{value.link}}" title="{{value.title}}">
-					<img ng-src="{{value.image}}" alt="" style="" id="id{{value.id}}">
+					<img ng-src="{{value.image}}" alt="" style="" id="id{{value.id}}" ng-show="key %2 != 0">
 				</a>
 			</div>
 		</div>
