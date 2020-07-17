@@ -84,7 +84,6 @@
 		{
 			"id": 28, "link": "https://www.icloud.com/keynote/", "title": "Keynote", "image": "images/AKeynote.png"
 		}
-
 	],
 	"mainLeft":{
 		"1":
@@ -174,6 +173,23 @@
 			"id":11,"sty":"","link":"https://tiki.vn","title":"tiki","image":"images/tiki.png"
 		}
 	},
+	"mainFoot":[
+		{
+			"link": "https://microsoft.com", "title": "Microsoft", "image": "images/microsoft.png"
+		},
+		{
+			"link":"https://skype.com","title":"Skype","image":"images/skype.png"
+		},
+		{
+			"link":"https://onedrive.com","title":"One Drive","image":"images/onedrive.png"
+		},
+		{
+			"link":"https://dropbox.com","title":"Dropbox","image":"images/dropbox.png"
+		},
+		{
+			"link":"https://outlook.com","title":"Outlook","image":"images/outlook.png"
+		}
+	],
 	"1":[
 		{
 			"link": "https://www.duolingo.com", "name": "Duolingo - học tiếng anh giao tiếp", "image": "images/duolingo.png"
