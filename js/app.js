@@ -145,7 +145,7 @@ function nhay(){
 		}
 		// console.log(time+':'+color_table[count]);
 		time ++;
-	},111);
+	},80);
 };
 function clock(){
 	var hdimg = document.getElementById("head-con");
