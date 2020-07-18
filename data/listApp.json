@@ -262,7 +262,7 @@
 			"link": "http://www.iconarchive.com", "name": "Icon Archive", "image": "images/iconArchive.png"
 		},
 		{
-			"link": "http://chiase.io", "name": "Chia sẻ", "image": "images/chiase.png"
+			"link": "http://upfile.vn", "name": "Up File", "image": "images/upfile.png"
 		},
 		{
 			"link": "https://vuighe.net", "name": "Vui ghê", "image": "images/vuighe.png"
@@ -271,7 +271,7 @@
 			"link": "https://vinaresearch.net", "name": "VinaSearch", "image": "images/vinasearch.png"
 		},
 		{
-			"link": "http://upfile.vn", "name": "Up File", "image": "images/upfile.png"
+			"link": "http://chiase.io", "name": "Chia sẻ", "image": "images/chiase.png"
 		},
 		{
 			"link": "https://www.draw.io", "name": "Draw", "image": "images/draw.png"
