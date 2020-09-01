@@ -112,7 +112,7 @@
 		},
 		"7":
 		{
-			"id":7,"sty":"margin-left: 5px;","link":"https://mobidrive.com/","title":"MobiDrive","image":"https://mobidrive.com/apple-touch-icon.png"
+			"id":7,"sty":"margin-left: 5px;","link":"https://mobidrive.com/","title":"MobiDrive","image":"https://mobidrive.com.png"
 		},
 		"8":
 		{
@@ -154,7 +154,7 @@
 		},
 		"7":
 		{
-			"id":7,"sty":"margin-right: -5px;","link":"https://bachkhoa-aptech.edu.vn/","title":"BKAP","image":"images/aptech.png"
+			"id":7,"sty":"margin-left: -5px;","link":"https://bachkhoa-aptech.edu.vn/","title":"BKAP","image":"images/aptech.png"
 		},
 		"8":
 		{
