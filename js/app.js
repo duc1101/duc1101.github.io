@@ -169,12 +169,12 @@ function clock(){
 			bgimg.style.backgroundImage = 'url("../images/24h.jpg")';
 		};
 		// --------------------------
-		if(d.getMonth()>3){
-			hdimg.style.backgroundImage = 'url("../images/sum.png")';
+		if(d.getMonth()>9){
+			hdimg.style.backgroundImage = 'url("../images/win.png")';
 		}else if(d.getMonth()>6){
 			hdimg.style.backgroundImage = 'url("../images/fall.png")';
-		}else if(d.getMonth()>9){
-			hdimg.style.backgroundImage = 'url("../images/win.png")';
+		}else if(d.getMonth()>3){
+			hdimg.style.backgroundImage = 'url("../images/sum.png")';
 		}
 	},1000);
 };
