@@ -191,6 +191,13 @@ function checkMenu(){
 		bgMenu.style.zIndex = "-5";
 	}
 };
+
+window.onload = function () {
+	var videos = ["https://www.youtube.com/embed/9bZkp7q19f0", "https://www.youtube.com/embed/dQw4w9WgXcQ"];
+	var linkYoutube = videos[Math.floor(Math.random() * videos.length)];
+	$scope.linkYoutube = linkYoutube;
+};
+
 $(document).ready(function(){
 	$("#assistive-left").click(function(){
 		$("#assistive-left").hide(0,function(){
