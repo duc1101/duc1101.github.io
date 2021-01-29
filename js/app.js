@@ -14,15 +14,20 @@ myApp.config(function ($routeProvider) {
 		controller: 'perApp'
 	})
 });
+myApp.filter("trustUrl", function($sce) {
+	return function(Url) {
+		console.log(Url);
+		return $sce.trustAsResourceUrl(Url);
+	};
+});
 myApp.controller('AppCtrl',function ($scope,$http) {
 	$http.get('data/listApp.json').then(function(itemList){
 		var leftApp = [];
 		var rightApp = [];
 		var custom = [];
-		var videos = ['https://www.youtube.com/embed/sKus7wlFXoQ', 'https://www.youtube.com/embed/yg9G1SkwNZY', 'https://www.youtube.com/embed/vw7eit3alA4', 'https://www.youtube.com/embed/W9gO-K7_31M', 'https://www.youtube.com/embed/fJw6tav2ris'];
-		var linkYoutube = videos[2];
+		var videos = ['https://www.youtube.com/embed/sKus7wlFXoQ', 'https://www.youtube.com/embed/yg9G1SkwNZY', 'https://www.youtube.com/embed/vw7eit3alA4', 'https://www.youtube.com/embed/W9gO-K7_31M', 'https://www.youtube.com/embed/X2WBWoo12ow'];
+		var linkYoutube = videos[Math.floor(Math.random()*videos.length)];
 		$scope.linkYoutube = linkYoutube;
-		console.log(linkYoutube);
 		for(var key in itemList.data){
 			if(key == '0'){
 				for(key2 in itemList.data[key]){
