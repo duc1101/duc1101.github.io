@@ -20,7 +20,7 @@ myApp.controller('AppCtrl',function ($scope,$http) {
 		var rightApp = [];
 		var custom = [];
 		var videos = ['https://www.youtube.com/embed/sKus7wlFXoQ', 'https://www.youtube.com/embed/yg9G1SkwNZY', 'https://www.youtube.com/embed/vw7eit3alA4', 'https://www.youtube.com/embed/W9gO-K7_31M', 'https://www.youtube.com/embed/fJw6tav2ris'];
-		var linkYoutube = videos[Math.floor(Math.random() * videos.length)];
+		var linkYoutube = videos[2];
 		$scope.linkYoutube = linkYoutube;
 		for(var key in itemList.data){
 			if(key == '0'){
