@@ -124,33 +124,6 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <small style="color: rgba(0, 0, 0, 0)">
-           private static Connection getConnection() {
-        try {
-            Class.forName(DRIVER);
-            return DriverManager.getConnection(HOST, USERNAME, PASSWORD);
-            -----
-            public static ResultSet executeQuery(String sql, Object... params)(int exUP) {
-        Connection conn = SqlConnect.getConnection();
-        try {
-            CallableStatement cs = conn.prepareCall(sql);
-            if (params != null && params.length > 0) {
-                for (int i = 0; i < params.length; i++) {
-                    cs.setObject((i + 1), params[i]);
-                }
-            }
-            return cs.executeQuery();
-           ------
-                                                  private StudentDAO studentDAO = new StudentDAO();
-            while(rs.next()){
-               Product p = new Product(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getInt(4), rs.getFloat(5), rs.getInt(6));
-               p.output();
-           }
-                                                  
-                                                  --------------------
-            </small>
-        </div>
       </div>
       <div class="col-sm-7 main-center">
         <ng-view></ng-view>
@@ -169,64 +142,6 @@
               <a class="list-group-item p-0 pl-1 limit-1" href="{{value.link}}" title="{{value.name}}">{{value.name}}</a>
             </ul>
           </div>
-        </div>
-        <div class="row">
-          <small style="color: rgba(0, 0, 0, 0)">
-           List<Admin> toList();
-    List<Admin> findByName(String ten);
-    Admin find(int id);
-    void add(Admin entity);
-            --
-            private SanPhamDAOImp sanPhamDAOImp;
-            tblSanPham.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                loadChiTietSP();
-
-            }
-        });
-            -------
-            private void loadCombobox() {
-            List<SanPham> lstSpn = new ArrayList<>();
-            ResultSet rs = SqlConnect.executeQuery("select * from tblDanhMuc", null);
-            while (rs.next()) {
-                DanhMuc dm = new DanhMuc();
-                dm.setId(rs.getInt("id"));
-                dm.setTenDanhMuc(rs.getString("ten_dm"));
-                lstDanhMuc.add(dm);
-            for (DanhMuc danhMuc : lstDanhMuc) {
-            modelDanhMuc.addElement(danhMuc);
-        }
-        cboDanhMuc.setModel(modelDanhMuc);
-            
-            public void loadChiTietSP() {
-        int selectRow = tblSanPham.getSelectedRow();
-        if (selectRow >= 0) {
-            
-            String code = (String) tblSanPham.getValueAt(selectRow, 1);
-            SanPham sp = sanPhamDAOImp.find(code);
-            txtMaSP.setText(String.valueOf(sp.getId()));
-            
-            ---
-            ResultSet rs = SqlConnect.executeQuery("select * from tblDanhMuc where id=?", sp.getId_dm());
-                while (rs.next()) {
-                    DanhMuc dm = new DanhMuc();
-                    dm.setId(rs.getInt("id"));
-                    dm.setTenDanhMuc(rs.getString("ten_dm"));
-
-                    modelDanhMuc.setSelectedItem(dm);
-            =====
-            List<SanPham> lstSanPham = sanPhamDAOImp.toList();
-        DefaultTableModel model = (DefaultTableModel) tblSanPham.getModel();
-        model.setRowCount(0);
-        for (SanPham sp : lstSanPham) {
-            model.addRow(new Object[]{
-                sp.getTen_dm(),
-            });
-        }
-
-        tblSanPham.setModel(model);
-            </small>
         </div>
       </div>
     </div>
