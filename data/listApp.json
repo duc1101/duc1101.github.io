@@ -297,13 +297,13 @@
 			"name": "TPBank eBanking","link": "https://ebank.tpb.vn/", "image": "images/TPBank.ico"
 		},
 		{
-			"name": "MB Bank online","link": "https://online.mbbank.com.vn/", "image": "https://online.mbbank.com.vn/retail/img/logo-title.ico"
+			"name": "MB Bank online","link": "https://online.mbbank.com.vn/", "image": "https://online.mbbank.com.vn/assets/images/favicon.ico"
 		},
 		{
 			"name": "VietcomBank Digital","link": "https://vcbdigibank.vietcombank.com.vn/", "image": "https://vcbdigibank.vietcombank.com.vn/assets/images/favicon.ico"
 		},
 		{
-			"name": "VietinBank Ipay","link": "https://ebanking.vietinbank.vn/rcas/portal/web/retail/bflogin", "image": "https://ebanking.vietinbank.vn/rcas/portal/vietinbank-theme/images/favicon.ico"
+			"name": "VietinBank Ipay","link": "https://ipay.vietinbank.vn/login", "image": "https://ipay.vietinbank.vn/favicon.ico"
 		},
 		{
 			"name": "Agribank Ibank","link": "https://ibank.agribank.com.vn/", "image": "images/Agribank.ico"
