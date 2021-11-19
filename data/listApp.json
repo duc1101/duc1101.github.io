@@ -241,6 +241,9 @@
 			"link": "https://www.duolingo.com", "name": "Duolingo - học tiếng anh giao tiếp", "image": "images/duolingo.png"
 		},
 		{
+			"link": "https://letsenhance.io", "name": "Letsenhance - My images", "image": "https://letsenhance.io/icons/icon-512x512.png?v=bf2dd829b92a95b7b46f9982c63d6971"
+		},
+		{
 			"link": "https://dictionary.cambridge.org/vi/dictionary/english/bridge", "name": "Cam Bridge", "image": "images/cambridge.png"
 		},
 		{
