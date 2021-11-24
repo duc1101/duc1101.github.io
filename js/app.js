@@ -205,7 +205,7 @@ $(document).ready(function(){
 	$("#assistive-left").click(function(){
 		$("#assistive-left").hide(0,function(){
 			$("#mainLeft").animate({
-				bottom: "56%",
+				bottom: "40%",
 				left: "7%",
 				width: "toggle",
 				height: "toggle"
