@@ -241,6 +241,18 @@ div.addr-scroll{
 	width: 85%;
 	overflow: scroll;
 }
+a.lst-my-app{
+	text-decoration: none;
+}
+a.lst-my-app:hover{
+	color: red;
+	padding-left: 33px;
+	transition: 1.5s;
+	font-style: italic;
+}
+
+
+
 @media (max-width: 575px) {
 	body{
 		background-size: auto 100vh;
