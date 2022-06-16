@@ -13,19 +13,26 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'pages/my-applications.html',
 		controller: 'perApp'
 	})
+	.when('/my-ads', {
+		templateUrl: 'pages/my-ads.html',
+		controller: 'myAds'
+	})
 });
+
 myApp.filter("trustUrl", function($sce) {
 	return function(Url) {
 		console.log(Url);
 		return $sce.trustAsResourceUrl(Url);
 	};
 });
+
+
 myApp.controller('AppCtrl',function ($scope,$http) {
 	$http.get('data/listApp.json').then(function(itemList){
 		var leftApp = [];
 		var rightApp = [];
 		var custom = [];
-		var videos = ['https://www.youtube.com/embed/sKus7wlFXoQ', 'https://www.youtube.com/embed/yg9G1SkwNZY', 'https://www.youtube.com/embed/vw7eit3alA4', 'https://www.youtube.com/embed/W9gO-K7_31M', 'https://www.youtube.com/embed/X2WBWoo12ow'];
+		var videos = ['https://www.youtube.com/embed/sKus7wlFXoQ', 'https://www.youtube.com/embed/yg9G1SkwNZY', 'https://www.youtube.com/embed/sKus7wlFXoQ', 'https://www.youtube.com/embed/W9gO-K7_31M', 'https://www.youtube.com/embed/X2WBWoo12ow'];
 		var linkYoutube = videos[Math.floor(Math.random()*videos.length)];
 		$scope.linkYoutube = linkYoutube;
 		for(var key in itemList.data){
@@ -89,6 +96,7 @@ myApp.controller('HomeCtrl',function ($scope,$http) {
 		$scope.mainFoot = mainFoot;
 	});
 });
+
 myApp.controller('kwCtrl',function ($scope,$http) {
 	$http.get('data/wk.json').then(function(item){
 		var kw = [];
@@ -105,6 +113,7 @@ myApp.controller('kwCtrl',function ($scope,$http) {
 		$scope.w7 = kw['w7'];
 	});
 });
+
 myApp.controller('perApp',function ($scope,$http) {
 	$http.get('data/myApp.json').then(function(item){
 		var app = [];
@@ -114,6 +123,25 @@ myApp.controller('perApp',function ($scope,$http) {
 		$scope.app = app;
 		});
 });
+
+myApp.controller('myAds',function ($scope,$http) {
+	$http.get('data/myApp.json').then(function(item){
+		var links = [];
+		var lnkAds = [];
+		for(var key in item.data){
+			links.push(item.data[key].l);
+		}
+		
+		for(var i =0; i<4; i++){
+		var lnk = links[Math.floor(Math.random()*links.length)];
+
+			lnkAds.push(lnk);
+		}
+		console.log(lnkAds);
+		$scope.lnkAds = lnkAds;
+		});
+});
+
 
 function nhay(){
 	var d = document.querySelectorAll('a.mrDuc');
