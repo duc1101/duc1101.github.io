@@ -87,7 +87,7 @@ myApp.controller('HomeCtrl',function ($scope,$http) {
 			}
 			else if(key == 'mainFoot'){
 				for(var key2 in itemList.data[key]){
-						mainFoot.push(itemList.data[key][key2]);
+					mainFoot.push(itemList.data[key][key2]);
 				}
 			}
 		}
@@ -121,7 +121,7 @@ myApp.controller('perApp',function ($scope,$http) {
 			app.push(item.data[key]);
 		}
 		$scope.app = app;
-		});
+	});
 });
 
 myApp.controller('myAds',function ($scope,$http) {
@@ -132,14 +132,14 @@ myApp.controller('myAds',function ($scope,$http) {
 			links.push(item.data[key].l);
 		}
 		
-		for(var i =0; i<4; i++){
-		var lnk = links[Math.floor(Math.random()*links.length)];
+		for(var i =0; i<6; i++){
+			var lnk = links[Math.floor(Math.random()*links.length)];
 
 			lnkAds.push(lnk);
 		}
 		console.log(lnkAds);
 		$scope.lnkAds = lnkAds;
-		});
+	});
 });
 
 
