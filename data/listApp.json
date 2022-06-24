@@ -247,6 +247,9 @@
 			"link": "https://droplink.co/member/dashboard", "name": "Droplink Dashboard", "image": "https://i.imgur.com/zPF7duh.png"
 		},
 		{
+			"link": "https://tineye.com/", "name": "Tineye - tìm ảnh", "image": "https://tineye.com/favicon.ico"
+		},
+		{
 			"link": "https://dictionary.cambridge.org/vi/dictionary/english/bridge", "name": "Cam Bridge", "image": "images/cambridge.png"
 		},
 		{
