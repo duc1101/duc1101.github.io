@@ -8,19 +8,33 @@
 <div class="container-fluid pl-0 pr-0 pt-3 small">
 	<div class="card text-center">
 		<div class="card-body pl-1 pr-1 pb-0" >
-			<h4 class="card-title">My application</h4>
-			<p class="card-text">
-				<table class="table table-hover table-sm">
-					<tr ng-repeat="(key, value) in app" class="w-100">
-						<td class="text-left">
-							<a target="_blank" href="{{value.l}}" class="w-100 pt-1 pb-1 col-12 lst-my-app">
-								<div class="spinner-grow text-danger float-left pr-2 text-primary" style="width: 11px; height: 11px;"></div>
-								{{value.name}}
-							</a>
-						</td>
-					</tr>
-				</table>
-			</p>
+			<h4 class="card-title">Office</h4>
+			<div class="container">
+				<!-- <div class=""> -->
+					<table class="table table-inverse table-hover table-striped table-bordered">
+						<tr class="text-left">
+							<th class="text-center">Version</th>
+							<th class="text-center">Online Setup</th>
+							<th class="text-center">x64</th>
+							<th class="text-center">x86</th>
+						</tr>
+						<tr ng-repeat="(key, value) in office" class="">
+							<td class="col-6 text-left text-danger font-weight-bold pt-1 pb-1 limit-1" colspan="" rowspan="" headers="">
+								{{value.ver}}
+							</td>
+							<td class="text-left p-1 limit-1">
+								<a target="_blank" href="{{value.onl}}" class="text-left pt-1 pb-1 lst-my-app limit-1">Online (x64)</a>
+							</td>
+							<td class="text-left p-1 limit-1">
+								<a target="_blank" href="{{value.x64}}" class="text-left pt-1 pb-1 lst-my-app">x64</a>
+							</td>
+							<td class="text-left p-1 limit-1">
+								<a target="_blank" href="{{value.x86}}" class="text-left pt-1 pb-1 lst-my-app">x86</a>
+							</td>
+						</tr>
+					</table>
+				<!-- </div> -->
+			</div>
 		</div>
 	</div>
 </div>
