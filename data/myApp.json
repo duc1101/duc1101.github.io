@@ -1,24 +1,29 @@
-[
-	{"name": "Youtube Vanced - Apk", "l": "https://droplink.co/Vanced"},
-	{"name": "Official 2016 professional", "l": "https://droplink.co/iOlG4"},
-	{"name": "Official 2019", "l": "https://droplink.co/w4KWJG5Q"},
-	{"name": "UniKey - gõ tiếng việt", "l": "https://droplink.co/1fcqSA"},
-	{"name": "WinRar", "l": "https://droplink.co/KqU90hV"},
-	{"name": "TeamView download", "l": "https://droplink.co/i8Sa"},
-	{"name": "Ultraview download", "l": "https://droplink.co/oB2n8m4e"},
-	{"name": "Zoom meeting download", "l": "https://droplink.co/GCTbWRN8"},
-	{"name": "PhotoShop CS6", "l": "https://droplink.co/MFNJhput"},
-	{"name": "PhotoShop CC - 2018", "l": "https://droplink.co/8oPJUt"},
-	{"name": "Snapgit - chụp ảnh màn hình", "l": "https://droplink.co/wNDarodk"},
-	{"name": "Minitool partition portable 12.3", "l": "https://droplink.co/mAKCD612"},
-	{"name": "VLC media Player", "l": "https://droplink.co/EM27"},
-	{"name": "Notepad++", "l": "https://droplink.co/z861g"},
-	{"name": "Sublime Text 3(portable) - none bootstrap", "l": "https://droplink.co/PoCfa2D"},
-	{"name": "Sublime Text 3(portable) + bs4", "l": "https://droplink.co/TvFGh"},
-	{"name": "Sublime Text 3(portable) + bs3", "l": "https://droplink.co/dItXOOE"},
-	{"name": "NTFS Drive Protection", "l": "https://droplink.co/by3sL"},
-	{"name": "DLC Boot 2019 v3.6", "l": "https://droplink.co/2MXfWi"},
-	{"name": "Test hardware", "l": "https://droplink.co/FGwOk6H"},
-	{"name": "File gõ tắt Unikey", "l": "https://droplink.co/Gotat"},
-	{"name": "Tạo ICO", "l": "https://droplink.co/XsE8OkIR"}
-]
+{
+	"office":[
+		{"ver": "365 ProPlus", "onl": "https://droplink.co/365ProPlusOnl", "x64": "https://droplink.co/365ProPlus", "x86": "404error.com"},
+		{"ver": "365 Business", "onl": "https://droplink.co/365BusinessOnl", "x64": "https://droplink.co/365Business", "x86": "404error.com"},
+		{"ver": "365 HomePrem", "onl": "https://droplink.co/365HomePreOnl", "x64": "https://droplink.co/365HomePre", "x86": "404error.com"},
+		{"ver": "2021 ProPlus", "onl": "https://droplink.co/2021ProPlusOnl", "x64": "https://droplink.co/2021ProPlus", "x86": "404error.com"},
+		{"ver": "2021 Viso", "onl": "https://droplink.co/2021VisoOnl", "x64": "https://droplink.co/2021Viso", "x86": "404error.com"},
+		{"ver": "2021 Project", "onl": "https://droplink.co/2021ProjecProOnl", "x64": "https://droplink.co/2021ProjecPro", "x86": "404error.com"},
+		{"ver": "2019 ProPlus", "onl": "https://droplink.co/2019ProPlusOnl", "x64": "https://droplink.co/2019ProPlus", "x86": "404error.com"},
+		{"ver": "2019 Viso", "onl": "https://droplink.co/2019VisoOnl", "x64": "https://droplink.co/2019Viso", "x86": "404error.com"},
+		{"ver": "2019 Project", "onl": "https://droplink.co/2019ProjecProOnl", "x64": "https://droplink.co/2019ProjecPro", "x86": "404error.com"},
+		{"ver": "2016 ProPlus", "onl": "https://droplink.co/2016ProPlusOnl", "x64": "https://droplink.co/2016ProPlus64", "x86": "https://droplink.co/2016ProPlus32"},
+		{"ver": "2016 Viso", "onl": "https://droplink.co/2016VisoOnl", "x64": "https://droplink.co/2016Viso64", "x86": "https://droplink.co/2016Viso32"},
+		{"ver": "2016 Project", "onl": "https://droplink.co/2016ProjectProOnl", "x64": "https://droplink.co/2016ProjectPro64", "x86": "https://droplink.co/2016ProjectPro32"},
+		{"ver": "2013 ProPlus", "onl": "https://droplink.co/2013ProPlusOnl", "x64": "https://droplink.co/2013ProPlus64", "x86": "https://droplink.co/2013ProPlus32"},
+		{"ver": "2013 Viso", "onl": "https://droplink.co/2013VisoOnl", "x64": "https://droplink.co/2013Viso64", "x86": "https://droplink.co/2013Viso32"},
+		{"ver": "2013 Project", "onl": "https://droplink.co/2013ProjectProOnl", "x64": "https://droplink.co/2013ProjectPro64", "x86": "https://droplink.co/2013ProjectPro32"},
+		{"ver": "2010 ProPlus", "onl": "404error.com", "x64": "https://droplink.co/2010ProPlus64", "x86": "https://droplink.co/2010ProPlus32"},
+		{"ver": "2010 Viso", "onl": "404error.com", "x64": "https://droplink.co/2010Viso64", "x86": "https://droplink.co/2010Viso32"},
+		{"ver": "2007 Enterprise", "onl": "404error.com", "x64": "404error.com", "x86": "https://droplink.co/2007Enterprise32"}
+	],
+	"apps":[
+		{"ver": "365 ProPlus", "onl": "https://droplink.co/365ProPlusOnl", "x64": "https://droplink.co/365ProPlus", "x86": "404error.com"},
+		{"ver": "365 Business", "onl": "https://droplink.co/365BusinessOnl", "x64": "https://droplink.co/365Business", "x86": "404error.com"},
+		{"ver": "365 HomePrem", "onl": "https://droplink.co/365HomePreOnl", "x64": "https://droplink.co/365HomePre", "x86": "404error.com"},
+		{"ver": "2021 ProPlus", "onl": "https://droplink.co/2021ProPlusOnl", "x64": "https://droplink.co/2021ProPlus", "x86": "404error.com"},
+		{"ver": "2019 ProPlus", "onl": "https://droplink.co/2019ProPlusOnl", "x64": "https://droplink.co/2019ProPlus", "x86": "404error.com"}	
+	]
+}
