@@ -230,8 +230,9 @@ ul.app-right a>img{
 .limit-1{
 	/* giới hạn cho tên trong 1 dòng */
 	white-space: nowrap; 
-	overflow: hidden;
-	text-overflow: ellipsis;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+
 }
 
 div.addr-scroll{
@@ -245,10 +246,11 @@ a.lst-my-app{
 	text-decoration: none;
 }
 a.lst-my-app:hover{
-	color: red;
-	padding-left: 33px;
 	transition: 1.5s;
+	color: red;
+	/* font-weight: bold; */
 	font-style: italic;
+	/* padding-left: 33px; */
 }
 
 
