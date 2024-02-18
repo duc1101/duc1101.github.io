@@ -116,11 +116,16 @@ myApp.controller('kwCtrl',function ($scope,$http) {
 
 myApp.controller('perApp',function ($scope,$http) {
 	$http.get('data/myApp.json').then(function(item){
-		var app = [];
+		var categori = [];
+		// var mainLeft = [];
 		for(var key in item.data){
-			app.push(item.data[key]);
+			categori[key] = [];
+			for(var key2 in item.data[key]){
+				categori[key].push(item.data[key][key2]);
+			}
 		}
-		$scope.app = app;
+		$scope.office = categori['office'];
+		console.log(categori['apps']);
 	});
 });
 
