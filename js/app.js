@@ -125,7 +125,7 @@ myApp.controller('perApp',function ($scope,$http) {
 			}
 		}
 		$scope.office = categori['office'];
-		console.log(categori['apps']);
+		// console.log(categori['apps']);
 	});
 });
 
@@ -142,7 +142,7 @@ myApp.controller('myAds',function ($scope,$http) {
 
 			lnkAds.push(lnk);
 		}
-		console.log(lnkAds);
+		// console.log(lnkAds);
 		$scope.lnkAds = lnkAds;
 	});
 });
@@ -157,32 +157,33 @@ function nhay(){
 	var count =2;
 	setInterval(function(){
 		var co_id = Math.floor(Math.random()*border_table.length);
-		console.log(co_id);
+		// console.log(co_id);
 		bdy.style.borderColor = border_table[co_id];
 		//co dãn
 		if(time>1){
 			if(time%6==1){
-				d[0].style.color = color_table[count];
-				d[5].style.color = color_table[count];
+				d[0].style.color = border_table[co_id];
+				d[5].style.color = border_table[co_id];
 			}else if(time%6==4){
-				d[3].style.color = color_table[count];
-				d[2].style.color = color_table[count];
+				d[3].style.color = border_table[co_id];
+				d[2].style.color = border_table[co_id];
 			}else if(time%6==2){
-				d[1].style.color = color_table[count];
-				d[4].style.color = color_table[count];
+				d[1].style.color = border_table[co_id];
+				d[4].style.color = border_table[co_id];
 			}else if(time%6==3){
-				d[2].style.color = color_table[count];
-				d[3].style.color = color_table[count];
+				d[2].style.color = border_table[co_id];
+				d[3].style.color = border_table[co_id];
 				count++;
 			}else if(time%6==5){
-				d[4].style.color = color_table[count];
-				d[1].style.color = color_table[count];
+				d[4].style.color = border_table[co_id];
+				d[1].style.color = border_table[co_id];
 			}else if(time%6==0){
-				d[5].style.color = color_table[count];
-				d[0].style.color = color_table[count];
+				d[5].style.color = border_table[co_id];
+				d[0].style.color = border_table[co_id];
 				count++;
 			}
-		}if(count>6){
+		};
+		if(count>6){
 			count=0;
 		};
 		if(time==7){
@@ -190,7 +191,7 @@ function nhay(){
 		}
 		// console.log(time+':'+color_table[count]);
 		time ++;
-	},111);
+	},150);
 };
 function clock(){
 	var hdimg = document.getElementById("head-con");
