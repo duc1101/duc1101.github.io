@@ -238,6 +238,9 @@
 	],
 	"1":[
 		{
+			"name": "List applications","link": "#!/list-app", "image": "https://icons.iconarchive.com/icons/janosch500/tropical-waters-folders/48/Applications-icon.png"
+		},
+		{
 			"link": "https://quantrimang.com/", "name": "Quuản trị mạng", "image": "https://quantrimang.com/favicon.192.png"
 		},
 		{
