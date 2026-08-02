@@ -5,9 +5,12 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'pages/home.html',
 		controller: 'HomeCtrl'
 	})
+	.when('/notes', {
+		templateUrl: 'pages/notes.html',
+		controller: 'notesCtrl'
+	})
 	.when('/kw', {
-		templateUrl: 'pages/win-key.html',
-		controller: 'kwCtrl'
+		redirectTo: '/notes'
 	})
 	.when('/list-app', {
 		templateUrl: 'pages/my-applications.html',
@@ -97,21 +100,183 @@ myApp.controller('HomeCtrl',function ($scope,$http) {
 	});
 });
 
-myApp.controller('kwCtrl',function ($scope,$http) {
-	$http.get('data/wk.json').then(function(item){
-		var kw = [];
-		// var mainLeft = [];
-		for(var key in item.data){
-			kw[key] = [];
-			for(var key2 in item.data[key]){
-				kw[key].push(item.data[key][key2]);
-			}
+myApp.controller('notesCtrl',function ($scope,$window,$sce) {
+	var NOTE_FILE_PATH = 'data/notes.md';
+	var GITHUB_BRANCH = 'main';
+	var GITHUB_OWNER = '';
+	var GITHUB_REPO = '';
+
+	function inferRepoFromLocation() {
+		var hostname = $window.location.hostname.toLowerCase();
+		var pathParts = $window.location.pathname.split('/').filter(function(p){ return p; });
+		if (hostname.endsWith('.github.io')) {
+			GITHUB_OWNER = hostname.slice(0, hostname.indexOf('.github.io'));
+			GITHUB_REPO = pathParts.length > 0 ? pathParts[0] : GITHUB_OWNER + '.github.io';
 		}
-		$scope.w10 = kw['w10'];
-		$scope.w81 = kw['w81'];
-		$scope.w8 = kw['w8'];
-		$scope.w7 = kw['w7'];
-	});
+	}
+
+	inferRepoFromLocation();
+
+	$scope.noteContent = '';
+	$scope.editEnabled = false;
+	$scope.previewHtml = '';
+	$scope.statusMessage = '';
+	$scope.fileSha = null;
+
+	function bufToBase64(buf) {
+		var binary = '';
+		var bytes = new Uint8Array(buf);
+		for (var i = 0; i < bytes.length; i++) {
+			binary += String.fromCharCode(bytes[i]);
+		}
+		return btoa(binary);
+	}
+
+	function base64Encode(str) {
+		var encoder = new TextEncoder();
+		var bytes = encoder.encode(str);
+		var binary = '';
+		for (var i = 0; i < bytes.length; i++) {
+			binary += String.fromCharCode(bytes[i]);
+		}
+		return btoa(binary);
+	}
+
+	function saveStatus(msg) {
+		$scope.statusMessage = msg;
+		if (!$scope.$$phase) $scope.$apply();
+		setTimeout(function(){ $scope.statusMessage = ''; if(!$scope.$$phase) $scope.$apply(); }, 1800);
+	}
+
+	function renderPreview(content) {
+		try {
+			$scope.previewHtml = $sce.trustAsHtml(marked(content || ''));
+		} catch (e) {
+			$scope.previewHtml = $sce.trustAsHtml('');
+		}
+		if (!$scope.$$phase) $scope.$apply();
+	}
+
+	function getGithubApiHeaders(token) {
+		var headers = { 'Accept': 'application/vnd.github.v3+json' };
+		if (token) headers['Authorization'] = 'token ' + token;
+		return headers;
+	}
+
+	function getGithubFileMeta(token) {
+		if (!GITHUB_OWNER || !GITHUB_REPO) return Promise.reject(new Error('Không thể xác định repo GitHub tự động.'));
+		var url = 'https://api.github.com/repos/' + encodeURIComponent(GITHUB_OWNER) + '/' + encodeURIComponent(GITHUB_REPO) + '/contents/' + encodeURIComponent(NOTE_FILE_PATH) + '?ref=' + encodeURIComponent(GITHUB_BRANCH);
+		return fetch(url, { headers: getGithubApiHeaders(token) }).then(function(res) {
+			if (res.status === 404) return null;
+			if (!res.ok) throw new Error('Không thể lấy metadata: ' + res.status);
+			return res.json();
+		});
+	}
+
+	function getGithubPutUrl() {
+		return 'https://api.github.com/repos/' + encodeURIComponent(GITHUB_OWNER) + '/' + encodeURIComponent(GITHUB_REPO) + '/contents/' + encodeURIComponent(NOTE_FILE_PATH);
+	}
+
+	async function loadNoteFile() {
+		try {
+			var res = await fetch(NOTE_FILE_PATH);
+			if (!res.ok) {
+				$scope.noteContent = '# Chưa có tài liệu. Nhấn chỉnh sửa để tạo.';
+				renderPreview($scope.noteContent);
+				return;
+			}
+			$scope.noteContent = await res.text();
+			renderPreview($scope.noteContent);
+		} catch (e) {
+			$scope.noteContent = '# Lỗi tải tài liệu';
+			renderPreview($scope.noteContent);
+		}
+	}
+
+	$scope.viewMode = function() {
+		$scope.editEnabled = false;
+		renderPreview($scope.noteContent);
+		saveStatus('Chế độ xem');
+	};
+
+	$scope.enableEdit = function() {
+		$scope.editEnabled = true;
+		saveStatus('Chế độ chỉnh sửa đã bật');
+	};
+
+	$scope.saveContent = async function() {
+		if (!GITHUB_OWNER || !GITHUB_REPO) {
+			$window.alert('Không thể xác định repo GitHub tự động từ địa chỉ hiện tại.');
+			return;
+		}
+		var token = $window.prompt('Nhập GitHub token để lưu file:', '');
+		if (!token) return;
+		try {
+			var meta = await getGithubFileMeta(token);
+			var body = {
+				message: 'Update docs note',
+				content: base64Encode($scope.noteContent || ''),
+				branch: GITHUB_BRANCH
+			};
+			if (meta && meta.sha) body.sha = meta.sha;
+			var res = await fetch(getGithubPutUrl(), {
+				method: 'PUT',
+				headers: getGithubApiHeaders(token),
+				body: JSON.stringify(body)
+			});
+			if (!res.ok) {
+				var msg = await res.text();
+				throw new Error('Lưu thất bại: ' + res.status + '\n' + msg);
+			}
+			var data = await res.json();
+			if (data.content && data.content.sha) {
+				$scope.fileSha = data.content.sha;
+			}
+			$scope.editEnabled = false;
+			renderPreview($scope.noteContent);
+			saveStatus('Đã lưu tài liệu');
+		} catch (e) {
+			$window.alert(e.message || 'Lỗi khi lưu.');
+		}
+	};
+
+	$scope.deleteContent = async function() {
+		if (!GITHUB_OWNER || !GITHUB_REPO) {
+			$window.alert('Không thể xác định repo GitHub tự động từ địa chỉ hiện tại.');
+			return;
+		}
+		if (!$window.confirm('Xóa file tài liệu trên GitHub?')) return;
+		var token = $window.prompt('Nhập GitHub token để xoá file:', '');
+		if (!token) return;
+		try {
+			var meta = await getGithubFileMeta(token);
+			if (!meta || !meta.sha) {
+				$window.alert('Không tìm thấy file tài liệu để xóa.');
+				return;
+			}
+			var body = {
+				message: 'Delete docs note',
+				sha: meta.sha,
+				branch: GITHUB_BRANCH
+			};
+			var res = await fetch(getGithubPutUrl(), {
+				method: 'DELETE',
+				headers: getGithubApiHeaders(token),
+				body: JSON.stringify(body)
+			});
+			if (!res.ok) {
+				var msg = await res.text();
+				throw new Error('Xóa thất bại: ' + res.status + '\n' + msg);
+			}
+			$scope.noteContent = '# Chưa có tài liệu. Nhấn chỉnh sửa để tạo.';
+			renderPreview($scope.noteContent);
+			saveStatus('Đã xóa tài liệu');
+		} catch (e) {
+			$window.alert(e.message || 'Lỗi khi xóa.');
+		}
+	};
+
+	loadNoteFile();
 });
 
 myApp.controller('perApp',function ($scope,$http) {
