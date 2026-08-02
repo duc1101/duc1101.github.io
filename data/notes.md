@@ -5,5 +5,3 @@
 - Nhấn `Chỉnh sửa` để nhập nội dung.
 - Lưu lại sẽ ghi trực tiếp vào GitHub repo của bạn.
 - Chỉnh sửa yêu cầu mật khẩu, xem thì không.
-
-Viết ghi chú, tips, hoặc tài liệu ở đây.
