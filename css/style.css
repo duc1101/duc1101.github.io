@@ -19,6 +19,21 @@ body{
 	background-attachment: fixed;
 	position: relative;
 }
+
+.main {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.main > .row {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.main > .row > [class*="col-"] {
+	padding-left: 10px;
+	padding-right: 10px;
+}
 /* ----------------------header----------------------- */
 #head-con{
 	background-image: url('../images/spr.png');
@@ -112,6 +127,21 @@ iframe{
 .main-center{
 	border: 1px solid;
 	border-radius: 11px;
+}
+
+@media (min-width: 992px) {
+	.main-left {
+		flex: 0 0 22%;
+		max-width: 22%;
+	}
+	.main-center {
+		flex: 0 0 60%;
+		max-width: 60%;
+	}
+	.main-right {
+		flex: 0 0 18%;
+		max-width: 18%;
+	}
 }
 .main-center .col-3{
 	padding-left: 6px;
