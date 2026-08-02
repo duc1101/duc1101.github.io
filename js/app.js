@@ -102,7 +102,7 @@ myApp.controller('HomeCtrl',function ($scope,$http) {
 
 myApp.controller('notesCtrl',function ($scope,$window,$sce) {
 	var NOTE_FILE_PATH = 'data/notes.md';
-	var GITHUB_BRANCH = 'main';
+	var GITHUB_BRANCH = 'master';
 	var GITHUB_OWNER = '';
 	var GITHUB_REPO = '';
 
