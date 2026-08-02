@@ -36,7 +36,7 @@
 	cscript OSPP.VBS /dstatus
 	slmgr.vbs /ckms
 
-#CÁCH KHÁC (TOOL ONLINE) -----------------------
+#MAS -----------------------
 [-powershell (admin)-]
 	irm https://get.activated.win |iex
 
